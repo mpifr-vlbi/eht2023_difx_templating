@@ -7,7 +7,9 @@ include Makefile.inc
 ## Derived set of v2d,vex in both conventional zoom setup and outputband setup
 DIFX_TARGETS_ZOOM := $(addsuffix _b1,$(TRACKS)) $(addsuffix _b2,$(TRACKS)) $(addsuffix _b3,$(TRACKS)) $(addsuffix _b4,$(TRACKS))
 DIFX_TARGETS_OUTPUTBAND := $(addsuffix _ob,$(DIFX_TARGETS_ZOOM))
-DIFX_TARGETS := $(DIFX_TARGETS_ZOOM) $(DIFX_TARGETS_OUTPUTBAND)
+DIFX_TARGETS_345G_ZOOM := $(addsuffix _b1_345,$(TRACKS_345G)) $(addsuffix _b2_345,$(TRACKS_345G)) $(addsuffix _b3_345,$(TRACKS_345G)) # $(addsuffix _b4_345,$(TRACKS_345G))
+DIFX_TARGETS_345G_OUTPUTBAND := $(addsuffix _ob,$(DIFX_TARGETS_345G_ZOOM))
+DIFX_TARGETS := $(DIFX_TARGETS_ZOOM) $(DIFX_TARGETS_OUTPUTBAND) $(DIFX_TARGETS_345G_ZOOM) $(DIFX_TARGETS_345G_OUTPUTBAND)
 
 # .NOTPARALLEL:  # note: quite slow build, commented out again; but be careful to do 'make all' and then 'make install' as separate steps, not 'make all install'
 
@@ -43,6 +45,19 @@ prerequisites:
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 2 > templates/230G/band2/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 3 > templates/230G/band3/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 4 > templates/230G/band4/freqs_ALMA.vex
+	#
+	## 345G
+	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 1   > templates/345G/band1/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 2   > templates/345G/band2/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 4   > templates/345G/band3/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 3   > templates/345G/band4/freqs_NOEMA.vex
+	#    
+	./scripts/alma-vex-defs.py --lo1 343.600      -r 1 > templates/345G/band1/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f335600.00000 -w58.0 -sL -ralma
+	#./scripts/alma-vex-defs.py --lo1 343.600     -r 2 > templates/345G/band2/freqs_ALMA_alt.vex  # equiv. to $ehtc/alma-vex-defs.py -f337600.00000 -w58.0 -sL -ralma
+	./scripts/alma-vex-defs.py --lo1 343.54140625 -r 2 > templates/345G/band2/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f337541.40625 -w58.0 -sL -ralma; shifted 58.59375 MHz
+	./scripts/alma-vex-defs.py --lo1 341.600      -r 3 > templates/345G/band3/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f347600.00000 -w58.0 -sU -ralma
+	./scripts/alma-vex-defs.py --lo1 341.600      -r 4 > templates/345G/band4/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f349600.00000 -w58.0 -sU -ralma
+
 	## Note: DiFX $ehtc/alma-vex-defs.py would be more direct, but its chan_defs are not useable as-is,
 	##       vs own ./scripts/alma-vex-defs.py usable for that but is not 4-8/5-9 aware plus b2 offset trickyness
 	## SMA a priori clock CSV files
