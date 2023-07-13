@@ -1,0 +1,8 @@
+def NOEMA;
+     site_name = NOEMA;
+     site_ID = Nn;
+     site_type = fixed;
+     site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
+     site_position_epoch = 0;
+     site_position = 4523987.1330 m : 468041.9885 m : 4460325.1330 m;   * e23d15 pad N02, 4 phased, 2023-04-14 21:48:15
+enddef;
