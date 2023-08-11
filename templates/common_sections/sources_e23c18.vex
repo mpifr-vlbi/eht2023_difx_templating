@@ -2,10 +2,8 @@ $SOURCE;
 *
 def SGRA;
      source_name = SGRA;
-*    this source had calibrator code:  
+     * TODO: replace the below with refined coordinates, to be determined
      ra = 17h45m40.0320700s; dec = -29d00'28.261034"; ref_coord_frame = J2000;
-*    ra = 17h42m29.3010382s; dec = -28d59'18.675713"; ref_coord_frame = B1950;
-*    ra = 17h47m08.8479006s; dec = -29d01'02.160666"; ref_coord_frame = Date;
 enddef;
 *
 def 3C273;
