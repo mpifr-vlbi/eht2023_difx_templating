@@ -1,5 +1,8 @@
 $ANTENNA;
 *
+* Note: several stations have Nasmyth-L or Nasmyth-R rather than Az-El mounts,
+* however, VEX 1.5 does not support that axis_type (VEX 2 would...)
+*
 def ALMA;
      axis_type = az : el;
      antenna_motion = el : 180.0 deg/min : 30 sec;  *    9.000 deg/sec/sec
