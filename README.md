@@ -1,5 +1,8 @@
 # eht2023_difx_templating
+
 EHT 2023 VLBI DiFX correlation setups
+
+Most tracks were observed at 230 GHz, the single track e23d15 at 345 GHz.
 
 # TODO
 
