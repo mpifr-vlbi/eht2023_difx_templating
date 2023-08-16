@@ -27,4 +27,6 @@ ZOOM zooms62 {
    # blank
 }
 
-#include <setup_outputbands.v2d>
+#include <outputbands.v2d>
+
+#include <setup.v2d>
