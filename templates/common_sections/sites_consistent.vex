@@ -69,9 +69,11 @@ def SPT;
      * position for Apr 2021, epoch 20210415, by M. Titus and V. Fish
      * site_position =     840.90160 m:    -842.71670 m: -6359567.87550 m;
      *
-     * position for March 2022, epoch 20220321, per Pedro Elosequi's script
-     site_position =     848.11910 m:    -848.70500 m: -6359567.69090 m;
-     * TODO position for 2023!!
+     * position for March 2022, epoch 20220321, per Pedro Elosegui's script
+     * site_position =     848.11910 m:    -848.70500 m: -6359567.69090 m;
+     *
+     * position for April 2023, epoch 20230419, by Dhiman Mondal:
+     site_position =     856.4590 m:    -855.6301 m: -6359567.4666 m;
      *
      site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
      site_position_epoch =   54466;
