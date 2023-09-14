@@ -78,7 +78,7 @@ lm_b4:
 ## NOEMA
 	
 nn_b1:
-	$(call mk6dir2filelist,mark6-09,1,MPI%6443,NOEMA_b1.1.filelist)
+	$(call mk6dir2filelist,mark6-09,1,MPI%6433,NOEMA_b1.1.filelist)
 	$(call mk6dir2filelist,mark6-09,2,MPI%6428,NOEMA_b1.2.filelist)
 	$(call mk6dir2filelist,mark6-09,3,MPI%6426,NOEMA_b1.3.filelist)
 	$(call mk6dir2filelist,mark6-09,4,MPI%6445,NOEMA_b1.4.filelist)
