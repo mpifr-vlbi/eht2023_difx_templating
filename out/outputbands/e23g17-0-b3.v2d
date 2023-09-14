@@ -64,11 +64,6 @@ ANTENNA Nn {
   zoom = zooms58
 }
 
-ANTENNA Pv {
-  datastreams = Pv_ds12,Pv_ds34
-  zoom = zooms58
-}
-
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
   zoom = zooms58
@@ -93,8 +88,6 @@ DATASTREAM Lmt_ds12 { filelist = LMT_b3.12.filelist }
 DATASTREAM Lmt_ds34 { filelist = LMT_b3.34.filelist }
 DATASTREAM Spt_ds12 { filelist = SPT_b3.12.filelist }
 DATASTREAM Spt_ds34 { filelist = SPT_b3.34.filelist }
-DATASTREAM Pv_ds12 { filelist = Pico_b3.12.filelist }
-DATASTREAM Pv_ds34 { filelist = Pico_b3.34.filelist }
 DATASTREAM SmaAphids_ds12 { filelist = SMA_b3.12.filelist }
 DATASTREAM SmaAphids_ds34 { filelist = SMA_b3.34.filelist }
 DATASTREAM Smt_ds12 { filelist = SMT_b3.12.filelist }
