@@ -134,7 +134,7 @@ sz_b4: # todo, not shipped yet (as of 09/2023)
 
 buglist:
 	# All scans that have unexpected time stamps
-	grep -v " 59" *.filelist || true
+	grep -v " 600" *.filelist || true
 	grep " 51544." *.filelist || true
 
 
