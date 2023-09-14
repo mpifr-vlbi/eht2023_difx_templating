@@ -19,12 +19,6 @@ vex = vexfilename
 # CORRELATION CONFIG
 #==================================================================
 
-ZOOM zooms58 {
-   # blank
-}
-
-ZOOM zooms62 {
-   # blank
-}
+#include <zooms.v2d>
 
 #include <setup.v2d>
