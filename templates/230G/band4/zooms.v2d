@@ -57,7 +57,7 @@ ZOOM zooms62
       addZoomFreq = freq@228748.0/bw@62.0/noparent@true
       addZoomFreq = freq@228812.0/bw@62.0/noparent@true
       # Nn rec3 slot2,3 net USB
-      #addZoomFreq = freq@228812.0/bw@62.0/noparent@true
+      addZoomFreq = freq@228812.0/bw@62.0/noparent@true
       addZoomFreq = freq@228876.0/bw@62.0/noparent@true
       addZoomFreq = freq@228940.0/bw@62.0/noparent@true
       addZoomFreq = freq@229004.0/bw@62.0/noparent@true

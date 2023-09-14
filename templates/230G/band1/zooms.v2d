@@ -1,9 +1,8 @@
-# $ehtc/alma-vex-defs.py -rzoom -f213100.0 -sL -w58.0
+# $ehtc/alma-vex-defs.py -rzoom -f213100.0 -sL -w58.0 but modified order into increasing by freq
 ZOOM zooms58 {
       # 32 zoom bands in [212162.500000,214037.500000] 1 zm/ch mv 0 res 0
       # center 213100.000000, nInt x 0.000160000000000 s 0.000160000000000 s
       # 18560 ch/HOPS 20000 ch/ALMA 655360 ch/R2DBE Res 0.003125000000000 MHz
-
       addZoomFreq = freq@212162.796875/bw@58.0/noparent@true  #< 212220.796875
       addZoomFreq = freq@212221.390625/bw@58.0/noparent@true  #< 212279.390625
       addZoomFreq = freq@212279.984375/bw@58.0/noparent@true  #< 212337.984375
@@ -40,6 +39,8 @@ ZOOM zooms58 {
 
 ZOOM zooms62
 {
+      # fake for redundant channel pair Ch01 Ch17
+      addZoomFreq = freq@293324.0/bw@62.0/noparent@true
       # Nn rec1 slot2
       addZoomFreq = freq@212364.0/bw@62.0/noparent@true
       addZoomFreq = freq@212428.0/bw@62.0/noparent@true
@@ -73,7 +74,5 @@ ZOOM zooms62
       addZoomFreq = freq@214156.0/bw@62.0/noparent@true
       addZoomFreq = freq@214220.0/bw@62.0/noparent@true
       addZoomFreq = freq@214284.0/bw@62.0/noparent@true
-      # fake for redundant channel pair Ch01 Ch17
-      addZoomFreq = freq@293324.0/bw@62.0/noparent@true
 }
 
