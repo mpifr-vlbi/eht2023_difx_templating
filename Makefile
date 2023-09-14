@@ -31,6 +31,10 @@ prerequisites:
 	. scripts/create_vex_EOPs.sh
 	. scripts/make_initial_clocks.sh
 	. scripts/make_initial_notes.sh
+	## Recorded Mark6 file lists
+	make -C filelists bonn
+	make -C filelists hays
+	make -C filelists install
 	## NOEMA Array Reference Positions
 	for exptname in $(TRACKS); do \
 		./scripts/vlbimonitordb/vlbimon-get-noemaPosition.py $${exptname} > ./templates/common_sections/sites_NOEMA_$${exptname}.vex ; \
