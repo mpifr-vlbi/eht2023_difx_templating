@@ -1,4 +1,4 @@
-## Get global settings; TRACKS (e22...), REV (FRINGE), REL (0), SITE (mpifr), EXPROOT (/Exps)
+## Get global settings; TRACKS (e23...), REV (FRINGE), REL (0), SITE (mpifr), EXPROOT (/Exps)
 include ../Makefile.inc
 
 M6DIRS := /cluster/difx/directories/
@@ -6,7 +6,7 @@ M6DIRS := /cluster/difx/directories/
 all:
 	@echo "Options:  'make bonn'  or  'make hays'"
 
-mk6dir2filelist = grep "^e22" $(M6DIRS)/$(3).filelist | sort -k 2 | sed -e 's/^/\/$(1)_fuse\/$(2)\//' | cut -d' ' -f 1,2,3 > $(4)
+mk6dir2filelist = grep "^e23" $(M6DIRS)/$(3).filelist | sort -k 2 | sed -e 's/^/\/$(1)_fuse\/$(2)\//' | cut -d' ' -f 1,2,3 > $(4)
 
 bonn: aa_b1 aa_b4 ax_b1 ax_b4 gl_b1 gl_b4 mm_b1 mm_b4 mg_b1 mg_b4 \
 	kt_b1 kt_b4 lm_b1 lm_b4 nn_b1 nn_b4 sw_b1 sw_b4 sz_b1 sz_b4
