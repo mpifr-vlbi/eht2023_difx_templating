@@ -43,11 +43,6 @@ ANTENNA Nn {
   zoom = zooms58
 }
 
-ANTENNA Pv {
-  datastreams = Pv_ds12,Pv_ds34
-  zoom = zooms58
-}
-
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
   zoom = zooms58
