@@ -9,7 +9,9 @@ DIFX_TARGETS_ZOOM := $(addsuffix _b1,$(TRACKS)) $(addsuffix _b2,$(TRACKS)) $(add
 DIFX_TARGETS_OUTPUTBAND := $(addsuffix _ob,$(DIFX_TARGETS_ZOOM))
 DIFX_TARGETS_345G_ZOOM := $(addsuffix _b1_345,$(TRACKS_345G)) $(addsuffix _b2_345,$(TRACKS_345G)) $(addsuffix _b3_345,$(TRACKS_345G)) # $(addsuffix _b4_345,$(TRACKS_345G))
 DIFX_TARGETS_345G_OUTPUTBAND := $(addsuffix _ob,$(DIFX_TARGETS_345G_ZOOM))
-DIFX_TARGETS := $(DIFX_TARGETS_ZOOM) $(DIFX_TARGETS_OUTPUTBAND) $(DIFX_TARGETS_345G_ZOOM) $(DIFX_TARGETS_345G_OUTPUTBAND)
+# DIFX_TARGETS := $(DIFX_TARGETS_OUTPUTBAND) $(DIFX_TARGETS_345G_OUTPUTBAND)
+# TODO: make 345 GHz band 1 to 4 defaults
+DIFX_TARGETS := $(DIFX_TARGETS_OUTPUTBAND)
 
 # .NOTPARALLEL:  # note: quite slow build, commented out again; but be careful to do 'make all' and then 'make install' as separate steps, not 'make all install'
 
@@ -120,6 +122,11 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b1.v2d
 	@ sed -i "s/vexfilename/$*-${REL}-b1.vex.obs/g" out/outputbands/$*-$(REL)-b1.v2d
 
+%_b1_345_ob:
+	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/$*.vext out/outputbands/$*-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/$*-${REL}-b1.vex.obs/g" out/outputbands/$*-$(REL)-b1.v2d
+
 # Custom-fiddled band 1 builds
 # (none)
 
@@ -138,6 +145,11 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b2.v2d
 	@ sed -i "s/vexfilename/$*-${REL}-b2.vex.obs/g" out/outputbands/$*-$(REL)-b2.v2d
 
+%_b2_345_ob:
+	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/$*.vext out/outputbands/$*-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/$*-${REL}-b2.vex.obs/g" out/outputbands/$*-$(REL)-b2.v2d
+
 # Custom-fiddled band 2 builds
 # (none)
 
@@ -154,6 +166,11 @@ diff: b1_diff b2_diff b3_diff b4_diff
 %_b3_ob:
 	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/$*.vext out/outputbands/$*-$(REL)-b3.vex.obs
 	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/$*-${REL}-b3.vex.obs/g" out/outputbands/$*-$(REL)-b3.v2d
+
+%_b3_345_ob:
+	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/$*.vext out/outputbands/$*-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b3.v2d
 	@ sed -i "s/vexfilename/$*-${REL}-b3.vex.obs/g" out/outputbands/$*-$(REL)-b3.v2d
 
 # Custom-fiddled band 3 builds
@@ -183,6 +200,11 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	#
 	# sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -105.462 # SMA extra offsets/g" out/outputbands/e22g18-$(REL)-b4.v2d
 	# ...
+
+%_b4_345_ob:
+	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/$*.vext out/outputbands/$*-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/$*-${REL}-b4.vex.obs/g" out/outputbands/$*-$(REL)-b4.v2d
 
 # Custom-fiddled band 3 builds
 # (none)
