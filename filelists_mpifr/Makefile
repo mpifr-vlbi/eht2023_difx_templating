@@ -145,14 +145,16 @@ install:
 	#	mkdir -p /Exps/$${exptname}/$(REV)/b1/ /Exps/$${exptname}/$(REV)/b1_outputbands/ ; \
 	#	mkdir -p /Exps/$${exptname}/$(REV)/b4/ /Exps/$${exptname}/$(REV)/b4_outputbands/ ; \
 	#done
-	#for exptname in $(TRACKS); do \
-	#	cp -a *_b1.* /Exps/$${exptname}/$(REV)/b1/ ;				\
-	#	cp -a *_b1.* /Exps/$${exptname}/$(REV)/b1_outputbands/ ;	\
-	#	cp -a *_b4.* /Exps/$${exptname}/$(REV)/b4/ ;				\
-	#	cp -a *_b4.* /Exps/$${exptname}/$(REV)/b4_outputbands/;		\
-	#done
+	#
+	# Outputband correlation subdirs
 	for exptname in $(TRACKS); do \
 		cp -a *_b1.* /Exps/$${exptname}/$(REV)/b1_outputbands/ ;	\
 		cp -a *_b4.* /Exps/$${exptname}/$(REV)/b4_outputbands/;		\
+	done
+	#
+	# Zoom correlation subdirs
+	for exptname in $(TRACKS); do \
+		cp -a *_b1.* /Exps/$${exptname}/$(REV)/b1/ ;	\
+		cp -a *_b4.* /Exps/$${exptname}/$(REV)/b4/;		\
 	done
 
