@@ -1,7 +1,7 @@
 *------------------------------------------------------------------------------
 $MODE;
 *
-def 1mmlcp;
+def band7;
      ref $PROCEDURES = Proc_01;
      ref $IF = IF_NOMINAL:Nn:Gl:Ax:Sz:Kt:Lm:Mg:Sw:Mm;
      ref $IF = IF_APEX:Ax;
