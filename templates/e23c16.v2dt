@@ -19,14 +19,6 @@ vex = vexfilename
 # CORRELATION CONFIG
 #==================================================================
 
-ZOOM zooms58 {
-   # blank
-}
-
-ZOOM zooms62 {
-   # blank
-}
-
 #include <outputbands.v2d>
 
 #include <setup.v2d>
