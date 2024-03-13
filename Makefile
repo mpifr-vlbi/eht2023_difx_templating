@@ -90,7 +90,7 @@ etransferDirs:
 ## Build and install full correlation v2d vex config sets
 ####################################################################################
 
-all: $(DIFX_TARGETS)
+all: $(DIFX_TARGETS_ALL)
 
 install: b1_install b2_install b3_install b4_install
 
