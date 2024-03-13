@@ -42,12 +42,24 @@ if __name__ == '__main__':
     rate_div = dict(zip(rate_units,[10**(-x) for x in [0,3,6,9,12,15]]))[rate_unit]
     offset_unit = args.offset_unit
     offset_div = dict(zip(offset_units,[10**(-x) for x in [0,3,6,9,12,15]]))[offset_unit]
-    start_time = args.start_time
-    stop_time = args.stop_time
 
     r2dbes = [1,2,3,4]
     fpga_clk = 256e6
-    t0,tnow = [(datetime.datetime.utcnow() - datetime.timedelta(days=d)).timestamp() for d in [60,0]]
+
+    if args.stop_time is None:
+        stop_t = datetime.datetime.utcnow()
+        stop_time = datetime.datetime.utcnow().timestamp()
+    else:
+        stop_t = args.stop_time
+        stop_time = args.stop_time.timestamp()
+
+    if args.start_time is None:
+        start_time = (stop_t - datetime.timedelta(days=60)).timestamp()
+    else:
+        start_time = args.start_time.timestamp()
+
+    t0,tnow = start_time, stop_time
+    # t0,tnow = [(datetime.datetime.utcnow() - datetime.timedelta(days=d)).timestamp() for d in [60,0]]
 
     # process separately for each r2dbe for each site
     for site in sites:
@@ -82,11 +94,11 @@ if __name__ == '__main__':
 
             # now get ppsOffset logged since upSince
             ppsoffset = 'r2dbe_{}_ppsOffset'.format(r2)
-            tstart = t1 if start_time is None else start_time.timestamp()
+            tstart = t1 if start_time is None else start_time
             if tstart < t1:
                 print('    (start time limited to last r2dbe{} configure time)'.format(r2))
                 tstart = t1
-            tstop = tnow if stop_time is None else stop_time.timestamp()
+            tstop = tnow if stop_time is None else stop_time
             if tstop > tnow:
                 print('    (stop time limited to now)')
                 tstop = tnow
