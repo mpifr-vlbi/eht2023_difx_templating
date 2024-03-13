@@ -1,0 +1,27 @@
+
+=== VLBIMon1 ===
+
+From Radboud VLBIMon1 database https://vlbimon1.science.ru.nl/
+via script ./scripts/vlbimonitordb/report_clock_model.py
+
+  ./report_clock_model.py --start-time=2023y108d01h01m01s --stop-time 2023y116d01h01m01s --band 1 --sites KP
+  KP  band 1: rate = -76.277 +/- 0.101 ps/s, offset = +5116.464 ns @ 2023y108d01h01m02s [11532 pts]
+
+
+  ./report_clock_model.py --start-time=2023y108d01h01m01s --stop-time 2023y116d01h01m01s --band 1
+  SMTO   band 1: rate = -1.192 +/- 0.001 ps/s, offset = -895.121 ns @ 2023y108d01h01m16s [6297 pts]
+  JCMT   band 1: rate = -0.160 +/- 0.001 ps/s, offset = +24.416 ns @ 2023y108d01h01m20s [11491 pts]
+  APEX   (no data for site)
+  GLT    band 1: rate = -0.093 +/- 0.000 ps/s, offset = -58.939 ns @ 2023y108d01h01m30s [11299 pts]
+  SPT    band 1: rate = -0.435 +/- 0.002 ps/s, offset = -344.886 ns @ 2023y108d01h01m29s [4902 pts]
+  LMT    band 1: rate = -5221.623 +/- 0.012 ps/s, offset = -851165.934 ns @ 2023y108d01h01m45s [7630 pts]
+  PICO   (no data for site)
+  KP     band 1: rate = -76.277 +/- 0.101 ps/s, offset = +5116.464 ns @ 2023y108d01h01m02s [11532 pts]
+
+
+=== Station-reported GPS 1pps vs Maser 1pps drift ===
+
+  APEX    todo
+  NOEMA   todo
+  PICO    todo
+  ALMA    ?
