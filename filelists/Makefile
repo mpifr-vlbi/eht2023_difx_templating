@@ -23,6 +23,14 @@ aa_b1:
 	$(call mk6dir2filelist,mark6-01,12,SAO%0025,ALMA_b1.12.filelist)
 	$(call mk6dir2filelist,mark6-01,34,SAO%0027,ALMA_b1.34.filelist)
 
+aa_b2:
+	@echo "TODO get ALMA Band 2 MSNs list!"
+	touch ALMA_b2.12.filelist ALMA_b2.34.filelist
+
+aa_b3:
+	@echo "TODO get ALMA Band 3 MSNs list!"
+	touch ALMA_b3.12.filelist ALMA_b3.34.filelist
+
 aa_b4:
 	$(call mk6dir2filelist,mark6-01,12,SAO%0040,ALMA_b4.12.filelist)
 	$(call mk6dir2filelist,mark6-01,34,SAO%0031,ALMA_b4.34.filelist)
