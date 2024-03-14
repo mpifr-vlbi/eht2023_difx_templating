@@ -1,0 +1,131 @@
+107-0306 3C279        band6          AX  GL  KT  LM  MG  NN  SZ  
+107-0318 J1159+2914   band6          AX  GL  KT  LM  MG  NN  --  
+107-0330 3C279        band6          AX  GL  KT  LM  MG  NN  SZ  
+107-0342 J1159+2914   band6          AX  GL  KT  LM  MG  NN  --  
+107-0356 3C279        band6          AX  GL  KT  LM  MG  --  SZ  AA  
+107-0404 J1550+0527   band6          AX  GL  KT  LM  --  NN  --  AA  
+107-0406 J1555+1111   band6          AX  GL  KT  LM  --  NN  --  AA  
+107-0410 J1550+0527   band6          --  --  --  --  --  --  --  AA  
+107-0412 J1555+1111   band6          AX  GL  KT  LM  --  NN  --  AA  
+107-0416 J1550+0527   band6          --  --  --  --  --  --  --  AA  
+107-0422 3C279        band6          AX  GL  KT  LM  MG  --  SZ  AA  
+107-0430 J1550+0527   band6          AX  GL  KT  LM  --  NN  --  AA  
+107-0432 J1555+1111   band6          AX  GL  KT  LM  --  NN  --  AA  
+107-0436 J1550+0527   band6          --  --  --  --  --  --  --  AA  
+107-0438 J1555+1111   band6          AX  GL  KT  LM  --  NN  --  AA  
+107-0442 J1550+0527   band6          --  --  --  --  --  --  --  AA  
+107-0452 J1550+0527   band6          AX  GL  KT  LM  --  NN  --  AA  
+107-0454 J1555+1111   band6          AX  GL  KT  LM  --  NN  --  AA  
+107-0458 J1550+0527   band6          --  --  --  --  --  --  --  AA  
+107-0500 J1555+1111   band6          AX  GL  KT  LM  --  NN  --  AA  
+107-0504 J1550+0527   band6          --  --  --  --  --  --  --  AA  
+107-0510 3C279        band6          AX  GL  KT  LM  MG  --  SZ  AA  MM  SW  
+107-0518 J1550+0527   band6          AX  GL  KT  LM  --  NN  --  AA  --  --  
+107-0520 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0524 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0526 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0530 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0536 J1642+3948   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0548 J1550+0527   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0550 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0554 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0556 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0600 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0606 3C279        band6          AX  GL  KT  LM  MG  --  SZ  AA  MM  SW  
+107-0614 J1550+0527   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0616 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0620 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0622 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0626 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0632 J1642+3948   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0644 J1550+0527   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0646 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0650 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0652 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-0656 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0702 3C279        band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+107-0710 J1550+0527   band6          AX  GL  KT  LM  MG  NN  --  AA  MM  --  
+107-0712 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  MM  --  
+107-0716 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0718 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  MM  --  
+107-0722 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  --  
+107-0728 J1642+3948   band6          AX  GL  KT  LM  MG  NN  --  AA  MM  --  
+107-0740 J1550+0527   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0742 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0746 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0748 J1555+1111   band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-0752 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0758 3C279        band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+107-0806 J1550+0527   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0808 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0812 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0814 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0818 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0824 J1642+3948   band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-0836 J1550+0527   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0838 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0842 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0844 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0848 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0852 J1550+0527   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0854 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0858 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0900 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0904 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0910 J1642+3948   band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-0922 J1550+0527   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0924 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0928 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0930 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0934 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0938 J1550+0527   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0940 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0944 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-0946 J1555+1111   band6          AX  GL  KT  LM  MG  --  --  AA  MM  SW  
+107-0950 J1550+0527   band6          --  --  --  --  --  --  --  AA  --  SW  
+107-1015 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  --  --  
+107-1024 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  --  --  
+107-1033 CTA102       band6          AX  GL  --  LM  --  NN  --  --  --  --  
+107-1042 J2253+1608   band6          AX  GL  --  LM  --  NN  --  --  --  --  
+107-1052 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  --  --  
+107-1101 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  --  --  
+107-1115 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  --  --  
+107-1124 CTA102       band6          AX  GL  KT  LM  --  NN  --  AA  --  --  
+107-1130 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-1139 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-1146 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-1155 J2253+1608   band6          AX  GL  KT  LM  --  NN  --  AA  --  --  
+107-1207 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-1214 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-1223 CTA102       band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-1231 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  --  
+107-1238 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  --  
+107-1247 J2253+1608   band6          AX  GL  KT  LM  --  NN  --  AA  --  --  
+107-1259 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-1306 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-1315 CTA102       band6          AX  GL  KT  LM  MG  NN  --  AA  --  --  
+107-1323 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-1330 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-1339 J2253+1608   band6          AX  GL  KT  LM  --  NN  --  AA  --  --  
+107-1351 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-1358 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-1407 CTA102       band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-1415 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-1422 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  AA  MM  SW  
+107-1431 J2253+1608   band6          AX  GL  KT  LM  --  NN  --  AA  MM  SW  
+107-1441 CTA102       band6          AX  GL  KT  LM  MG  --  --  --  MM  SW  
+107-1447 J2253+1608   band6          AX  GL  KT  LM  --  NN  --  --  MM  SW  
+107-1455 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  MM  SW  
+107-1502 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  MM  SW  
+107-1513 CTA102       band6          AX  GL  KT  LM  MG  --  --  --  MM  SW  
+107-1519 J2253+1608   band6          AX  GL  KT  LM  --  --  --  --  MM  SW  
+107-1527 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  MM  SW  
+107-1534 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  MM  SW  
+107-1545 CTA102       band6          AX  GL  KT  LM  MG  --  --  --  MM  SW  
+107-1551 J2253+1608   band6          AX  GL  KT  --  --  --  --  --  MM  SW  
+107-1559 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  MM  SW  
+107-1606 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  MM  SW  
+107-1617 CTA102       band6          AX  GL  KT  LM  MG  --  --  --  MM  SW  
+107-1623 J2253+1608   band6          AX  GL  KT  LM  --  --  --  --  MM  SW  
+107-1631 BLLAC        band6          AX  GL  KT  LM  MG  NN  --  --  MM  SW  
+107-1638 BLLAC        band6          --  GL  KT  LM  MG  NN  --  --  MM  SW  

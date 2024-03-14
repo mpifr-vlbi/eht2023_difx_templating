@@ -1,0 +1,81 @@
+105-0143 3C279        band7          AX  GL  NN  
+105-0152 3C273        band7          AX  GL  NN  
+105-0201 3C279        band7          AX  GL  NN  
+105-0210 3C273        band7          AX  GL  NN  
+105-0219 3C279        band7          AX  GL  NN  
+105-0228 3C273        band7          AX  GL  NN  MG  
+105-0240 3C279        band7          AX  GL  NN  --  
+105-0249 3C273        band7          AX  GL  NN  MG  
+105-0258 3C279        band7          AX  GL  NN  MG  
+105-0306 3C279        band7          AX  GL  NN  MG  AA  
+105-0312 3C273        band7          AX  GL  NN  MG  AA  
+105-0318 3C279        band7          AX  GL  NN  MG  AA  
+105-0325 J1337-1257   band7          AX  --  NN  --  AA  
+105-0333 3C279        band7          AX  GL  NN  MG  AA  
+105-0339 3C273        band7          AX  GL  NN  MG  AA  
+105-0347 3C279        band7          AX  GL  --  MG  AA  
+105-0353 J1337-1257   band7          AX  --  --  MG  AA  
+105-0401 SGRA         band7          AX  --  NN  --  AA  
+105-0416 3C279        band7          AX  GL  --  MG  AA  
+105-0424 SGRA         band7          AX  --  NN  --  AA  
+105-0425 3C273        band7          --  GL  --  MG  --  MM  SW  
+105-0433 3C279        band7          --  GL  --  MG  --  --  --  
+105-0445 SGRA         band7          AX  --  NN  --  AA  --  --  
+105-0504 3C279        band7          AX  GL  --  MG  AA  MM  SW  
+105-0510 J1337-1257   band7          AX  --  --  MG  AA  --  --  
+105-0518 SGRA         band7          AX  --  NN  --  AA  --  --  
+105-0534 SGRA         band7          AX  --  NN  --  AA  --  --  
+105-0551 J1924-2914   band7          AX  --  NN  --  AA  --  --  
+105-0525 3C273        band7          --  GL  --  MG  --  MM  SW  
+105-0533 3C279        band7          --  GL  --  MG  --  MM  SW  
+105-0542 3C273        band7          --  GL  --  MG  --  MM  SW  
+105-0550 J1337-1257   band7          --  --  --  MG  --  MM  --  
+105-0605 SGRA         band7          AX  --  NN  --  AA  --  --  
+105-0624 3C279        band7          AX  --  --  MG  AA  MM  SW  
+105-0630 J1337-1257   band7          AX  --  --  MG  AA  MM  SW  
+105-0637 J1924-2914   band7          AX  --  NN  --  AA  --  --  
+105-0646 3C273        band7          AX  GL  --  MG  AA  MM  SW  
+105-0652 3C279        band7          AX  --  --  MG  AA  MM  SW  
+105-0658 3C273        band7          AX  GL  --  MG  AA  MM  SW  
+105-0705 J1337-1257   band7          AX  --  --  MG  AA  MM  SW  
+105-0712 J1924-2914   band7          AX  --  NN  --  AA  --  --  
+105-0726 J1924-2914   band7          AX  --  NN  --  AA  --  --  
+105-0736 3C279        band7          AX  --  --  MG  AA  MM  SW  
+105-0744 3C273        band7          AX  GL  --  MG  AA  MM  SW  
+105-0753 J1924-2914   band7          AX  --  NN  --  AA  --  --  
+105-0802 J1337-1257   band7          AX  --  --  MG  AA  MM  SW  
+105-0813 3C279        band7          AX  --  --  MG  AA  MM  SW  
+105-0812 3C345        band7          --  GL  NN  --  --  --  --  
+105-0822 3C345        band7          --  GL  NN  --  --  MM  SW  
+105-0837 J0958+6533   band7          --  GL  NN  --  --  MM  SW  
+105-0828 SGRA         band7          AX  --  --  MG  AA  --  --  
+105-0842 SGRA         band7          AX  --  --  MG  AA  --  --  
+105-0857 J1337-1257   band7          AX  --  --  MG  AA  MM  SW  
+105-0905 SGRA         band7          AX  --  --  MG  AA  --  --  
+105-0921 3C279        band7          AX  --  --  MG  --  MM  SW  
+105-0928 SGRA         band7          AX  --  --  MG  AA  --  --  
+105-0945 SGRA         band7          AX  --  --  MG  AA  --  --  
+105-1001 J1924-2914   band7          AX  --  --  MG  AA  --  --  
+105-1010 SGRA         band7          AX  --  --  MG  AA  MM  --  
+105-1028 J1924-2914   band7          AX  --  --  MG  AA  --  --  
+105-1042 SGRA         band7          AX  --  --  MG  AA  MM  SW  
+105-1058 SGRA         band7          AX  --  --  MG  AA  MM  SW  
+105-1113 J1924-2914   band7          AX  --  --  MG  AA  --  --  
+105-1120 SGRA         band7          AX  --  --  MG  AA  MM  SW  
+105-1137 J1924-2914   band7          AX  --  --  MG  AA  --  --  
+105-1151 SGRA         band7          AX  --  --  MG  AA  MM  SW  
+105-1208 SGRA         band7          AX  --  --  MG  AA  MM  SW  
+105-1223 J1924-2914   band7          AX  --  --  MG  AA  MM  SW  
+105-1231 SGRA         band7          AX  --  --  MG  AA  MM  SW  
+105-1247 J1924-2914   band7          AX  --  --  MG  AA  MM  SW  
+105-1301 SGRA         band7          AX  --  --  MG  AA  MM  SW  
+105-1318 SGRA         band7          AX  --  --  MG  AA  MM  SW  
+105-1334 J1924-2914   band7          AX  --  --  MG  AA  MM  SW  
+105-1342 SGRA         band7          AX  --  --  MG  AA  MM  SW  
+105-1400 J1924-2914   band7          AX  --  --  MG  AA  MM  SW  
+105-1411 SGRA         band7          AX  --  --  MG  --  MM  SW  
+105-1426 J1924-2914   band7          AX  --  --  MG  --  MM  SW  
+105-1435 SGRA         band7          AX  --  --  MG  --  MM  SW  
+105-1445 J1924-2914   band7          AX  --  --  MG  --  MM  SW  
+105-1457 J1924-2914   band7          AX  --  --  MG  --  MM  SW  
+105-1509 J1924-2914   band7          AX  --  --  MG  --  MM  SW  

@@ -1,0 +1,76 @@
+108-0221 3C273        band6          AX  GL  KT  LM  MG  NN  
+108-0229 3C279        band6          AX  GL  KT  LM  --  NN  SZ  
+108-0237 3C273        band6          AX  GL  KT  LM  MG  NN  --  
+108-0245 3C279        band6          AX  GL  KT  LM  MG  NN  SZ  
+108-0253 3C273        band6          AX  GL  KT  LM  MG  NN  --  
+108-0301 J1337-1257   band6          AX  --  KT  LM  --  NN  SZ  
+108-0311 SGRA         band6          AX  --  --  --  --  NN  SZ  
+108-0309 3C273        band6          --  GL  KT  LM  MG  --  --  
+108-0317 3C279        band6          --  GL  KT  LM  MG  --  --  
+108-0325 3C273        band6          --  GL  KT  LM  MG  --  --  
+108-0336 3C279        band6          AX  GL  KT  LM  MG  --  SZ  AA  
+108-0341 J1337-1257   band6          AX  --  KT  LM  MG  --  SZ  AA  
+108-0349 SGRA         band6          AX  --  --  --  --  NN  SZ  AA  
+108-0407 SGRA         band6          AX  --  --  --  --  NN  SZ  AA  
+108-0400 3C273        band6          --  GL  KT  LM  MG  --  --  --  MM  
+108-0417 3C273        band6          --  GL  KT  LM  MG  --  --  --  MM  SW  
+108-0431 3C273        band6          --  GL  KT  LM  MG  --  --  --  MM  SW  
+108-0432 SGRA         band6          AX  --  --  --  --  NN  SZ  AA  --  --  
+108-0452 3C279        band6          AX  GL  KT  LM  MG  --  SZ  AA  MM  SW  
+108-0457 J1337-1257   band6          AX  --  KT  LM  MG  --  SZ  AA  --  --  
+108-0505 SGRA         band6          AX  --  --  --  --  NN  SZ  AA  --  --  
+108-0523 SGRA         band6          AX  --  --  --  --  NN  SZ  AA  --  --  
+108-0540 J1924-2914   band6          AX  --  --  --  --  NN  SZ  AA  --  --  
+108-0514 3C279        band6          --  GL  KT  LM  MG  --  --  --  MM  SW  
+108-0527 3C273        band6          --  GL  KT  LM  MG  --  --  --  MM  SW  
+108-0537 3C279        band6          --  GL  KT  LM  MG  --  --  --  MM  SW  
+108-0551 3C273        band6          --  GL  KT  LM  MG  --  --  --  MM  SW  
+108-0552 SGRA         band6          AX  --  --  --  --  NN  SZ  AA  --  --  
+108-0612 SGRA         band6          AX  --  --  LM  --  NN  SZ  AA  --  --  
+108-0630 J1924-2914   band6          AX  --  --  --  --  NN  SZ  AA  --  --  
+108-0635 SGRA         band6          AX  --  --  LM  --  --  SZ  AA  --  --  
+108-0620 3C273        band6          --  GL  KT  --  MG  --  --  --  MM  SW  
+108-0645 3C273        band6          --  GL  KT  --  MG  --  --  --  MM  SW  
+108-0654 3C279        band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-0659 J1337-1257   band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-0712 SGRA         band6          AX  --  --  LM  --  --  SZ  AA  --  --  
+108-0717 3C273        band6          --  GL  KT  --  MG  --  --  --  MM  SW  
+108-0732 3C279        band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-0737 J1337-1257   band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-0745 SGRA         band6          AX  --  KT  LM  --  --  SZ  AA  --  --  
+108-0803 J1924-2914   band6          AX  --  --  LM  --  --  SZ  AA  --  --  
+108-0806 3C273        band6          --  GL  KT  --  MG  --  --  --  MM  SW  
+108-0815 3C279        band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-0820 J1337-1257   band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-0828 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  --  --  
+108-0846 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  --  --  
+108-0904 J1924-2914   band6          AX  --  KT  LM  --  --  SZ  AA  --  --  
+108-0916 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  --  --  
+108-0934 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  --  --  
+108-0952 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  AA  --  --  
+108-0959 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  --  
+108-1017 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  AA  --  --  
+108-1029 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1047 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1102 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  AA  --  --  
+108-1109 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1127 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  AA  --  --  
+108-1139 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1157 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1212 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1219 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1237 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1249 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1307 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1325 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1330 SGRA         band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1348 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  AA  MM  SW  
+108-1358 SGRA         band6          AX  --  KT  LM  MG  --  SZ  --  MM  SW  
+108-1411 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  --  MM  SW  
+108-1419 SGRA         band6          AX  --  KT  LM  MG  --  SZ  --  MM  SW  
+108-1432 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  --  MM  SW  
+108-1440 SGRA         band6          AX  --  KT  LM  --  --  SZ  --  MM  SW  
+108-1448 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  --  MM  SW  
+108-1459 J2025-0735   band6          AX  --  KT  LM  MG  --  SZ  --  MM  SW  
+108-1507 J2025-0735   band6          AX  --  KT  LM  MG  --  SZ  --  MM  SW  
+108-1517 J1924-2914   band6          AX  --  KT  LM  MG  --  SZ  --  MM  SW  
