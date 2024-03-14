@@ -37,24 +37,24 @@ def Ax;
 enddef;
 *
 def Gl;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.067e-12;
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.087e-12;
 enddef;
 *
 def Kt;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.058e-12;
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -76.277e-12;
 enddef;
 *
-* LMT, undisciplined xtal instead of H-maser, TODO: clock rate breaks
+* LMT, undisciplined xtal instead of H-maser
 def Lm;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : 263.424e-12;
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -5221.623e-12;
 enddef;
 *
-def Mm; * JCMT
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.090e-12;
+def Mm; * JCMT & SMA shared H-maser
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.158e-12;
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.249e-12;
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -1.192e-12;
 enddef;
 *
 def Nn; * NOEMA
@@ -66,11 +66,11 @@ def Pv;
 enddef;
 *
 def Sz;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.300e-12;
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.435e-12;
 enddef;
 *
-def Sw;
-  clock_early = 2023y105d00h00m00s: 0.0 usec : 2023y105d00h00m00s : -7e-15;
+def Sw; * TODO - wait for APHIDS 2023, the delay spreadsheet files, and a sign-corrected vexdelay.py
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.158e-12;
 enddef;
 *------------------------------------------------------------------------------
 $MODE;
