@@ -5,6 +5,8 @@ M6DIRS := /cluster/difx/directories/
 
 mk6dir2filelist = grep "^e23" $(M6DIRS)/$(3).filelist | sort -k 2 | sed -e 's/^/\/$(1)_fuse\/$(2)\//' | cut -d' ' -f 1,2,3 > $(4)
 
+#.NOTPARALLEL:
+
 all:
 	@echo "Options:  'make bonn'  or  'make hays'"
 
@@ -150,16 +152,16 @@ nn_b2:
 	$(call mk6dir2filelist,mark6-07,4,MPI%6425,NOEMA_b2.4.filelist)
 
 nn_b3:
-	$(call mk6dir2filelist,mark6-07,1,MPI%6442,NOEMA_b3.1.filelist)
-	$(call mk6dir2filelist,mark6-07,2,MPI%6444,NOEMA_b3.2.filelist)
-	$(call mk6dir2filelist,mark6-07,3,MPI%6427,NOEMA_b3.3.filelist)
-	$(call mk6dir2filelist,mark6-07,4,MPI%6432,NOEMA_b3.4.filelist)
+	$(call mk6dir2filelist,mark6-07,1,MPI%6423,NOEMA_b3.1.filelist)
+	$(call mk6dir2filelist,mark6-07,2,MPI%6431,NOEMA_b3.2.filelist)
+	$(call mk6dir2filelist,mark6-07,3,MPI%6424,NOEMA_b3.3.filelist)
+	$(call mk6dir2filelist,mark6-07,4,MPI%6441,NOEMA_b3.4.filelist)
 
 nn_b4:
-	$(call mk6dir2filelist,mark6-07,1,MPI%6423,NOEMA_b4.1.filelist)
-	$(call mk6dir2filelist,mark6-07,2,MPI%6431,NOEMA_b4.2.filelist)
-	$(call mk6dir2filelist,mark6-07,3,MPI%6424,NOEMA_b4.3.filelist)
-	$(call mk6dir2filelist,mark6-07,4,MPI%6441,NOEMA_b4.4.filelist)
+	$(call mk6dir2filelist,mark6-07,1,MPI%6442,NOEMA_b4.1.filelist)
+	$(call mk6dir2filelist,mark6-07,2,MPI%6444,NOEMA_b4.2.filelist)
+	$(call mk6dir2filelist,mark6-07,3,MPI%6427,NOEMA_b4.3.filelist)
+	$(call mk6dir2filelist,mark6-07,4,MPI%6432,NOEMA_b4.4.filelist)
 
 ## Pico - did not observe EHT 2023
 
