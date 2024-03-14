@@ -18,10 +18,15 @@ via script ./scripts/vlbimonitordb/report_clock_model.py
   PICO   (no data for site)
   KP     band 1: rate = -76.277 +/- 0.101 ps/s, offset = +5116.464 ns @ 2023y108d01h01m02s [11532 pts]
 
+  ./report_clock_model.py --start-time=2023y102d01h01m01s --stop-time 2023y116d01h01m01s --band 1 --sites JCMT
+  JCMT   band 1: rate = -0.158 +/- 0.001 ps/s, offset = +34.181 ns @ 2023y107d06h13m50s [14157 pts]
+  ./report_clock_model.py --start-time=2023y102d01h01m01s --stop-time 2023y116d01h01m01s --band 1 --sites GLT
+  GLT    band 1: rate = -0.087 +/- 0.000 ps/s, offset = -15.629 ns @ 2023y102d01h01m17s [26730 pts]
+
 
 === Station-reported GPS 1pps vs Maser 1pps drift ===
 
+  ALMA    todo, usually about zero
   APEX    todo
-  NOEMA   todo
+  NOEMA   todo, usually about zero
   PICO    todo
-  ALMA    ?
