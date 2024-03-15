@@ -4,12 +4,12 @@ SETUP zoomSetup {
   # subintNS =  3200000  # terribly slow at MPIfR
   subintNS =  40000000   # by factor 2 zippier correlation at MPIfR
   FFTSpecRes = 0.015625
-  outputSpecRes = 0.5
   xmacLength = 0
   strideLength = 0
   guardNS = 2000
 
-  # outputSpecRes = 0.0625 # fringe search, ~1000 ch over 58 MHz
+  outputSpecRes = 0.5         # production
+  # outputSpecRes = 0.0625    # fringe search, ~1000 ch over 58 MHz
   # outputSpecRes = 0.0156250 # fringe search, ~4000 ch over 58 MHz
 }
 
