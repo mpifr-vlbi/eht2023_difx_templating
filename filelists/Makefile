@@ -3,6 +3,8 @@ include ../Makefile.inc
 
 M6DIRS := /cluster/difx/directories/
 
+TRACKS_ALL := $(TRACKS_230G) $(TRACKS_345G)
+
 mk6dir2filelist = grep "^e23" $(M6DIRS)/$(3).filelist | sort -k 2 | sed -e 's/^/\/$(1)_fuse\/$(2)\//' | cut -d' ' -f 1,2,3 > $(4)
 
 #.NOTPARALLEL:
@@ -265,8 +267,7 @@ install:
 	mkdir -p /Exps/$${exptname}/$(REV)/b2/
 	mkdir -p /Exps/$${exptname}/$(REV)/b3/
 	mkdir -p /Exps/$${exptname}/$(REV)/b4/
-	for exptname in $(TRACKS); do cp -av *_b1.* /Exps/$${exptname}/$(REV)/b1/ ;	done
-	for exptname in $(TRACKS); do cp -av *_b2.* /Exps/$${exptname}/$(REV)/b2/ ;	done
-	for exptname in $(TRACKS); do cp -av *_b3.* /Exps/$${exptname}/$(REV)/b3/ ;	done
-	for exptname in $(TRACKS); do cp -av *_b4.* /Exps/$${exptname}/$(REV)/b4/ ;	done
-
+	for exptname in $(TRACKS_ALL); do cp -av *_b1.* /Exps/$${exptname}/$(REV)/b1/ || true;	done
+	for exptname in $(TRACKS_ALL); do cp -av *_b2.* /Exps/$${exptname}/$(REV)/b2/ || true;	done
+	for exptname in $(TRACKS_ALL); do cp -av *_b3.* /Exps/$${exptname}/$(REV)/b3/ || true;	done
+	for exptname in $(TRACKS_ALL); do cp -av *_b4.* /Exps/$${exptname}/$(REV)/b4/|| true;	done
