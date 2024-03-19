@@ -41,7 +41,9 @@ def Gl;
 enddef;
 *
 def Kt;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -76.277e-12;
+  * The a priori rate from EHT VLBIMon1 GPS vs H-maser 1PPS is -76.277e-12 s/s,
+  * but in tracks e.g. e23c16 a rate of +1.4503e-12 s/s wrt ALMA fits best
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : 1.4503e-12;
 enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
