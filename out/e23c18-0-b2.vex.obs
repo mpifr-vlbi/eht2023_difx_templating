@@ -29,7 +29,7 @@ enddef;
 $CLOCK;
 *
 def Aa;
-  clock_early = 2023y105d00h00m00s: 2107.147 usec : 2023y105d00h00m00s : -10e-15;
+  clock_early = 2023y105d00h00m00s: 2107.147 usec : 2023y105d00h00m00s : +0.1650e-12;
 enddef;
 *
 def Ax;
@@ -401,7 +401,7 @@ def NOEMA;
      site_type = fixed;
      site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
      site_position_epoch = 0;
-     site_position = 0.0000 m : 0.0000 m : 0.0000 m;   * e23c18 pad E00, 10 phased, 2023-04-18 01:54:37
+     site_position = 4523999.4416 m : 468067.5300 m : 4460310.0690 m; * e23c16 e23c18 pad E003
 enddef;
 *------------------------------------------------------------------------------
 $TRACKS;

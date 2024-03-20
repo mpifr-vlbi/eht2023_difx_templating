@@ -29,7 +29,7 @@ enddef;
 $CLOCK;
 *
 def Aa;
-  clock_early = 2023y105d00h00m00s: 2107.147 usec : 2023y105d00h00m00s : -10e-15;
+  clock_early = 2023y105d00h00m00s: 2107.147 usec : 2023y105d00h00m00s : +0.1650e-12;
 enddef;
 *
 def Ax;
@@ -400,9 +400,7 @@ def NOEMA;
      site_type = fixed;
      site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
      site_position_epoch = 0;
-     site_position = 0.0000 m : 0.0000 m : 0.0000 m;   * e23c16 pad E00, 10 phased, 2023-04-15 19:26:10
-     * site_position = 0.0000 m : 0.0000 m : 0.0000 m; * e23c16 pad E00, 8 phased, 2023-04-16 04:16:30
-     * site_position = 0.0000 m : 0.0000 m : 0.0000 m; * e23c16 pad E00, 10 phased, 2023-04-16 04:22:50
+     site_position = 4523999.4416 m : 468067.5300 m : 4460310.0690 m; * e23c16 e23c18 pad E003
 enddef;
 *------------------------------------------------------------------------------
 $TRACKS;
@@ -908,7 +906,23 @@ $SOURCE;
 def SGRA;
      source_name = SGRA;
      * TODO: replace the below with refined coordinates, to be determined
-     ra = 17h45m40.0320700s; dec = -29d00'28.261034"; ref_coord_frame = J2000;
+     * ra = 17h45m40.0320700s; dec = -29d00'28.261034"; ref_coord_frame = J2000;
+     *
+     * EHT 2022: Vincent Fish, Xu et al. (2022 ApJ 940 15) pos plus pm
+     * ra = 17h45m40.032329s; dec = -29d00'28.255012"; ref_coord_frame = J2000;
+     *
+     * Xu et al
+     *   epoch 2020.0 17h45m40.032863 -29d00m28.24260s
+     *      dra  -3.125 mas/yr
+     *      ddec -5.586 mas/yr
+     &
+     * EHT 2023:
+     *   1 yr 1 month after EHT 2022, 1 + 1/12 = 1.0833 yr
+     *   dec -28.255012 - 1.0833*5.586e-3                        = -28.261034
+     *   ra   40.032329 - 1.0833*3.152e-3 * 15 * cos(-29*pi/180) =  39.987532 alt1
+     *   ra   40.032329 - 1.0833*3.152e-3 * cos(-29*pi/180)      =  40.029343 alt2
+     *   ra   40.032329 - 1.0833*3.152e-3 * cos(-29*pi/180) / 15 =  40.032130 alt3
+     ra = 17h45m40.032130; dec = -29d00'28.261034"; ref_coord_frame = J2000;
 enddef;
 *
 def 3C273;

@@ -29,7 +29,7 @@ enddef;
 $CLOCK;
 *
 def Aa;
-  clock_early = 2023y105d00h00m00s: 2107.147 usec : 2023y105d00h00m00s : -10e-15;
+  clock_early = 2023y105d00h00m00s: 2107.147 usec : 2023y105d00h00m00s : +0.1650e-12;
 enddef;
 *
 def Ax;
@@ -400,9 +400,7 @@ def NOEMA;
      site_type = fixed;
      site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
      site_position_epoch = 0;
-* Warning: incomplete data for ['NOEMA'] timerange [1681878840, 1681933260] - expected refPad,refAntID,nrAnt,antIDsList - got ['1,2,4,5,6,7,8,9,10,11,12', 11, 'N00']
-* Warning: incomplete data for ['NOEMA'] timerange [1681878840, 1681933260] - expected refPad,refAntID,nrAnt,antIDsList - got ['2,4,5,6,7,8,9,10,11,12', 10, 'N00']
-* Warning: incomplete data for ['NOEMA'] timerange [1681878840, 1681933260] - expected refPad,refAntID,nrAnt,antIDsList - got ['2,4,5,6,7,8,9,10,11,12', 10, 'W00']
+     site_position = 4523959.3899 m : 468037.3577 m : 4460353.5681 m; * e23g17 e23e19 e23a22 pad N007
 enddef;
 *------------------------------------------------------------------------------
 $TRACKS;

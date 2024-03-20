@@ -4,7 +4,5 @@ def NOEMA;
      site_type = fixed;
      site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
      site_position_epoch = 0;
-     site_position = 0.0000 m : 0.0000 m : 0.0000 m;   * e23c16 pad E00, 10 phased, 2023-04-15 19:26:10
-     * site_position = 0.0000 m : 0.0000 m : 0.0000 m; * e23c16 pad E00, 8 phased, 2023-04-16 04:16:30
-     * site_position = 0.0000 m : 0.0000 m : 0.0000 m; * e23c16 pad E00, 10 phased, 2023-04-16 04:22:50
+     site_position = 4523999.4416 m : 468067.5300 m : 4460310.0690 m; * e23c16 e23c18 pad E003
 enddef;
