@@ -48,7 +48,7 @@ enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
 def Lm;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -5221.623e-12;
+  clock_early = 2023y106d03h44m00s : -36.2929 usec : 2023y106d03h44m00s : -5232.400e-12; * e22c16
 enddef;
 *
 def Mm; * JCMT & SMA shared H-maser
