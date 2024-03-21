@@ -4,11 +4,10 @@
 From Radboud VLBIMon1 database https://vlbimon1.science.ru.nl/
 via script ./scripts/vlbimonitordb/report_clock_model.py
 
-  ./report_clock_model.py --start-time=2023y108d01h01m01s --stop-time 2023y116d01h01m01s --band 1 --sites KP
+  $ report_clock_model.py --start-time=2023y108d01h01m01s --stop-time 2023y116d01h01m01s --band 1 --sites KP
   KP  band 1: rate = -76.277 +/- 0.101 ps/s, offset = +5116.464 ns @ 2023y108d01h01m02s [11532 pts]
 
-
-  ./report_clock_model.py --start-time=2023y108d01h01m01s --stop-time 2023y116d01h01m01s --band 1
+  $ report_clock_model.py --start-time=2023y108d01h01m01s --stop-time 2023y116d01h01m01s --band 1
   SMTO   band 1: rate = -1.192 +/- 0.001 ps/s, offset = -895.121 ns @ 2023y108d01h01m16s [6297 pts]
   JCMT   band 1: rate = -0.160 +/- 0.001 ps/s, offset = +24.416 ns @ 2023y108d01h01m20s [11491 pts]
   APEX   (no data for site)
@@ -18,10 +17,19 @@ via script ./scripts/vlbimonitordb/report_clock_model.py
   PICO   (no data for site)
   KP     band 1: rate = -76.277 +/- 0.101 ps/s, offset = +5116.464 ns @ 2023y108d01h01m02s [11532 pts]
 
-  ./report_clock_model.py --start-time=2023y102d01h01m01s --stop-time 2023y116d01h01m01s --band 1 --sites JCMT
+  $ report_clock_model.py --start-time=2023y102d01h01m01s --stop-time 2023y116d01h01m01s --band 1 --sites JCMT
   JCMT   band 1: rate = -0.158 +/- 0.001 ps/s, offset = +34.181 ns @ 2023y107d06h13m50s [14157 pts]
-  ./report_clock_model.py --start-time=2023y102d01h01m01s --stop-time 2023y116d01h01m01s --band 1 --sites GLT
+  $ report_clock_model.py --start-time=2023y102d01h01m01s --stop-time 2023y116d01h01m01s --band 1 --sites GLT
   GLT    band 1: rate = -0.087 +/- 0.000 ps/s, offset = -15.629 ns @ 2023y102d01h01m17s [26730 pts]
+
+
+LMT clock details
+
+  - EHT 2022 Aa-Lm fringes in e.g. track e22e22
+       b1 VEX  clock_early              (+12.703 usec, +244.8210e-12 s/s)
+       b1 VDIF e22e22_Lm_081-0130.vdif  (+16.331 usec, +245.7048e-12 s/s) from r2dbevdifExtract1PPSOffset.py
+       b1 Mon  2022y081d01h++           (+15.481 usec, +244.6740e-12 s/s) from report_clock_model.py --start-time=2022y081d01h31m01s --stop-time 2022y081d18h01m01s --band 1 --sites LMT
+     --> the sign of offset and rate in DiFX-correlated VEX with fringes is consistent with logged/extracted rates
 
 
 === Station-reported GPS 1pps vs Maser 1pps drift ===
