@@ -1,5 +1,4 @@
 OUTPUTBAND outputbands {
-  # DiFX 2.8.x
   addOutputBand = freq@346662.796875/bw@58.0
   addOutputBand = freq@346721.390625/bw@58.0
   addOutputBand = freq@346779.984375/bw@58.0
