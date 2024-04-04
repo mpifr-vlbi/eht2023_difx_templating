@@ -1,4 +1,7 @@
 #==================================================================
+# DiFX version 2.8.1 default, or
+# DiFX version 2.8.3/2.9.x when using LMT 'deltaClockAccel'
+#
 # Track e23e19 band 2
 # Notes: ...
 #==================================================================
@@ -42,6 +45,7 @@ ANTENNA Kt {
 ANTENNA Lm {
   datastreams = Lmt_ds12,Lmt_ds34
   deltaClock = 0 # LMT extra offsets
+  deltaClockAccel = 0 # LMT clock acceleration
 }
 
 ANTENNA Mg { # SMT

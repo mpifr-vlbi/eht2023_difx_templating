@@ -48,10 +48,12 @@ enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
 def Lm;
-  clock_early = 2023y106d03h44m00s : 0.0 usec : 2023y106d03h44m00s : -5234.72779e-12; * e23c16
+  * e23c16 : deltaClockAccel = -3.6056e-11
+  * e23g17 : deltaClockAccel = -2.77643176e-11
+  clock_early = 2023y106d03h44m00s : -36.2929 usec : 2023y106d03h44m00s : -5234.72779e-12; * e23c16
+  clock_early = 2023y107d03h06m00s : -475.940 usec : 2023y107d03h06m00s :-5227.43128e-12; * e23g17
   * ToDo: rates/clocks and v2d deltaClockAccel for:
   * e23d15
-  * e23g17
   * e23c18
   * e23e19
   * e23a22

@@ -48,10 +48,12 @@ enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
 def Lm;
-  clock_early = 2023y106d03h44m00s : 0.0 usec : 2023y106d03h44m00s : -5234.72779e-12; * e23c16
+  * e23c16 : deltaClockAccel = -3.6056e-11
+  * e23g17 : deltaClockAccel = -2.77643176e-11
+  clock_early = 2023y106d03h44m00s : -36.2929 usec : 2023y106d03h44m00s : -5234.72779e-12; * e23c16
+  clock_early = 2023y107d03h06m00s : -475.940 usec : 2023y107d03h06m00s :-5227.43128e-12; * e23g17
   * ToDo: rates/clocks and v2d deltaClockAccel for:
   * e23d15
-  * e23g17
   * e23c18
   * e23e19
   * e23a22
@@ -927,8 +929,8 @@ def SGRA;
      *   epoch 2020.0 17h45m40.032863 -29d00m28.24260s
      *      dra  -3.125 mas/yr
      *      ddec -5.586 mas/yr
-     &
-     * EHT 2023:
+     *
+     * EHT 2023: ToDO! waiting for reply from VF
      *   1 yr 1 month after EHT 2022, 1 + 1/12 = 1.0833 yr
      *   dec -28.255012 - 1.0833*5.586e-3                        = -28.261034
      *   ra   40.032329 - 1.0833*3.152e-3 * 15 * cos(-29*pi/180) =  39.987532 alt1
