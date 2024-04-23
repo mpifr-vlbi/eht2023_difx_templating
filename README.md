@@ -20,3 +20,6 @@ is due to a BDC that LMT realized a bit before DR2024 as being dead. TODO check 
 Derive better Sgr A* coordinates.
 
 Derive better SPT coordinates after correlation, if residuals with a priori SPT coordinates turn out to be too large.
+
+ALMA LO offset 345G likely zero
+
