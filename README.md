@@ -13,11 +13,9 @@ M. Bremer provided the pad info separately by email; tracks g17 e19 a22 pad N007
 
 # TODO
 
-Request an a priori clock model for LMT from their staff. Initial inspection of GMVA Spring 2023 recordings of track C231B indicated a very high
-drift of 4.5556e-9 sec/sec (r2dbevdifExtract1PPSOffset.py), but this produced no fringes. Update 2024: perhaps lack of 86 GHz fringes
-is due to a BDC that LMT realized a bit before DR2024 as being dead. TODO check EHT 2023 tracks for any LMT fringes...
+Use v2d deltaClockAccel for LMT to improve on the non-linear residual fringe rates due to their drifting non-disciplined 10 MHz standard.
 
-Derive better Sgr A* coordinates.
+Derive better Sgr A* coordinates, initial estimate done based on proper motion and EHT 2022 position, but waiting for V. Fish for official coordinates to use.
 
 Derive better SPT coordinates after correlation, if residuals with a priori SPT coordinates turn out to be too large.
 
