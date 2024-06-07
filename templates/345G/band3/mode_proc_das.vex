@@ -12,7 +12,6 @@ def band7;
      ref $FREQ = FREQ_COMMON:Sz:Kt:Lm:Mg:Mm;
      ref $FREQ = FREQ_SMA:Sw;
      ref $FREQ = FREQ_DBBC3_AX:Ax;
-     ref $FREQ = FREQ_DBBC3_PV:Pv;
      ref $FREQ = FREQ_AA:Aa;
      ref $FREQ = FREQ_GLT:Gl;
      ref $FREQ = FREQ_Nn:Nn;

@@ -45,13 +45,6 @@ def NOEMA;
      axis_offset =    0.00000 m;
 enddef;
 *
-def PICOVEL;
-     axis_type = az : el;
-     antenna_motion = el :  30.0 deg/min : 30 sec;  * 1000.000 deg/sec/sec
-     antenna_motion = az :  30.0 deg/min : 30 sec;  * 1000.000 deg/sec/sec
-     axis_offset =    0.00000 m;
-enddef;
-*
 def SMTO;
      axis_type = az : el;
      antenna_motion = el :  60.0 deg/min : 30 sec;  * 1000.000 deg/sec/sec

@@ -48,12 +48,6 @@ def Nn;
      ref $DAS = 2NONE<;
 enddef;
 *
-def Pv;
-     ref $SITE = PICOVEL;
-     ref $ANTENNA = PICOVEL;
-     ref $DAS = 2NONE<;
-enddef;
-*
 def Sw;
      ref $SITE = SMAP;
      ref $ANTENNA = SMAP;

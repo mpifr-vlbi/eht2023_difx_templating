@@ -72,10 +72,6 @@ def Nn; * NOEMA
   clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.0028e-12;
 enddef;
 *
-def Pv;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.105e-12;
-enddef;
-*
 def Sz;
   clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.435e-12;
 enddef;
@@ -97,7 +93,6 @@ def band7;
      ref $FREQ = FREQ_COMMON:Sz:Kt:Lm:Mg:Mm;
      ref $FREQ = FREQ_SMA:Sw;
      ref $FREQ = FREQ_DBBC3_AX:Ax;
-     ref $FREQ = FREQ_DBBC3_PV:Pv;
      ref $FREQ = FREQ_AA:Aa;
      ref $FREQ = FREQ_GLT:Gl;
      ref $FREQ = FREQ_Nn:Nn;
@@ -185,12 +180,6 @@ def Nn;
      ref $DAS = 2NONE<;
 enddef;
 *
-def Pv;
-     ref $SITE = PICOVEL;
-     ref $ANTENNA = PICOVEL;
-     ref $DAS = 2NONE<;
-enddef;
-*
 def Sw;
      ref $SITE = SMAP;
      ref $ANTENNA = SMAP;
@@ -247,13 +236,6 @@ def NOEMA;
      axis_type = az : el;
      antenna_motion = el :  30.0 deg/min : 30 sec;  * 1000.000 deg/sec/sec
      antenna_motion = az :  60.0 deg/min : 30 sec;  * 1000.000 deg/sec/sec
-     axis_offset =    0.00000 m;
-enddef;
-*
-def PICOVEL;
-     axis_type = az : el;
-     antenna_motion = el :  30.0 deg/min : 30 sec;  * 1000.000 deg/sec/sec
-     antenna_motion = az :  30.0 deg/min : 30 sec;  * 1000.000 deg/sec/sec
      axis_offset =    0.00000 m;
 enddef;
 *
@@ -324,15 +306,6 @@ def LMT;
      site_position = -768715.63200 m:-5988507.07200 m: 2063354.85200 m;
      site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
      site_position_epoch =   54466;
-enddef;
-*
-def PICOVEL;
-     site_type = fixed;
-     site_name = PICOVEL;
-     site_ID = Pv;
-     site_position = 5088967.74544 m: -301681.18586 m: 3825012.20561 m;
-     site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
-     site_position_epoch =   50449;
 enddef;
 *
 def THULE;
@@ -728,12 +701,6 @@ def FREQ_COMMON;
 enddef;
 *
 def FREQ_DBBC3_AX;
-     sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
-     chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
-enddef;
-*
-def FREQ_DBBC3_PV;
      sample_rate =  4096.000 Ms/sec;
      chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
      chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
