@@ -52,9 +52,9 @@ def Lm;
   * e23c16 : deltaClockAccel = -3.6056e-11
   * e23g17 : deltaClockAccel = -2.77643176e-11
   * e23c18 : LMT did not observe
-  * e23e19 : todo
+  * e23e19 : deltaClockAccel = todo
   * e23a22 : LMT did not observe, recorded only 111-2043
-  clock_early = 2023y106d03h44m00s : -36.2929 usec  : 2023y106d03h44m00s :  -5234.72779e-12; * e23c16
+  clock_early = 2023y106d02h28m00s : -12.4143 usec  : 2023y106d02h28m00s :  -5234.72779e-12; * e23c16
   clock_early = 2023y107d03h06m00s : -475.940 usec  : 2023y107d03h06m00s :  -5227.43128e-12; * e23g17
   clock_early = 2023y109d04h33m00s : -1406.5193 usec : 2023y109d04h33m00s : -5224.29311e-12; * e23e19
   clock_early = 2023y111d15h17m00s : -2612.339 usec : 2023y111d15h17m00s : -5189.546357e-12; * e23a22 single scan
