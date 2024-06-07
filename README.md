@@ -11,11 +11,11 @@ order (and b3 b4 increasing order), and this lead to problems in postprocessing.
 The VLBI Monitor database contains incorrect (truncated) reference pad name entries for NOEMA.
 M. Bremer provided the pad info separately by email; tracks g17 e19 a22 pad N007, c16 c18 pad E003).
 
+Coordinates for Sgr A* by V. Fish using position and proper motion from 2022ApJ...940...15X for J2000 epoch 2023.29 are 17 45 40.032073   -29 00 28.26098.
+
 # TODO
 
 Use v2d deltaClockAccel for LMT to improve on the non-linear residual fringe rates due to their drifting non-disciplined 10 MHz standard.
-
-Derive better Sgr A* coordinates, initial estimate done based on proper motion and EHT 2022 position, but waiting for V. Fish for official coordinates to use.
 
 Derive better SPT coordinates after correlation, if residuals with a priori SPT coordinates turn out to be too large.
 

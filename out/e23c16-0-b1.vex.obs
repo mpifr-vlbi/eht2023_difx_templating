@@ -887,9 +887,6 @@ $SOURCE;
 *
 def SGRA;
      source_name = SGRA;
-     * TODO: replace the below with refined coordinates, to be determined
-     * ra = 17h45m40.0320700s; dec = -29d00'28.261034"; ref_coord_frame = J2000;
-     *
      * EHT 2022: Vincent Fish, Xu et al. (2022 ApJ 940 15) pos plus pm
      * ra = 17h45m40.032329s; dec = -29d00'28.255012"; ref_coord_frame = J2000;
      *
@@ -904,7 +901,10 @@ def SGRA;
      *   ra   40.032329 - 1.0833*3.152e-3 * 15 * cos(-29*pi/180) =  39.987532 alt1
      *   ra   40.032329 - 1.0833*3.152e-3 * cos(-29*pi/180)      =  40.029343 alt2
      *   ra   40.032329 - 1.0833*3.152e-3 * cos(-29*pi/180) / 15 =  40.032130 alt3
-     ra = 17h45m40.032130; dec = -29d00'28.261034"; ref_coord_frame = J2000;
+     * ra = 17h45m40.032130; dec = -29d00'28.261034"; ref_coord_frame = J2000;
+     *
+     * From VF based on same Xu et al.:
+     ra = 17h45m40.032073; dec = -29d00'28.26098"; ref_coord_frame = J2000;
 enddef;
 *
 def 3C273;
