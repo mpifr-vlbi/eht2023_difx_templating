@@ -14,7 +14,7 @@ $EXPER;
 *
 def e23a22;
      exper_name = e23a22;
-     exper_num = 1000; ** to be determined
+     exper_num = 3853;
      exper_description = "ALMA+EHT VLBI April 2023 Survey + NGC4261";
      PI_name = "EHTC";
      PI_email = not@an.address;
