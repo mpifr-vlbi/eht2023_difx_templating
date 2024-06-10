@@ -696,26 +696,26 @@ $FREQ;
 *
 def FREQ_COMMON;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
-     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
+     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_DBBC3_AX;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
-     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
+     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_GLT;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
-     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
+     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_SMA;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
-     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
+     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
