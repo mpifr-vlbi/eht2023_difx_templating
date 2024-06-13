@@ -30,7 +30,7 @@ def Lm;
   *
   * Rates:
   clock_early = 2023y106d02h28m00s : -12.4143 usec  : 2023y106d02h28m00s :  -5235.25235e-12; * e23c16
-  clock_early = 2023y107d03h06m00s : -475.940 usec  : 2023y107d03h06m00s :  -5227.43128e-12; * e23g17
+  clock_early = 2023y107d03h06m00s : -476.3727 usec : 2023y107d03h06m00s :  -5227.43128e-12; * e23g17
   clock_early = 2023y109d04h33m00s : -1406.5193 usec : 2023y109d04h33m00s : -5224.29311e-12; * e23e19
   clock_early = 2023y111d15h17m00s : -2612.339 usec : 2023y111d15h17m00s : -5189.546357e-12; * e23a22 single scan
 enddef;
