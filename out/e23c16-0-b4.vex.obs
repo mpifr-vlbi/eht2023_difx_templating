@@ -40,16 +40,10 @@ def Gl;
   clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.087e-12;
 enddef;
 *
-* NB: The a priori rate from EHT VLBIMon1 GPS vs H-maser 1PPS is -76.277e-12 s/s,
-*     but in tracks e.g. e23c16 a rate of +1.6251e-12 s/s wrt ALMA fits best
-* ToDo:
-*   for e23c18 this high Kt rate is necessary (also according to VDIF-embedded R2DBE 1pps offsets):
-*     clock_early = 2023y108d02h20m00s: 1.682785630 usec: 2023y108d02h20m00s : -43.97004e-12;
-*   while c16 g17 are fine with +1.6251e-12. Strange. Have to check Kt rate in e19 a22!
-*
 def Kt;
   clock_early = 2023y105d00h00m00s : 1.0144 usec : 2023y105d00h00m00s : +1.6251e-12;* c16 g17
   clock_early = 2023y108d02h20m00s: 0.0 usec: 2023y108d02h20m00s : -43.97004e-12; * c18
+  clock_early = 2023y109d04h33m00s: 0.0 usec: 2023y109d04h33m00s : -76.521093e-12; * e19 - todo refine
 enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
