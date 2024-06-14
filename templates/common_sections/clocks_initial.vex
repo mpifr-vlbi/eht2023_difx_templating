@@ -20,7 +20,8 @@ enddef;
 *   while c16 g17 are fine with +1.6251e-12. Strange. Have to check Kt rate in e19 a22!
 *
 def Kt;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +1.6251e-12;
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +1.6251e-12; * c16 g17
+  clock_early = 2023y108d02h20m00s: 0.0 usec: 2023y108d02h20m00s : -43.97004e-12; * c18
 enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
