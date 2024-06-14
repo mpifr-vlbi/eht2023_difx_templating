@@ -16,6 +16,7 @@ def Kt;
   clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +1.6251e-12; * c16 g17
   clock_early = 2023y108d02h20m00s: 0.0 usec: 2023y108d02h20m00s : -43.97004e-12; * c18
   clock_early = 2023y109d04h33m00s: 0.0 usec: 2023y109d04h33m00s : -76.521093e-12; * e19 - todo refine
+  clock_early = 2023y111d15h18m00s: 0.0 usec: 2023y111d15h18m00s : -90.577746e-12; * a22 - todo refine
 enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
