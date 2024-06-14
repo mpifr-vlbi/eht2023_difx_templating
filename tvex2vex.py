@@ -19,6 +19,7 @@ Other formats are not added yet.
 '''
 
 import os, re, sys
+import datetime
 from optparse import OptionParser
 
 __author__="Jan Wagner <jwagner@mpifr-bonn.mpg.de>"
@@ -26,6 +27,14 @@ __prog__ = os.path.basename(__file__)
 __build__= "$Revision: 8798 $"
 __date__ ="$Date: 2019-03-13 09:20:08 +0100 (Wed, 13 Mar 2019) $"
 __lastAuthor__="$Author: JanWagner $"
+
+
+def vextime2Datetime(s):
+	return datetime.datetime.strptime(s, '%Yy%jd%Hh%Mm%Ss')
+
+
+def datetime2Vextime(d):
+	return d.strftime('%Yy%jd%Hh%Mm%Ss')
 
 
 def loadFileLines(filename):
@@ -61,6 +70,40 @@ def isComment(line):
     '''
     L = line.strip()
     return ( (len(L) < 1) or (L[0] == '*') or (L[0] == '#'))
+
+
+def extractExperimentDetails(lines):
+    '''
+    Looks through VEX file lines in the in lines[] string,
+    determines experiment name and start/stop times.
+    :return (name:str, start:datetime, stop:datetime)
+    '''
+    name = None
+    tstart = None
+    tstop = None
+    reName = re.compile( r'[\s]*exper_name[\s]*=[\s]*([\w\d]+)[\s]*;' )
+    reStart = re.compile( r'[\s]*exper_nominal_start[\s]*=[\s]*([\w\d]+)[\s]*;' )
+    reStop = re.compile( r'[\s]*exper_nominal_stop[\s]*=[\s]*([\w\d]+)[\s]*;' )
+    for line in lines:
+        if 'exper_name' in line:
+            r = reName.search(line)
+            name = r.group(1)
+        elif 'exper_nominal_start' in line:
+            r = reStart.search(line)
+            tstart = vextime2Datetime(r.group(1))
+        elif 'exper_nominal_stop' in line:
+            r = reStop.search(line)
+            tstop = vextime2Datetime(r.group(1))
+        if name and tstart and tstop:
+            break
+
+    if not name:
+        name = '<undefined>'
+    if not tstop:
+        tstop = datetime.datetime.utcnow()
+    if not tstart:
+        tstart = tstop
+    return (name, tstart, tstop)
 
 
 def expandIncludes(lines, includepaths):
@@ -100,13 +143,19 @@ def expandIncludes(lines, includepaths):
     return expanded
 
 
-def populateData_Clock(lines, data):
+def populateData_Clock(vexlines, data):
     '''
     Update VEX entries with CLOCK data
     Todo: make the search for clock_early in VEX less picky, currently
           must be either a one-liner def ... enddef,
           or three-liner with no comment lines.
     '''
+
+    reDef = re.compile( r'^[\s]*def[\s]+([\w\d]+)[\s]*;' )
+    # Regex to match VEX clock_early
+    # Match groups are  1:lhs leftover string, 2:dly_epoch, 3:dly_value, 4:dly_unit, 5:rate_epoch, 6:rate_value, 7:rhs leftover string/comments
+    # ToDo: detect optional rate unit?
+    reClkEarly = re.compile( r'(.*)[\s]*clock_early[\s]*=[\s]*([\w\d]+)[\s]*:[\s]*([+-.e\d]+)[\s]*([\w]+)[\s]*:[\s]*([\w\d]+)[\s]*:[\s]*([+-.e\d]+)[\s;]+(.*)' )
 
     # Load data
     clks = []
@@ -127,58 +176,73 @@ def populateData_Clock(lines, data):
         clk = {'antenna':antenna, 'delay':delay, 'rate':rate}
         clks.append(clk)
         ants.append(antenna)
+		# TODO: add a 'valid starting from' column to support in-track clock breaks?
+
+    print(ants)
+    print(clks)
+
+    # Read experiment time range to selectively update clock_early'ies matching just this experiment
+    (expname,vex_tstart,vex_tstop) = extractExperimentDetails(vexlines)
 
     # Update VEX
-    for n in range(1,len(lines)):
+    currAnt = None
+    for n in range(1,len(vexlines)):
 
-        line = lines[n]
+        line = vexlines[n]
         if isComment(line):
             continue
 
         # Remember recent 'def <something>;' regardless of block type (CLOCK, ANTENNA, ...)
         if ('def ' in line):
-            antDef = lines[n].strip()
-        elif ('def ' in lines[n-1]):
-            antDef = lines[n-1].strip()
-        else:
-            # no 'def', or multiple clock-early
-            continue
+            r = reDef.search(line.strip())
+            if r:
+                currAnt = r.group(1)
+            else:
+                continue
 
+        # Skip any clock_early entries not belonging to an updateable antenna
         if 'clock_early' not in line:
             continue
-
-        # Handle clock for this antenna?
-        i1 = antDef.find('def ');
-        i2 = antDef.find(';', i1)
-        currAnt = antDef[i1:i2].split()[1]
-        if currAnt not in ants:
+        if currAnt and (currAnt not in ants):
             if options.verbose:
                 print ('Skip: antenna %s not among updateable antennas in data file' % (currAnt))
+            currAnt = None
+            continue
+        if not currAnt:
             continue
 
-        clk = clks[ants.index(currAnt)]
-        if (currAnt != clk['antenna']):
+        # Parse clock_early and update it
+        r = reClkEarly.search(line)
+        if not r:
+            continue
+        vexclk = {
+            "lhs":r.group(1),
+            "delayEpoch":r.group(2), "delay":r.group(3), "delayUnit":r.group(4),
+            "rateEpoch":r.group(5), "rate":r.group(6),
+            "rhs":r.group(7)
+        }
+        vexepoch = vextime2Datetime(vexclk['delayEpoch'])
+
+        if vexepoch >= vex_tstop:
+            if options.verbose:
+                print("Skip: " + currAnt + " VEX clock_early at %s (%s) is VEX experiment start/stop range of %s to %s" % (vexclk['delayEpoch'],str(vexepoch),str(vex_tstart),str(vex_tstop)))
+            continue
+
+        usrclk = clks[ants.index(currAnt)]
+        if (currAnt != usrclk['antenna']):
             print("Programmer oops in populateData_Clock(): antenna list index didn't match tuple index of antenna")
             sys.exit(1)
 
-        # Break up clock_early, update it
-        i1 = line.find('clock_early')
-        i2 = line.find('=', i1)
-        i3 = line.find(';', i2)
-        oldClk = line[(i2+1):i3].replace(':', ' ')
-        oldClk = oldClk.replace('usec', ' ')
-        oldClkRest = line[i3:]
-        vals = oldClk.split() # [VexTime, delay, VexTime, rate, <leftovers>]
-        if clk['rate'] is None:
-            clk['rate'] = vals[3]
+        if usrclk['rate'] is None:
+            usrclk['rate'] = vexclk['rate']
             if options.verbose:
-                print('Antenna %s: retaining existing VEX clock_early rate of %s' % (currAnt, vals[3]))
-        newClk = 'clock_early = %s : %s usec : %s : %s' % (vals[0],clk['delay'],vals[2],clk['rate'])
+                print('Antenna %s: retaining existing VEX clock_early rate of %s' % (currAnt, vexclk['rate']))
 
         # Replace with new clock line
-        lines[n] = line[:i1] + newClk + oldClkRest
+        newClk = '%sclock_early = %s : %s %s : %s : %s;%s\n' % (vexclk['lhs'], vexclk['delayEpoch'], usrclk['delay'], vexclk['delayUnit'], vexclk['rateEpoch'], vexclk['rate'], vexclk['rhs'])
+        vexlines[n] = newClk
 
-    return lines
+    return vexlines
 
 
 def populateData(lines, includepaths):
