@@ -178,9 +178,6 @@ def populateData_Clock(vexlines, data):
         ants.append(antenna)
 		# TODO: add a 'valid starting from' column to support in-track clock breaks?
 
-    print(ants)
-    print(clks)
-
     # Read experiment time range to selectively update clock_early'ies matching just this experiment
     (expname,vex_tstart,vex_tstop) = extractExperimentDetails(vexlines)
 
