@@ -61,6 +61,13 @@ KT clock details
   band 1: rate = -43.989 +/- 0.611 ps/s, offset = +911.148 ns @ 2023y108d09h20m14s [70 pts]
   band 1: rate = -51.224 +/- 0.389 ps/s, offset = +735.300 ns @ 2023y108d10h30m18s [120 pts]
 
+     VDIF header 1pps offsets
+     ~> r2dbevdifExtract1PPSOffset.py /mark6-10_fuse/12/e23c18_Kt_108-0457.vdif
+     2023.108.04:57:10.000/gps-fmout/+1.187500e-06 "mean of 20 frames tid#0, clock_early +1.187500e-06 and -8.840522757e-24 s/s linear-fit this scan, 0.000000000e+00 s/s all-scan lever
+     ...
+     2023.108.04:59:50.000/gps-fmout/+1.183594e-06 "mean of 20 frames tid#0, clock_early +1.188309e-06 and -3.418141643e-11 s/s linear-fit this scan, -2.439881329e-11 s/s all-scan lever
+     --> -24.3988 ps/s rather than -9.656 ps/s
+
   Entire e23a22
   $ report_clock_model.py --start-time=2023y111d15h18m00s --stop-time 2023y112d07h48m00s --band 1 --sites KP
     band 1: rate = -88.849 +/- 0.113 ps/s, offset = -14762.965 ns @ 2023y111d15h18m20s [993 pts]
