@@ -31,6 +31,49 @@ LMT clock details
        b1 Mon  2022y081d01h++           (+15.481 usec, +244.6740e-12 s/s) from report_clock_model.py --start-time=2022y081d01h31m01s --stop-time 2022y081d18h01m01s --band 1 --sites LMT
      --> the sign of offset and rate in DiFX-correlated VEX with fringes is consistent with logged/extracted rates
 
+KT clock details
+
+  e23c16 : flat rate
+  e23g17 : flat rate
+  e23c18 : large but linear drift in rate
+  e23e19 : large nonlinear drift in rate
+  e23a22 : very large drift and nonlinear swing from +3000 mHz to -1000 mHz wrt ALMA
+
+  e23c16
+  $ report_clock_model.py --start-time=2023y106d02h29m00s --stop-time 2023y106d15h28m00s --band 1 --sites KP
+  band 1: rate = +1.843 +/- 0.019 ps/s, offset = +1172.179 ns @ 2023y106d02h29m33s [780 pts]
+
+  e23g17
+  $ report_clock_model.py --start-time=2023y107d03h06m00s --stop-time 2023y107d16h42m00s --band 1 --sites KP
+  band 1: rate = +1.557 +/- 0.018 ps/s, offset = +1308.935 ns @ 2023y107d03h06m21s [816 pts]
+
+  e23c16 + e23g17
+  $ report_clock_model.py --start-time=2023y106d02h29m00s --stop-time 2023y107d16h42m00s --band 1 --sites KP
+  band 1: rate = +1.480 +/- 0.004 ps/s, offset = +1180.598 ns @ 2023y106d02h29m33s [2295 pts]
+
+  Piecewise e23c18
+  $ report_clock_model.py --start-time=2023y108d02h21m00s --stop-time 2023y108d05h05m00s --band 1 --sites KP
+  $ report_clock_model.py --start-time=2023y108d06h20m00s --stop-time 2023y108d07h30m00s --band 1 --sites KP
+  $ report_clock_model.py --start-time=2023y108d09h20m00s --stop-time 2023y108d10h30m00s --band 1 --sites KP
+  $ report_clock_model.py --start-time=2023y108d10h30m00s --stop-time 2023y108d12h30m00s --band 1 --sites KP
+  band 1: rate = -9.656 +/- 0.343 ps/s, offset = +1430.160 ns @ 2023y108d02h21m02s [165 pts]
+  band 1: rate = -23.590 +/- 0.452 ps/s, offset = +1233.656 ns @ 2023y108d06h20m10s [70 pts]
+  band 1: rate = -43.989 +/- 0.611 ps/s, offset = +911.148 ns @ 2023y108d09h20m14s [70 pts]
+  band 1: rate = -51.224 +/- 0.389 ps/s, offset = +735.300 ns @ 2023y108d10h30m18s [120 pts]
+
+  Entire e23a22
+  $ report_clock_model.py --start-time=2023y111d15h18m00s --stop-time 2023y112d07h48m00s --band 1 --sites KP
+    band 1: rate = -88.849 +/- 0.113 ps/s, offset = -14762.965 ns @ 2023y111d15h18m20s [993 pts]
+
+  Piecewise e23a22
+  $ report_clock_model.py --start-time=2023y111d15h18m00s --stop-time 2023y111d19h30m00s --band 1 --sites KP
+  $ report_clock_model.py --start-time=2023y111d19h30m00s --stop-time 2023y112d02h00m00s --band 1 --sites KP
+  $ report_clock_model.py --start-time=2023y112d02h00m00s --stop-time 2023y112d07h48m00s --band 1 --sites KP
+  band 1: rate = -77.333 +/- 0.135 ps/s, offset = -14900.999 ns @ 2023y111d15h18m20s [254 pts]
+  band 1: rate = -88.155 +/- 0.083 ps/s, offset = -16055.676 ns @ 2023y111d19h30m20s [391 pts]
+  band 1: rate = -96.263 +/- 0.046 ps/s, offset = -18139.081 ns @ 2023y112d02h00m42s [348 pts]
+  (oddly, much less than the +3 Hz (~13043.47 ps/s) to -1 Hz (-4347.83 ps/s) residual rates in ALMA-KT visibilities)
+
 
 === Station-reported GPS 1pps vs Maser 1pps drift ===
 
