@@ -1,0 +1,16 @@
+
+"Since our new baseline extension we had to move to 3 numeric digits.
+The same as the old E03, N07. Good point, we need to extend the ascii
+format in the VLBI monitor." - Michael Bremer
+
+e23d15 0.8mm: 100% weathered out, no data
+
+e23c16:  Pad E003
+
+e23g17:  Pad N007
+
+e23c18:  Pad E003
+
+e23e19:  Pad N007
+
+e23a22:  Pad N007
