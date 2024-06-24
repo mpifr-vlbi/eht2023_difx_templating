@@ -64,14 +64,21 @@ prerequisites:
 	./scripts/alma-vex-defs.py --lo1 343.54140625 -r 2 > templates/345G/band2/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f337541.40625 -w58.0 -sL -ralma; shifted 58.59375 MHz
 	./scripts/alma-vex-defs.py --lo1 341.600      -r 3 > templates/345G/band3/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f347600.00000 -w58.0 -sU -ralma
 	./scripts/alma-vex-defs.py --lo1 341.600      -r 4 > templates/345G/band4/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f349600.00000 -w58.0 -sU -ralma
-
 	## Note: DiFX $ehtc/alma-vex-defs.py would be more direct, but its chan_defs are not useable as-is,
-	##       vs own ./scripts/alma-vex-defs.py usable for that but is not 4-8/5-9 aware plus b2 offset trickyness
-	## SMA a priori clock CSV files
-	./scripts/vexdelay.py -f ./priors/sma-delays.rx230.sbLSB.quad1.b1.csv -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band1/clocks_SMA.vex
-	./scripts/vexdelay.py -f ./priors/sma-delays.rx230.sbLSB.quad0.b2.csv -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band2/clocks_SMA.vex
-	./scripts/vexdelay.py -f ./priors/sma-delays.rx230.sbUSB.quad1.b3.csv -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band3/clocks_SMA.vex
-	./scripts/vexdelay.py -f ./priors/sma-delays.rx230.sbUSB.quad2.b4.csv -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band4/clocks_SMA.vex
+	##       vs own ./scripts/alma-vex-defs.py usable for that while not being 4-8/5-9 aware, plus the 345G b2 offset trickyness
+	#
+	## SMA a priori clock files; clock rate identical to that of JCMT (shared H-maser)
+	#  Note that SMA has no band 4 in 345G track(s) due to capability to switch between 4-8G / 5-9G IF filters
+	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b1.rx230.sbLSB.quad1.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band1/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b2.rx230.sbLSB.quad0.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band2/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b3.rx230.sbUSB.quad1.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band3/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b4.rx230.sbUSB.quad2.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band4/clocks_SMA.vex
+	#
+	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b1.rx345.sbLSB.quad1.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/345G/band1/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b2.rx345.sbLSB.quad0.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/345G/band2/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b3.rx345.sbUSB.quad1.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/345G/band3/clocks_SMA.vex
+
+
 
 etransferDirs:
 	for exptname in $(TRACKS_ALL); do \
@@ -228,6 +235,9 @@ v2d_accels:
 	sed -i "s/deltaClockAccel = 0 # LMT clock acceleration/deltaClockAccel = -4.317305e-11 # LMT clock acceleration/g" out/e23c16-$(REL)-b?.v2d
 	sed -i "s/deltaClockAccel = 0 # LMT clock acceleration/deltaClockAccel = -2.443898e-11 # LMT clock acceleration/g" out/e23g17-$(REL)-b?.v2d
 	sed -i "s/deltaClockAccel = 0 # LMT clock acceleration/deltaClockAccel = -1.916262e-11 # LMT clock acceleration/g" out/e23e19-$(REL)-b?.v2d
+	#
+	sed -i "s/deltaClockAccel = 0 # KT clock acceleration/deltaClockAccel = +7.687584e-10 # KT clock acceleration/g" out/e23c18-$(REL)-b?.v2d
+	sed -i "s/deltaClockAccel = 0 # KT clock acceleration/deltaClockAccel = +1.468801e-10 # KT clock acceleration/g" out/e23a22-$(REL)-b?.v2d
 
 ####################################################################################
 
