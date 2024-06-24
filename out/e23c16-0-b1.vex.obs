@@ -41,10 +41,19 @@ def Gl;
 enddef;
 *
 def Kt;
+  *
+  * Accelerations for v2d:
+  * e23c16 : H-maser thermally stable, no significant acceleration term, rate +1.6251e-12 s/s
+  * e23g17 : H-maser thermally stable, no significant acceleration term, rate +1.6251e-12 s/s
+  * e23c18 : deltaClockAccel = +7.687584e-10 s/s2 for rate = -11.7019999e-12, else -26.8418830e-12 s/s
+  * e23e19 : deltaClockAccel = TBD ... , else -76.521093e-12 s/s
+  * e23a22 : deltaClockAccel = +1.468801e-10 s/s2 for rate = -75.689971e-12, else TBD
+  *
+  * Rates:
   clock_early = 2023y105d00h00m00s : 1.0144 usec : 2023y105d00h00m00s : +1.6251e-12;* c16 g17
-  clock_early = 2023y108d02h20m00s: 0.0 usec: 2023y108d02h20m00s : -43.97004e-12; * c18
+  clock_early = 2023y108d02h20m00s: 0.0 usec: 2023y108d02h20m00s : -11.7019999e-12; * c18
   clock_early = 2023y109d04h33m00s: 0.0 usec: 2023y109d04h33m00s : -76.521093e-12; * e19 - todo refine
-  clock_early = 2023y111d15h18m00s: 0.0 usec: 2023y111d15h18m00s : -90.577746e-12; * a22 - todo refine
+  clock_early = 2023y111d15h18m00s: 0.0 usec: 2023y111d15h18m00s : -75.689971e-12; * a22
 enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
@@ -80,8 +89,133 @@ def Sz;
   clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.435e-12;
 enddef;
 *
-def Sw; * TODO - wait for APHIDS 2023, the delay spreadsheet files, and a sign-corrected vexdelay.py
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.158e-12;
+def Sw;
+  clock_early=2023y106d04h25m00s : -36.679050 usec : 2023y106d04h25m00s : -1.58e-13 ;
+  clock_early=2023y106d04h39m00s : -36.681492 usec : 2023y106d04h39m00s : -1.58e-13 ;
+  clock_early=2023y106d05h00m00s : -36.682224 usec : 2023y106d05h00m00s : -1.58e-13 ;
+  clock_early=2023y106d05h22m00s : -36.680271 usec : 2023y106d05h22m00s : -1.58e-13 ;
+  clock_early=2023y106d05h35m00s : -36.680759 usec : 2023y106d05h35m00s : -1.58e-13 ;
+  clock_early=2023y106d05h45m00s : -36.681980 usec : 2023y106d05h45m00s : -1.58e-13 ;
+  clock_early=2023y106d06h28m00s : -36.682224 usec : 2023y106d06h28m00s : -1.58e-13 ;
+  clock_early=2023y106d06h53m00s : -36.686375 usec : 2023y106d06h53m00s : -1.58e-13 ;
+  clock_early=2023y106d07h02m00s : -36.681736 usec : 2023y106d07h02m00s : -1.58e-13 ;
+  clock_early=2023y106d07h07m00s : -36.681004 usec : 2023y106d07h07m00s : -1.58e-13 ;
+  clock_early=2023y106d07h25m00s : -36.691502 usec : 2023y106d07h25m00s : -1.58e-13 ;
+  clock_early=2023y106d07h40m00s : -36.692966 usec : 2023y106d07h40m00s : -1.58e-13 ;
+  clock_early=2023y106d07h45m00s : -36.692234 usec : 2023y106d07h45m00s : -1.58e-13 ;
+  clock_early=2023y106d08h14m00s : -36.688572 usec : 2023y106d08h14m00s : -1.58e-13 ;
+  clock_early=2023y106d08h23m00s : -36.691746 usec : 2023y106d08h23m00s : -1.58e-13 ;
+  clock_early=2023y106d08h28m00s : -36.691013 usec : 2023y106d08h28m00s : -1.58e-13 ;
+  clock_early=2023y106d10h37m00s : -36.692966 usec : 2023y106d10h37m00s : -1.58e-13 ;
+  clock_early=2023y106d10h55m00s : -36.691257 usec : 2023y106d10h55m00s : -1.58e-13 ;
+  clock_early=2023y106d11h17m00s : -36.689548 usec : 2023y106d11h17m00s : -1.58e-13 ;
+  clock_early=2023y106d11h47m00s : -36.689060 usec : 2023y106d11h47m00s : -1.58e-13 ;
+  clock_early=2023y106d12h05m00s : -36.692722 usec : 2023y106d12h05m00s : -1.58e-13 ;
+  clock_early=2023y106d12h20m00s : -36.689304 usec : 2023y106d12h20m00s : -1.58e-13 ;
+  clock_early=2023y106d12h27m00s : -36.691013 usec : 2023y106d12h27m00s : -1.58e-13 ;
+  clock_early=2023y106d12h45m00s : -36.690037 usec : 2023y106d12h45m00s : -1.58e-13 ;
+  clock_early=2023y106d12h57m00s : -36.691013 usec : 2023y106d12h57m00s : -1.58e-13 ;
+  clock_early=2023y106d13h15m00s : -36.689548 usec : 2023y106d13h15m00s : -1.58e-13 ;
+  clock_early=2023y106d13h33m00s : -36.691502 usec : 2023y106d13h33m00s : -1.58e-13 ;
+  clock_early=2023y106d13h38m00s : -36.690769 usec : 2023y106d13h38m00s : -1.58e-13 ;
+  clock_early=2023y106d14h06m00s : -36.689304 usec : 2023y106d14h06m00s : -1.58e-13 ;
+  clock_early=2023y106d14h19m00s : -36.692478 usec : 2023y106d14h19m00s : -1.58e-13 ;
+  clock_early=2023y106d14h40m00s : -36.692722 usec : 2023y106d14h40m00s : -1.58e-13 ;
+  clock_early=2023y106d15h07m00s : -36.690525 usec : 2023y106d15h07m00s : -1.58e-13 ;
+  clock_early=2023y106d15h15m00s : -36.691502 usec : 2023y106d15h15m00s : -1.58e-13 ;
+  clock_early=2023y106d15h25m00s : -36.690525 usec : 2023y106d15h25m00s : -1.58e-13 ;
+  clock_early=2023y108d04h17m00s : -36.799168 usec : 2023y108d04h17m00s : -1.58e-13 ;
+  clock_early=2023y108d04h31m00s : -36.801609 usec : 2023y108d04h31m00s : -1.58e-13 ;
+  clock_early=2023y108d04h52m00s : -36.789890 usec : 2023y108d04h52m00s : -1.58e-13 ;
+  clock_early=2023y108d05h14m00s : -36.800388 usec : 2023y108d05h14m00s : -1.58e-13 ;
+  clock_early=2023y108d05h27m00s : -36.800632 usec : 2023y108d05h27m00s : -1.58e-13 ;
+  clock_early=2023y108d05h37m00s : -36.797703 usec : 2023y108d05h37m00s : -1.58e-13 ;
+  clock_early=2023y108d05h51m00s : -36.797459 usec : 2023y108d05h51m00s : -1.58e-13 ;
+  clock_early=2023y108d06h20m00s : -36.790623 usec : 2023y108d06h20m00s : -1.58e-13 ;
+  clock_early=2023y108d06h45m00s : -36.798435 usec : 2023y108d06h45m00s : -1.58e-13 ;
+  clock_early=2023y108d06h54m00s : -36.797459 usec : 2023y108d06h54m00s : -1.58e-13 ;
+  clock_early=2023y108d06h59m00s : -36.801121 usec : 2023y108d06h59m00s : -1.58e-13 ;
+  clock_early=2023y108d07h17m00s : -36.799168 usec : 2023y108d07h17m00s : -1.58e-13 ;
+  clock_early=2023y108d07h32m00s : -36.789158 usec : 2023y108d07h32m00s : -1.58e-13 ;
+  clock_early=2023y108d07h37m00s : -36.800144 usec : 2023y108d07h37m00s : -1.58e-13 ;
+  clock_early=2023y108d08h06m00s : -36.800877 usec : 2023y108d08h06m00s : -1.58e-13 ;
+  clock_early=2023y108d08h15m00s : -36.799656 usec : 2023y108d08h15m00s : -1.58e-13 ;
+  clock_early=2023y108d08h20m00s : -36.787693 usec : 2023y108d08h20m00s : -1.58e-13 ;
+  clock_early=2023y108d10h29m00s : -36.800632 usec : 2023y108d10h29m00s : -1.58e-13 ;
+  clock_early=2023y108d10h47m00s : -36.799168 usec : 2023y108d10h47m00s : -1.58e-13 ;
+  clock_early=2023y108d11h09m00s : -36.797214 usec : 2023y108d11h09m00s : -1.58e-13 ;
+  clock_early=2023y108d11h39m00s : -36.801121 usec : 2023y108d11h39m00s : -1.58e-13 ;
+  clock_early=2023y108d11h57m00s : -36.800877 usec : 2023y108d11h57m00s : -1.58e-13 ;
+  clock_early=2023y108d12h12m00s : -36.789402 usec : 2023y108d12h12m00s : -1.58e-13 ;
+  clock_early=2023y108d12h19m00s : -36.799168 usec : 2023y108d12h19m00s : -1.58e-13 ;
+  clock_early=2023y108d12h37m00s : -36.797947 usec : 2023y108d12h37m00s : -1.58e-13 ;
+  clock_early=2023y108d12h49m00s : -36.798679 usec : 2023y108d12h49m00s : -1.58e-13 ;
+  clock_early=2023y108d13h07m00s : -36.801365 usec : 2023y108d13h07m00s : -1.58e-13 ;
+  clock_early=2023y108d13h25m00s : -36.799656 usec : 2023y108d13h25m00s : -1.58e-13 ;
+  clock_early=2023y108d13h30m00s : -36.799168 usec : 2023y108d13h30m00s : -1.58e-13 ;
+  clock_early=2023y108d13h48m00s : -36.786961 usec : 2023y108d13h48m00s : -1.58e-13 ;
+  clock_early=2023y108d13h58m00s : -36.801609 usec : 2023y108d13h58m00s : -1.58e-13 ;
+  clock_early=2023y108d14h11m00s : -36.800388 usec : 2023y108d14h11m00s : -1.58e-13 ;
+  clock_early=2023y108d14h19m00s : -36.800144 usec : 2023y108d14h19m00s : -1.58e-13 ;
+  clock_early=2023y108d14h32m00s : -36.800632 usec : 2023y108d14h32m00s : -1.58e-13 ;
+  clock_early=2023y108d14h48m00s : -36.800388 usec : 2023y108d14h48m00s : -1.58e-13 ;
+  clock_early=2023y108d14h59m00s : -36.798435 usec : 2023y108d14h59m00s : -1.58e-13 ;
+  clock_early=2023y108d15h07m00s : -36.799900 usec : 2023y108d15h07m00s : -1.58e-13 ;
+  clock_early=2023y108d15h17m00s : -36.798191 usec : 2023y108d15h17m00s : -1.58e-13 ;
+  clock_early=2023y111d18h14m00s : -36.787449 usec : 2023y111d18h14m00s : -1.58e-13 ;
+  clock_early=2023y111d18h22m00s : -36.788670 usec : 2023y111d18h22m00s : -1.58e-13 ;
+  clock_early=2023y111d18h46m00s : -36.789402 usec : 2023y111d18h46m00s : -1.58e-13 ;
+  clock_early=2023y111d19h18m00s : -36.790623 usec : 2023y111d19h18m00s : -1.58e-13 ;
+  clock_early=2023y111d19h43m00s : -36.790867 usec : 2023y111d19h43m00s : -1.58e-13 ;
+  clock_early=2023y111d20h08m00s : -36.787205 usec : 2023y111d20h08m00s : -1.58e-13 ;
+  clock_early=2023y111d20h18m00s : -36.789402 usec : 2023y111d20h18m00s : -1.58e-13 ;
+  clock_early=2023y111d20h33m00s : -36.787937 usec : 2023y111d20h33m00s : -1.58e-13 ;
+  clock_early=2023y111d20h43m00s : -36.789890 usec : 2023y111d20h43m00s : -1.58e-13 ;
+  clock_early=2023y111d20h58m00s : -36.787937 usec : 2023y111d20h58m00s : -1.58e-13 ;
+  clock_early=2023y111d21h08m00s : -36.790623 usec : 2023y111d21h08m00s : -1.58e-13 ;
+  clock_early=2023y111d21h36m00s : -36.787205 usec : 2023y111d21h36m00s : -1.58e-13 ;
+  clock_early=2023y111d21h46m00s : -36.790134 usec : 2023y111d21h46m00s : -1.58e-13 ;
+  clock_early=2023y111d22h01m00s : -36.787937 usec : 2023y111d22h01m00s : -1.58e-13 ;
+  clock_early=2023y111d22h54m00s : -36.800877 usec : 2023y111d22h54m00s : -1.58e-13 ;
+  clock_early=2023y112d03h52m00s : -36.800632 usec : 2023y112d03h52m00s : -1.58e-13 ;
+  clock_early=2023y112d03h56m00s : -36.785496 usec : 2023y112d03h56m00s : -1.58e-13 ;
+  clock_early=2023y112d03h58m00s : -36.799656 usec : 2023y112d03h58m00s : -1.58e-13 ;
+  clock_early=2023y112d04h15m00s : -36.798435 usec : 2023y112d04h15m00s : -1.58e-13 ;
+  clock_early=2023y112d04h18m00s : -36.799168 usec : 2023y112d04h18m00s : -1.58e-13 ;
+  clock_early=2023y112d04h22m00s : -36.800388 usec : 2023y112d04h22m00s : -1.58e-13 ;
+  clock_early=2023y112d04h24m00s : -36.797703 usec : 2023y112d04h24m00s : -1.58e-13 ;
+  clock_early=2023y112d04h28m00s : -36.785984 usec : 2023y112d04h28m00s : -1.58e-13 ;
+  clock_early=2023y112d04h43m00s : -36.799412 usec : 2023y112d04h43m00s : -1.58e-13 ;
+  clock_early=2023y112d04h46m00s : -36.797703 usec : 2023y112d04h46m00s : -1.58e-13 ;
+  clock_early=2023y112d04h50m00s : -36.797459 usec : 2023y112d04h50m00s : -1.58e-13 ;
+  clock_early=2023y112d04h52m00s : -36.786961 usec : 2023y112d04h52m00s : -1.58e-13 ;
+  clock_early=2023y112d04h56m00s : -36.800144 usec : 2023y112d04h56m00s : -1.58e-13 ;
+  clock_early=2023y112d05h02m00s : -36.800877 usec : 2023y112d05h02m00s : -1.58e-13 ;
+  clock_early=2023y112d05h09m00s : -36.799412 usec : 2023y112d05h09m00s : -1.58e-13 ;
+  clock_early=2023y112d05h12m00s : -36.799656 usec : 2023y112d05h12m00s : -1.58e-13 ;
+  clock_early=2023y112d05h16m00s : -36.785252 usec : 2023y112d05h16m00s : -1.58e-13 ;
+  clock_early=2023y112d05h18m00s : -36.798679 usec : 2023y112d05h18m00s : -1.58e-13 ;
+  clock_early=2023y112d05h22m00s : -36.798191 usec : 2023y112d05h22m00s : -1.58e-13 ;
+  clock_early=2023y112d05h37m00s : -36.799900 usec : 2023y112d05h37m00s : -1.58e-13 ;
+  clock_early=2023y112d05h40m00s : -36.786472 usec : 2023y112d05h40m00s : -1.58e-13 ;
+  clock_early=2023y112d05h44m00s : -36.797947 usec : 2023y112d05h44m00s : -1.58e-13 ;
+  clock_early=2023y112d05h46m00s : -36.799656 usec : 2023y112d05h46m00s : -1.58e-13 ;
+  clock_early=2023y112d05h56m00s : -36.785984 usec : 2023y112d05h56m00s : -1.58e-13 ;
+  clock_early=2023y112d06h03m00s : -36.799900 usec : 2023y112d06h03m00s : -1.58e-13 ;
+  clock_early=2023y112d06h06m00s : -36.800144 usec : 2023y112d06h06m00s : -1.58e-13 ;
+  clock_early=2023y112d06h09m50s : -36.799656 usec : 2023y112d06h09m50s : -1.58e-13 ;
+  clock_early=2023y112d06h11m50s : -36.798679 usec : 2023y112d06h11m50s : -1.58e-13 ;
+  clock_early=2023y112d06h28m00s : -36.784519 usec : 2023y112d06h28m00s : -1.58e-13 ;
+  clock_early=2023y112d06h30m00s : -36.801609 usec : 2023y112d06h30m00s : -1.58e-13 ;
+  clock_early=2023y112d06h38m00s : -36.798679 usec : 2023y112d06h38m00s : -1.58e-13 ;
+  clock_early=2023y112d06h48m00s : -36.801121 usec : 2023y112d06h48m00s : -1.58e-13 ;
+  clock_early=2023y112d06h50m00s : -36.798923 usec : 2023y112d06h50m00s : -1.58e-13 ;
+  clock_early=2023y112d06h58m00s : -36.799656 usec : 2023y112d06h58m00s : -1.58e-13 ;
+  clock_early=2023y112d07h13m00s : -36.797947 usec : 2023y112d07h13m00s : -1.58e-13 ;
+  clock_early=2023y112d07h15m00s : -36.798923 usec : 2023y112d07h15m00s : -1.58e-13 ;
+  clock_early=2023y112d07h33m00s : -36.801121 usec : 2023y112d07h33m00s : -1.58e-13 ;
+  clock_early=2023y112d07h35m00s : -36.799900 usec : 2023y112d07h35m00s : -1.58e-13 ;
+  clock_early=2023y112d07h43m00s : -36.800144 usec : 2023y112d07h43m00s : -1.58e-13 ;
 enddef;
 *------------------------------------------------------------------------------
 $MODE;

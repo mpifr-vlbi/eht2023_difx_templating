@@ -41,10 +41,19 @@ def Gl;
 enddef;
 *
 def Kt;
+  *
+  * Accelerations for v2d:
+  * e23c16 : H-maser thermally stable, no significant acceleration term, rate +1.6251e-12 s/s
+  * e23g17 : H-maser thermally stable, no significant acceleration term, rate +1.6251e-12 s/s
+  * e23c18 : deltaClockAccel = +7.687584e-10 s/s2 for rate = -11.7019999e-12, else -26.8418830e-12 s/s
+  * e23e19 : deltaClockAccel = TBD ... , else -76.521093e-12 s/s
+  * e23a22 : deltaClockAccel = +1.468801e-10 s/s2 for rate = -75.689971e-12, else TBD
+  *
+  * Rates:
   clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +1.6251e-12; * c16 g17
-  clock_early = 2023y108d02h20m00s: 0.0 usec: 2023y108d02h20m00s : -43.97004e-12; * c18
+  clock_early = 2023y108d02h20m00s: 0.0 usec: 2023y108d02h20m00s : -11.7019999e-12; * c18
   clock_early = 2023y109d04h33m00s: 0.0 usec: 2023y109d04h33m00s : -76.521093e-12; * e19 - todo refine
-  clock_early = 2023y111d15h18m00s: 0.0 usec: 2023y111d15h18m00s : -90.577746e-12; * a22 - todo refine
+  clock_early = 2023y111d15h18m00s: 0.0 usec: 2023y111d15h18m00s : -75.689971e-12; * a22
 enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
@@ -81,7 +90,43 @@ def Sz;
 enddef;
 *
 def Sw;
-  clock_early = 2023y105d00h00m00s: 0.0 usec : 2023y105d00h00m00s : -7e-15;
+  clock_early=2023y105d04h25m00s : -36.690281 usec : 2023y105d04h25m00s : -1.58e-13 ;
+  clock_early=2023y105d05h04m00s : -36.689060 usec : 2023y105d05h04m00s : -1.58e-13 ;
+  clock_early=2023y105d05h25m00s : -36.689548 usec : 2023y105d05h25m00s : -1.58e-13 ;
+  clock_early=2023y105d05h33m00s : -36.689304 usec : 2023y105d05h33m00s : -1.58e-13 ;
+  clock_early=2023y105d05h42m00s : -36.688572 usec : 2023y105d05h42m00s : -1.58e-13 ;
+  clock_early=2023y105d06h24m00s : -36.689548 usec : 2023y105d06h24m00s : -1.58e-13 ;
+  clock_early=2023y105d06h30m00s : -36.691990 usec : 2023y105d06h30m00s : -1.58e-13 ;
+  clock_early=2023y105d06h46m00s : -36.691746 usec : 2023y105d06h46m00s : -1.58e-13 ;
+  clock_early=2023y105d06h52m00s : -36.690525 usec : 2023y105d06h52m00s : -1.58e-13 ;
+  clock_early=2023y105d06h58m00s : -36.685154 usec : 2023y105d06h58m00s : -1.58e-13 ;
+  clock_early=2023y105d07h05m00s : -36.689304 usec : 2023y105d07h05m00s : -1.58e-13 ;
+  clock_early=2023y105d07h36m00s : -36.688572 usec : 2023y105d07h36m00s : -1.58e-13 ;
+  clock_early=2023y105d07h44m00s : -36.692478 usec : 2023y105d07h44m00s : -1.58e-13 ;
+  clock_early=2023y105d08h02m00s : -36.688084 usec : 2023y105d08h02m00s : -1.58e-13 ;
+  clock_early=2023y105d08h13m00s : -36.688816 usec : 2023y105d08h13m00s : -1.58e-13 ;
+  clock_early=2023y105d08h22m00s : -36.681492 usec : 2023y105d08h22m00s : -1.58e-13 ;
+  clock_early=2023y105d08h37m00s : -36.679295 usec : 2023y105d08h37m00s : -1.58e-13 ;
+  clock_early=2023y105d08h57m00s : -36.679050 usec : 2023y105d08h57m00s : -1.58e-13 ;
+  clock_early=2023y105d09h21m00s : -36.680027 usec : 2023y105d09h21m00s : -1.58e-13 ;
+  clock_early=2023y105d10h42m00s : -36.691502 usec : 2023y105d10h42m00s : -1.58e-13 ;
+  clock_early=2023y105d10h58m00s : -36.688572 usec : 2023y105d10h58m00s : -1.58e-13 ;
+  clock_early=2023y105d11h20m00s : -36.679050 usec : 2023y105d11h20m00s : -1.58e-13 ;
+  clock_early=2023y105d11h51m00s : -36.678074 usec : 2023y105d11h51m00s : -1.58e-13 ;
+  clock_early=2023y105d12h08m00s : -36.681248 usec : 2023y105d12h08m00s : -1.58e-13 ;
+  clock_early=2023y105d12h23m00s : -36.679050 usec : 2023y105d12h23m00s : -1.58e-13 ;
+  clock_early=2023y105d12h31m00s : -36.680515 usec : 2023y105d12h31m00s : -1.58e-13 ;
+  clock_early=2023y105d12h47m00s : -36.680027 usec : 2023y105d12h47m00s : -1.58e-13 ;
+  clock_early=2023y105d13h01m00s : -36.686375 usec : 2023y105d13h01m00s : -1.58e-13 ;
+  clock_early=2023y105d13h18m00s : -36.678806 usec : 2023y105d13h18m00s : -1.58e-13 ;
+  clock_early=2023y105d13h34m00s : -36.679783 usec : 2023y105d13h34m00s : -1.58e-13 ;
+  clock_early=2023y105d14h00m00s : -36.678562 usec : 2023y105d14h00m00s : -1.58e-13 ;
+  clock_early=2023y105d14h11m00s : -36.680027 usec : 2023y105d14h11m00s : -1.58e-13 ;
+  clock_early=2023y105d14h26m00s : -36.677830 usec : 2023y105d14h26m00s : -1.58e-13 ;
+  clock_early=2023y105d14h35m00s : -36.681004 usec : 2023y105d14h35m00s : -1.58e-13 ;
+  clock_early=2023y105d14h45m00s : -36.687595 usec : 2023y105d14h45m00s : -1.58e-13 ;
+  clock_early=2023y105d14h57m00s : -36.681248 usec : 2023y105d14h57m00s : -1.58e-13 ;
+  clock_early=2023y105d15h09m00s : -36.688572 usec : 2023y105d15h09m00s : -1.58e-13 ;
 enddef;
 *------------------------------------------------------------------------------
 $MODE;
