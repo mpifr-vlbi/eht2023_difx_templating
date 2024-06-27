@@ -1,3 +1,4 @@
+  * KT clock breaks for track e23c18 derived by alist2clockbreaks.py
   clock_early = 2023y108d02h20m00s : 1.682790 usec : 2023y108d02h20m00s : -26.841883e-12;
   clock_early = 2023y108d02h21m00s : 1.675376 usec : 2023y108d02h21m00s : -26.654417e-12;
   clock_early = 2023y108d02h29m00s : 1.616583 usec : 2023y108d02h29m00s : -25.180055e-12;
