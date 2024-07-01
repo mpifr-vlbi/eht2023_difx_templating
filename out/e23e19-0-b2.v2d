@@ -40,6 +40,7 @@ ANTENNA Gl {
 
 ANTENNA Kt {
   datastreams = Kt_ds12,Kt_ds34
+  deltaClock = 0 # KT extra offsets
   deltaClockAccel = 0 # KT clock acceleration
 }
 
