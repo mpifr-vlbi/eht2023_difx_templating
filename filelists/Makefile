@@ -192,9 +192,9 @@ pv_b4:
 # https://eht-wiki.haystack.mit.edu/Event_Horizon_Telescope_Home/Observing/2023_April/SMA_2023-04
 # pol = ?
 
-sw_b1: # todo, not shipped yet (as of 03/2024)
-	$(call mk6dir2filelist,mark6-08,12,MBHC%005,SMA_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-08,34,MBHC%007,SMA_b1.34.filelist)
+sw_b1:
+	$(call mk6dir2filelist,mark6-08,12,BHC%0014,SMA_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-08,34,BHC%0028,SMA_b1.34.filelist)
 
 sw_b2: # todo, not shipped yet (as of 03/2024)
 	$(call mk6dir2filelist,mark6-08,12,MBHC%009,SMA_b2.12.filelist)
