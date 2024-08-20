@@ -13,6 +13,10 @@ M. Bremer provided the pad info separately by email; tracks g17 e19 a22 pad N007
 
 Coordinates for Sgr A* by V. Fish using position and proper motion from 2022ApJ...940...15X for J2000 epoch 2023.29 are 17 45 40.032073   -29 00 28.26098.
 
+Tracks e23g17 and e23a22 have a few scans that were scheduled for ALMA only with no other stations.
+Although the scans were recorded on ALMA Mark6, they have no baselines, leading to issues under CASA.
+Thus the problematic ALMA-only scans are commented out in the DiFX correlation setup.
+
 # TODO
 
 Use v2d deltaClockAccel for LMT to improve on the non-linear residual fringe rates due to their drifting non-disciplined 10 MHz standard.
