@@ -511,7 +511,7 @@ def Lm;
 enddef;
 *
 def Mm; * JCMT & SMA shared H-maser
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.158e-12;
+  clock_early = 2023y105d00h00m00s : -0.174 usec : 2023y105d00h00m00s : -0.158e-12;
 enddef;
 *
 def Mg; * SMT
@@ -1182,8 +1182,8 @@ $FREQ;
 *
 def FREQ_COMMON;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:334552.000 MHz : U : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
-     chan_def = &B:334552.000 MHz : U : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
+     chan_def = &B:336600.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:336600.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_DBBC3_AX;
