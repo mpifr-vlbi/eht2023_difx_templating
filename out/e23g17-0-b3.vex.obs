@@ -1630,12 +1630,12 @@ scan 107-0406;
      station=Kt:    0 sec:  190 sec: 1487.176 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec:  256.410 GB:   :       : 1;
 endscan;
-scan 107-0410;
+* scan 107-0410;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d04h10m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   70 sec:  451.281 GB:   :       : 1;
-endscan;
+*     start=2023y107d04h10m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   70 sec:  451.281 GB:   :       : 1;
+* endscan;
 scan 107-0412;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_APPLY"
@@ -1648,12 +1648,12 @@ scan 107-0412;
      station=Kt:    0 sec:  190 sec: 1682.047 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec:  523.076 GB:   :       : 1;
 endscan;
-scan 107-0416;
+* scan 107-0416;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d04h16m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   60 sec:  717.947 GB:   :       : 1;
-endscan;
+*     start=2023y107d04h16m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   60 sec:  717.947 GB:   :       : 1;
+* endscan;
 scan 107-0422;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
@@ -1688,12 +1688,12 @@ scan 107-0432;
      station=Kt:    0 sec:  190 sec: 2133.328 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 1035.895 GB:   :       : 1;
 endscan;
-scan 107-0436;
+* scan 107-0436;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d04h36m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   70 sec: 1230.766 GB:   :       : 1;
-endscan;
+*     start=2023y107d04h36m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   70 sec: 1230.766 GB:   :       : 1;
+* endscan;
 scan 107-0438;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_APPLY"
@@ -1705,12 +1705,12 @@ scan 107-0438;
      station=Kt:    0 sec:  190 sec: 2328.199 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 1302.561 GB:   :       : 1;
 endscan;
-scan 107-0442;
+* scan 107-0442;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d04h42m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   60 sec: 1497.432 GB:   :       : 1;
-endscan;
+*     start=2023y107d04h42m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   60 sec: 1497.432 GB:   :       : 1;
+* endscan;
 scan 107-0452;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
@@ -1735,12 +1735,12 @@ scan 107-0454;
      station=Kt:    0 sec:  190 sec: 2594.865 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 1630.765 GB:   :       : 1;
 endscan;
-scan 107-0458;
+* scan 107-0458;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d04h58m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   70 sec: 1825.636 GB:   :       : 1;
-endscan;
+*     start=2023y107d04h58m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   70 sec: 1825.636 GB:   :       : 1;
+* endscan;
 scan 107-0500;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_APPLY"
@@ -1752,12 +1752,12 @@ scan 107-0500;
      station=Kt:    0 sec:  190 sec: 2789.737 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 1897.431 GB:   :       : 1;
 endscan;
-scan 107-0504;
+* scan 107-0504;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d05h04m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   60 sec: 2092.302 GB:   :       : 1;
-endscan;
+*     start=2023y107d05h04m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   60 sec: 2092.302 GB:   :       : 1;
+* endscan;
 scan 107-0510;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
@@ -1795,12 +1795,12 @@ scan 107-0520;
      station=Mg:    0 sec:  190 sec: 1784.611 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 2410.250 GB:   :       : 1;
 endscan;
-scan 107-0524;
+* scan 107-0524;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d05h24m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   70 sec: 2605.122 GB:   :       : 1;
-endscan;
+*     start=2023y107d05h24m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   70 sec: 2605.122 GB:   :       : 1;
+* endscan;
 scan 107-0526;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_APPLY"
@@ -1813,13 +1813,13 @@ scan 107-0526;
      station=Mg:    0 sec:  190 sec: 1979.482 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 2676.917 GB:   :       : 1;
 endscan;
-scan 107-0530;
+* scan 107-0530;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d05h30m00s; mode=band6; source=J1550+0527;
+*     start=2023y107d05h30m00s; mode=band6; source=J1550+0527;
 *              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
-     station=Aa:    0 sec:   60 sec: 2871.788 GB:   :       : 1;
-endscan;
+*     station=Aa:    0 sec:   60 sec: 2871.788 GB:   :       : 1;
+* endscan;
 scan 107-0536;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
@@ -1857,12 +1857,12 @@ scan 107-0550;
      station=Mg:    0 sec:  190 sec: 2430.763 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 3189.736 GB:   :       : 1;
 endscan;
-scan 107-0554;
+* scan 107-0554;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d05h54m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   70 sec: 3384.607 GB:   :       : 1;
-endscan;
+*     start=2023y107d05h54m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   70 sec: 3384.607 GB:   :       : 1;
+* endscan;
 scan 107-0556;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_APPLY"
@@ -1875,12 +1875,12 @@ scan 107-0556;
      station=Mg:    0 sec:  190 sec: 2625.635 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 3456.402 GB:   :       : 1;
 endscan;
-scan 107-0600;
+* scan 107-0600;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d06h00m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   60 sec: 3651.273 GB:   :       : 1;
-endscan;
+*     start=2023y107d06h00m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   60 sec: 3651.273 GB:   :       : 1;
+* endscan;
 scan 107-0606;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
@@ -1920,12 +1920,12 @@ scan 107-0616;
      station=Mg:    0 sec:  190 sec: 3076.916 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 3969.221 GB:   :       : 1;
 endscan;
-scan 107-0620;
+* scan 107-0620;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d06h20m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   70 sec: 4164.092 GB:   :       : 1;
-endscan;
+*     start=2023y107d06h20m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   70 sec: 4164.092 GB:   :       : 1;
+* endscan;
 scan 107-0622;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_APPLY"
@@ -1938,12 +1938,12 @@ scan 107-0622;
      station=Mg:    0 sec:  190 sec: 3271.787 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 4235.887 GB:   :       : 1;
 endscan;
-scan 107-0626;
+* scan 107-0626;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d06h26m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   60 sec: 4430.758 GB:   :       : 1;
-endscan;
+*      start=2023y107d06h26m00s; mode=band6; source=J1550+0527;
+*      station=Aa:    0 sec:   60 sec: 4430.758 GB:   :       : 1;
+* endscan;
 scan 107-0632;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
@@ -1981,13 +1981,13 @@ scan 107-0646;
      station=Mg:    0 sec:  190 sec: 3723.068 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 4748.706 GB:   :       : 1;
 endscan;
-scan 107-0650;
+* scan 107-0650;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d06h50m00s; mode=band6; source=J1550+0527;
+*     start=2023y107d06h50m00s; mode=band6; source=J1550+0527;
 *              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
-     station=Aa:    0 sec:   70 sec: 4943.577 GB:   :       : 1;
-endscan;
+*      station=Aa:    0 sec:   70 sec: 4943.577 GB:   :       : 1;
+* endscan;
 scan 107-0652;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_APPLY"
@@ -2000,12 +2000,12 @@ scan 107-0652;
      station=Mg:    0 sec:  190 sec: 3917.939 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 5015.372 GB:   :       : 1;
 endscan;
-scan 107-0656;
+* scan 107-0656;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d06h56m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   60 sec: 5210.243 GB:   :       : 1;
-endscan;
+*      start=2023y107d06h56m00s; mode=band6; source=J1550+0527;
+*      station=Aa:    0 sec:   60 sec: 5210.243 GB:   :       : 1;
+* endscan;
 scan 107-0702;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
@@ -2045,12 +2045,12 @@ scan 107-0712;
      station=Aa:    0 sec:  190 sec: 5528.191 GB:   :       : 1;
      station=Mm:    0 sec:  190 sec:  625.639 GB:   :       : 1;
 endscan;
-scan 107-0716;
+* scan 107-0716;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d07h16m00s; mode=band6; source=J1550+0527;
-     station=Aa:    0 sec:   70 sec: 5723.062 GB:   :       : 1;
-endscan;
+*     start=2023y107d07h16m00s; mode=band6; source=J1550+0527;
+*     station=Aa:    0 sec:   70 sec: 5723.062 GB:   :       : 1;
+* endscan;
 scan 107-0718;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_APPLY"
@@ -2064,13 +2064,13 @@ scan 107-0718;
      station=Aa:    0 sec:  190 sec: 5794.857 GB:   :       : 1;
      station=Mm:    0 sec:  190 sec:  820.511 GB:   :       : 1;
 endscan;
-scan 107-0722;
+* scan 107-0722;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
-     start=2023y107d07h22m00s; mode=band6; source=J1550+0527;
+*     start=2023y107d07h22m00s; mode=band6; source=J1550+0527;
 *              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
-     station=Aa:    0 sec:   60 sec: 5989.728 GB:   :       : 1;
-endscan;
+*     station=Aa:    0 sec:   60 sec: 5989.728 GB:   :       : 1;
+* endscan;
 scan 107-0728;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
