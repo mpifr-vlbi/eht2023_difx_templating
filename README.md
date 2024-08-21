@@ -23,5 +23,4 @@ Use v2d deltaClockAccel for LMT to improve on the non-linear residual fringe rat
 
 Derive better SPT coordinates after correlation, if residuals with a priori SPT coordinates turn out to be too large.
 
-ALMA LO offset 345G likely zero
-
+ALMA LO offset 345G likely zero? Or like 2021 after all?
