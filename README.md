@@ -17,6 +17,11 @@ Tracks e23g17 and e23a22 have a few scans that were scheduled for ALMA only with
 Although the scans were recorded on ALMA Mark6, they have no baselines, leading to issues under CASA.
 Thus the problematic ALMA-only scans are commented out in the DiFX correlation setup.
 
+The SMT 345G receiver is not sideband reparating, band 4 folds onto band 1, band 3 onto band 2.
+According to Slack posts in #smt_backend on 12 April 2023, there was also not enough IF power
+to effectively split the signal to all four R2DBEs. It might be that two Mark6 recorded "blank" noise
+and only the other two (which?) Mark6's have actual on sky signal data.
+
 # TODO
 
 Use v2d deltaClockAccel for LMT to improve on the non-linear residual fringe rates due to their drifting non-disciplined 10 MHz standard.
