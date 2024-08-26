@@ -142,6 +142,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	# sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.0 # LMT extra offsets/g" out/e23d15-$(REL)-b1.v2d
 	# ...
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23d15-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23g17-$(REL)-b1.v2d
 	# ...
 
 # Custom-fiddled band 1 builds

@@ -64,7 +64,7 @@ ANTENNA Nn {
 
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
-  deltaClock = 0 # SMA extra offsets
+  deltaClock = -37.2 # SMA extra offsets
 }
 
 ANTENNA Sz { # SPT
