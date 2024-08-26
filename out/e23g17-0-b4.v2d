@@ -3,7 +3,10 @@
 # DiFX version 2.8.3/2.9.x when using LMT 'deltaClockAccel'
 #
 # Track e23g17 band 4
-# Notes: ...
+# Notes:
+# - Mauna Kea power outage affected start of track; JCMT came back at 107-1231,
+#   infos on Slack unclear, JCMT had freq reference and tuning issues at first,
+#   the first scan with fringes is 107-1441
 #==================================================================
 
 vex = e23g17-0-b4.vex.obs
