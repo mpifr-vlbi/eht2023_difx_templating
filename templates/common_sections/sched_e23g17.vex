@@ -215,7 +215,7 @@ scan 107-0510;
      station=Kt:    0 sec:  180 sec: 2984.608 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 1599.996 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 2153.841 GB:   :       : 1;
-     station=Mm:    0 sec:  180 sec:    0.000 GB:   :       : 1;
+     *station=Mm:   0 sec:  180 sec:    0.000 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  180 sec:    0.000 GB:   :       : 1;
 endscan;
 scan 107-0518;
@@ -338,7 +338,7 @@ scan 107-0606;
      station=Kt:    0 sec:  180 sec: 4276.913 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 2820.506 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 3712.812 GB:   :       : 1;
-     station=Mm:    0 sec:  180 sec:  184.615 GB:   :       : 1;
+     *station=Mm:   0 sec:  180 sec:  184.615 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  180 sec:  184.615 GB:   :       : 1;
 endscan;
 scan 107-0614;
@@ -462,7 +462,7 @@ scan 107-0702;
      station=Kt:    0 sec:  180 sec: 5569.216 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 4112.811 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 5271.781 GB:   :       : 1;
-     station=Mm:    0 sec:  180 sec:  369.230 GB:   :       : 1;
+     *station=Mm:   0 sec:  180 sec:  369.230 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  180 sec:  369.230 GB:   :       : 1;
 endscan;
 scan 107-0710;
@@ -476,7 +476,7 @@ scan 107-0710;
      station=Kt:    0 sec:   70 sec: 5753.831 GB:   :       : 1;
      station=Mg:    0 sec:   70 sec: 4297.425 GB:   :       : 1;
      station=Aa:    0 sec:   70 sec: 5456.396 GB:   :       : 1;
-     station=Mm:    0 sec:   70 sec:  553.845 GB:   :       : 1;
+     *station=Mm:   0 sec:   70 sec:  553.845 GB:   :       : 1; * Mauna Kea power issues
 endscan;
 scan 107-0712;
 * intent = "apsmode = fast-abs"
@@ -489,7 +489,7 @@ scan 107-0712;
      station=Kt:    0 sec:  190 sec: 5825.626 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 4369.220 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 5528.191 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec:  625.639 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec:  625.639 GB:   :       : 1; * Mauna Kea power issues
 endscan;
 * scan 107-0716;
 * intent = "apsmode = fast-abs"
@@ -508,7 +508,7 @@ scan 107-0718;
      station=Kt:    0 sec:  190 sec: 6020.497 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 4564.091 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 5794.857 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec:  820.511 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec:  820.511 GB:   :       : 1; * Mauna Kea power issues
 endscan;
 * scan 107-0722;
 * intent = "apsmode = fast-abs"
@@ -528,7 +528,7 @@ scan 107-0728;
      station=Kt:    0 sec:  180 sec: 6215.368 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 4758.962 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 6051.266 GB:   :       : 1;
-     station=Mm:    0 sec:  180 sec: 1015.382 GB:   :       : 1;
+     *station=Mm:   0 sec:  180 sec: 1015.382 GB:   :       : 1; * Mauna Kea power issues
 endscan;
 scan 107-0740;
 * intent = "apsmode = fast-abs"
@@ -541,7 +541,7 @@ scan 107-0740;
      station=Kt:    0 sec:   70 sec: 6399.983 GB:   :       : 1;
      station=Mg:    0 sec:   70 sec: 4943.577 GB:   :       : 1;
      station=Aa:    0 sec:   70 sec: 6235.881 GB:   :       : 1;
-     station=Mm:    0 sec:   70 sec: 1199.997 GB:   :       : 1;
+     *station=Mm:   0 sec:   70 sec: 1199.997 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:   70 sec:  553.845 GB:   :       : 1;
 endscan;
 scan 107-0742;
@@ -554,7 +554,7 @@ scan 107-0742;
      station=Kt:    0 sec:  190 sec: 6471.778 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 5015.372 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 6307.676 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 1271.792 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 1271.792 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec:  625.639 GB:   :       : 1;
 endscan;
 scan 107-0746;
@@ -575,7 +575,7 @@ scan 107-0748;
      station=Kt:    0 sec:  190 sec: 6666.649 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 5210.243 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 6574.342 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 1466.663 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 1466.663 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec:  892.305 GB:   :       : 1;
 endscan;
 scan 107-0752;
@@ -595,7 +595,7 @@ scan 107-0758;
      station=Kt:    0 sec:  180 sec: 6861.520 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 5405.114 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 6830.751 GB:   :       : 1;
-     station=Mm:    0 sec:  180 sec: 1661.534 GB:   :       : 1;
+     *station=Mm:   0 sec:  180 sec: 1661.534 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  180 sec: 1148.715 GB:   :       : 1;
 endscan;
 scan 107-0806;
@@ -609,7 +609,7 @@ scan 107-0806;
      station=Kt:    0 sec:   70 sec: 7046.135 GB:   :       : 1;
      station=Mg:    0 sec:   70 sec: 5589.729 GB:   :       : 1;
      station=Aa:    0 sec:   70 sec: 7015.366 GB:   :       : 1;
-     station=Mm:    0 sec:   70 sec: 1846.149 GB:   :       : 1;
+     *station=Mm:   0 sec:   70 sec: 1846.149 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:   70 sec: 1333.330 GB:   :       : 1;
 endscan;
 scan 107-0808;
@@ -622,7 +622,7 @@ scan 107-0808;
      station=Kt:    0 sec:  190 sec: 7117.930 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 5661.524 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 7087.161 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 1917.944 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 1917.944 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 1405.125 GB:   :       : 1;
 endscan;
 scan 107-0812;
@@ -642,7 +642,7 @@ scan 107-0814;
      station=Kt:    0 sec:  190 sec: 7312.801 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 5856.395 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 7353.827 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 2112.815 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 2112.815 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 1671.791 GB:   :       : 1;
 endscan;
 scan 107-0818;
@@ -663,7 +663,7 @@ scan 107-0824;
      station=Kt:    0 sec:  180 sec: 7507.672 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 6051.266 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 7610.236 GB:   :       : 1;
-     station=Mm:    0 sec:  180 sec: 2307.687 GB:   :       : 1;
+     *station=Mm:   0 sec:  180 sec: 2307.687 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  180 sec: 1928.200 GB:   :       : 1;
 endscan;
 scan 107-0836;
@@ -677,7 +677,7 @@ scan 107-0836;
      station=Kt:    0 sec:   70 sec: 7692.287 GB:   :       : 1;
      station=Mg:    0 sec:   70 sec: 6235.881 GB:   :       : 1;
      station=Aa:    0 sec:   70 sec: 7794.851 GB:   :       : 1;
-     station=Mm:    0 sec:   70 sec: 2492.302 GB:   :       : 1;
+     *station=Mm:   0 sec:   70 sec: 2492.302 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:   70 sec: 2112.815 GB:   :       : 1;
 endscan;
 scan 107-0838;
@@ -691,7 +691,7 @@ scan 107-0838;
      station=Kt:    0 sec:  190 sec: 7764.082 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 6307.676 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 7866.646 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 2564.096 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 2564.096 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 2184.610 GB:   :       : 1;
 endscan;
 scan 107-0842;
@@ -711,7 +711,7 @@ scan 107-0844;
      station=Kt:    0 sec:  190 sec: 7958.953 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 6502.547 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 8133.312 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 2758.968 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 2758.968 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 2451.276 GB:   :       : 1;
 endscan;
 scan 107-0848;
@@ -731,7 +731,7 @@ scan 107-0852;
      station=Kt:    0 sec:   70 sec: 8153.824 GB:   :       : 1;
      station=Mg:    0 sec:   70 sec: 6697.418 GB:   :       : 1;
      station=Aa:    0 sec:   70 sec: 8389.721 GB:   :       : 1;
-     station=Mm:    0 sec:   70 sec: 2953.839 GB:   :       : 1;
+     *station=Mm:   0 sec:   70 sec: 2953.839 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:   70 sec: 2707.686 GB:   :       : 1;
 endscan;
 scan 107-0854;
@@ -744,7 +744,7 @@ scan 107-0854;
      station=Kt:    0 sec:  190 sec: 8225.618 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 6769.213 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 8461.516 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 3025.634 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 3025.634 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 2779.480 GB:   :       : 1;
 endscan;
 scan 107-0858;
@@ -764,7 +764,7 @@ scan 107-0900;
      station=Kt:    0 sec:  190 sec: 8420.489 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 6964.084 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 8728.182 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 3220.505 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 3220.505 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 3046.146 GB:   :       : 1;
 endscan;
 scan 107-0904;
@@ -786,7 +786,7 @@ scan 107-0910;
      station=Kt:    0 sec:  180 sec: 8615.360 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 7158.955 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 8984.591 GB:   :       : 1;
-     station=Mm:    0 sec:  180 sec: 3415.376 GB:   :       : 1;
+     *station=Mm:   0 sec:  180 sec: 3415.376 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  180 sec: 3302.556 GB:   :       : 1;
 endscan;
 scan 107-0922;
@@ -800,7 +800,7 @@ scan 107-0922;
      station=Kt:    0 sec:   70 sec: 8799.976 GB:   :       : 1;
      station=Mg:    0 sec:   70 sec: 7343.570 GB:   :       : 1;
      station=Aa:    0 sec:   70 sec: 9169.206 GB:   :       : 1;
-     station=Mm:    0 sec:   70 sec: 3599.991 GB:   :       : 1;
+     *station=Mm:   0 sec:   70 sec: 3599.991 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:   70 sec: 3487.171 GB:   :       : 1;
 endscan;
 scan 107-0924;
@@ -813,7 +813,7 @@ scan 107-0924;
      station=Kt:    0 sec:  190 sec: 8871.771 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 7415.365 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 9241.001 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 3671.786 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 3671.786 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 3558.966 GB:   :       : 1;
 endscan;
 scan 107-0928;
@@ -833,7 +833,7 @@ scan 107-0930;
      station=Kt:    0 sec:  190 sec: 9066.642 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 7610.236 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 9507.667 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 3866.657 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 3866.657 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 3825.632 GB:   :       : 1;
 endscan;
 scan 107-0934;
@@ -853,7 +853,7 @@ scan 107-0938;
      station=Kt:    0 sec:   70 sec: 9261.513 GB:   :       : 1;
      station=Mg:    0 sec:   70 sec: 7805.107 GB:   :       : 1;
      station=Aa:    0 sec:   70 sec: 9764.076 GB:   :       : 1;
-     station=Mm:    0 sec:   70 sec: 4061.529 GB:   :       : 1;
+     *station=Mm:   0 sec:   70 sec: 4061.529 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:   70 sec: 4082.042 GB:   :       : 1;
 endscan;
 scan 107-0940;
@@ -867,7 +867,7 @@ scan 107-0940;
      station=Kt:    0 sec:  190 sec: 9333.308 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 7876.902 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec: 9835.871 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 4133.323 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 4133.323 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 4153.836 GB:   :       : 1;
 endscan;
 scan 107-0944;
@@ -887,7 +887,7 @@ scan 107-0946;
      station=Kt:    0 sec:  190 sec: 9528.179 GB:   :       : 1;
      station=Mg:    0 sec:  190 sec: 8071.773 GB:   :       : 1;
      station=Aa:    0 sec:  190 sec:10102.537 GB:   :       : 1;
-     station=Mm:    0 sec:  190 sec: 4328.194 GB:   :       : 1;
+     *station=Mm:   0 sec:  190 sec: 4328.194 GB:   :       : 1; * Mauna Kea power issues
      station=Sw:    0 sec:  190 sec: 4420.502 GB:   :       : 1;
 endscan;
 scan 107-0950;
