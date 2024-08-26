@@ -17,10 +17,10 @@ Tracks e23g17 and e23a22 have a few scans that were scheduled for ALMA only with
 Although the scans were recorded on ALMA Mark6, they have no baselines, leading to issues under CASA.
 Thus the problematic ALMA-only scans are commented out in the DiFX correlation setup.
 
-The SMT 345G receiver is not sideband reparating, band 4 folds onto band 1, band 3 onto band 2.
-According to Slack posts in #smt_backend on 12 April 2023, there was also not enough IF power
-to effectively split the signal to all four R2DBEs. It might be that two Mark6 recorded "blank" noise
-and only the other two (which?) Mark6's have actual on sky signal data.
+The SMT 345G receiver is not sideband reparating. Receiver LSB folds onto USB.
+According to Slack #smt_backend on 12 April 2023, b1 b2 Mark6 recorders had no IF signal.
+A. Lowitz confirmed that the 345G "USB" IF was routed to b3 b4 Mark6 recorders, and
+the setup was identical to EHT 2021 and the standard EHT tuning was used.
 
 # TODO
 
@@ -29,3 +29,6 @@ Use v2d deltaClockAccel for LMT to improve on the non-linear residual fringe rat
 Derive better SPT coordinates after correlation, if residuals with a priori SPT coordinates turn out to be too large.
 
 ALMA LO offset 345G likely zero? Or like 2021 after all?
+
+Reason for no SMT 345G fringes?
+
