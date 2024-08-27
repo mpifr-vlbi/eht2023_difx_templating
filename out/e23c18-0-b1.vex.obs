@@ -511,7 +511,7 @@ def Lm;
 enddef;
 *
 def Mm; * JCMT & SMA shared H-maser
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.158e-12;
+  clock_early = 2023y105d00h00m00s : 0.428 usec : 2023y105d00h00m00s : -0.158e-12;
 enddef;
 *
 def Mg; * SMT
