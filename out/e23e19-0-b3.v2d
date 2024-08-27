@@ -3,7 +3,8 @@
 # DiFX version 2.8.3/2.9.x when using LMT 'deltaClockAccel'
 #
 # Track e23e19 band 3
-# Notes: ...
+# Notes:
+# - no SMA in this track: empty pre-APHIDS VDIF files, noticed during APHIDS offline processing
 #==================================================================
 
 vex = e23e19-0-b3.vex.obs
