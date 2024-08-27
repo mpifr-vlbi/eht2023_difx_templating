@@ -133,6 +133,10 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	# sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.0 # LMT extra offsets/g" out/e23d15-$(REL)-b1.v2d
 	# ...
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23c16-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23g17-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.415 # SMA extra offsets/g" out/e23c18-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.4307 # SMA extra offsets/g" out/e23a22-$(REL)-b1.v2d
+	# note, e23e19 recording failed at SMA - observed but no usable data
 	# ...
 
 %_b1_345:
@@ -142,8 +146,6 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	# sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.0 # LMT extra offsets/g" out/e23d15-$(REL)-b1.v2d
 	# ...
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23d15-$(REL)-b1.v2d
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23g17-$(REL)-b1.v2d
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.415 # SMA extra offsets/g" out/e23c18-$(REL)-b1.v2d
 	# ...
 
 # Custom-fiddled band 1 builds
