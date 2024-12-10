@@ -21,6 +21,7 @@ The SMT 345G receiver is not sideband reparating. Receiver LSB folds onto USB.
 According to Slack #smt_backend on 12 April 2023, b1 b2 Mark6 recorders had no IF signal.
 A. Lowitz confirmed that the 345G "USB" IF was routed to b3 b4 Mark6 recorders, and
 the setup was identical to EHT 2021 and the standard EHT tuning was used.
+Hence the b3 modules ought to contain a folded b2 & b3, and b4 modules a folded b1 & b4.
 
 # TODO
 
@@ -31,4 +32,13 @@ Derive better SPT coordinates after correlation, if residuals with a priori SPT 
 ALMA LO offset 345G likely zero? Or like 2021 after all?
 
 Reason for no SMT 345G fringes?
+
+# Stations and tracks
+
+e23d15 345G  7-st Aa Ax Gl Mg Mm Nn Sw
+e23c16 230G 10-st Aa Ax Gl Kt Lm Mg Mm Nn Sw Sz
+e23g17 230G 10-st Aa Ax Gl Kt Lm Mg Mm Nn Sw Sz
+e23c18 230G  9-st Aa Ax Gl Kt Mg Mm Nn Sz Sw
+e23e19 230G  8-st Aa Ax Gl Kt Lm Mg Mm Nn
+e23a22 230G  9-st Aa Ax Gl Kt Mg Mm Nn Sw Sz
 
