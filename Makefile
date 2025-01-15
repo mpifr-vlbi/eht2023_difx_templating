@@ -15,10 +15,10 @@ TRACKS_ALL := $(TRACKS_230G) $(TRACKS_345G)
 
 default: all
 
-b1: $(addsuffix _b1_230,$(TRACKS_230G)) $(addsuffix _b1_345,$(TRACKS_345G)) v2d_accels
-b2: $(addsuffix _b2_230,$(TRACKS_230G)) $(addsuffix _b2_345,$(TRACKS_345G)) v2d_accels
-b3: $(addsuffix _b3_230,$(TRACKS_230G)) $(addsuffix _b3_345,$(TRACKS_345G)) v2d_accels
-b4: $(addsuffix _b4_230,$(TRACKS_230G)) $(addsuffix _b4_345,$(TRACKS_345G)) v2d_accels
+b1: $(addsuffix _b1_230,$(TRACKS_230G)) $(addsuffix _b1_345,$(TRACKS_345G))
+b2: $(addsuffix _b2_230,$(TRACKS_230G)) $(addsuffix _b2_345,$(TRACKS_345G))
+b3: $(addsuffix _b3_230,$(TRACKS_230G)) $(addsuffix _b3_345,$(TRACKS_345G))
+b4: $(addsuffix _b4_230,$(TRACKS_230G)) $(addsuffix _b4_345,$(TRACKS_345G))
 
 ## Target 'prerequisites' for the first run only:
 ##  - split observed VEX into shared file fragments common to all bands and setups
@@ -100,7 +100,7 @@ etransferDirs:
 ## Build and install full correlation v2d vex config sets
 ####################################################################################
 
-all: $(DIFX_TARGETS_ALL) .WAIT v2d_accels
+all: $(DIFX_TARGETS_ALL) .WAIT
 
 install: b1_install b2_install b3_install b4_install
 
@@ -132,10 +132,10 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	@ sed -i "s/vexfilename/$*-${REL}-b1.vex.obs/g" out/$*-$(REL)-b1.v2d
 	# sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.0 # LMT extra offsets/g" out/e23d15-$(REL)-b1.v2d
 	# ...
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23c16-$(REL)-b1.v2d
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23g17-$(REL)-b1.v2d
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.415 # SMA extra offsets/g" out/e23c18-$(REL)-b1.v2d
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.4307 # SMA extra offsets/g" out/e23a22-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23c16-$(REL)-b1.v2d || true
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23g17-$(REL)-b1.v2d || true
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.415 # SMA extra offsets/g" out/e23c18-$(REL)-b1.v2d || true
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.4307 # SMA extra offsets/g" out/e23a22-$(REL)-b1.v2d || true
 	# note, e23e19 recording failed at SMA - observed but no usable data
 	# ...
 
@@ -145,7 +145,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	@ sed -i "s/vexfilename/$*-${REL}-b1.vex.obs/g" out/$*-$(REL)-b1.v2d
 	# sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.0 # LMT extra offsets/g" out/e23d15-$(REL)-b1.v2d
 	# ...
-	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23d15-$(REL)-b1.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.2 # SMA extra offsets/g" out/e23d15-$(REL)-b1.v2d || true
 	# ...
 
 # Custom-fiddled band 1 builds
@@ -236,6 +236,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 ####################################################################################
 
 v2d_accels:
+	# UNUSED - superseded by per-scan clock breaks
 	sed -i "s/deltaClockAccel = 0 # LMT clock acceleration/deltaClockAccel = -4.317305e-11 # LMT clock acceleration/g" out/e23c16-$(REL)-b?.v2d
 	sed -i "s/deltaClockAccel = 0 # LMT clock acceleration/deltaClockAccel = -2.443898e-11 # LMT clock acceleration/g" out/e23g17-$(REL)-b?.v2d
 	sed -i "s/deltaClockAccel = 0 # LMT clock acceleration/deltaClockAccel = -1.916262e-11 # LMT clock acceleration/g" out/e23e19-$(REL)-b?.v2d
