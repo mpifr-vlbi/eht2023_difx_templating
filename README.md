@@ -43,4 +43,5 @@ e23e19 230G  8-st Aa Ax Gl Kt Lm Mg Mm Nn
 e23a22 230G  9-st Aa Ax Gl Kt Mg Mm Nn Sw Sz
 Lm : free-running crystal reference in all tracks
 Kt : H-maser stability lost in c18 e19 a22
+Mm : absent in g17 because of Mauna Kea power grid issues
 ```
