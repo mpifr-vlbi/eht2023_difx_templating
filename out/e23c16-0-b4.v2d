@@ -47,7 +47,7 @@ ANTENNA Kt {
 ANTENNA Lm {
   datastreams = Lmt_ds12,Lmt_ds34
   deltaClock = 0 # LMT extra offsets
-  deltaClockAccel = -4.317305e-11 # LMT clock acceleration
+  deltaClockAccel = 0 # LMT clock acceleration
 }
 
 ANTENNA Mg { # SMT
