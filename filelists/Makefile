@@ -204,9 +204,9 @@ sw_b3: # todo, not shipped yet (as of 03/2024)
 	$(call mk6dir2filelist,mark6-08,12,MBHC%001,SMA_b3.12.filelist)
 	$(call mk6dir2filelist,mark6-08,34,MBHC%003,SMA_b3.34.filelist)
 
-sw_b4: # todo, not shipped yet (as of 03/2024)
-	$(call mk6dir2filelist,mark6-08,12,BHC%0054,SMA_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-08,34,BHC%0056,SMA_b4.34.filelist)
+sw_b4:
+	$(call mk6dir2filelist,mark6-08,12,MPIH%031,SMA_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-08,34,MPIH%045,SMA_b4.34.filelist)
 
 ## SMT
 #
