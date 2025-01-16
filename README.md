@@ -24,6 +24,19 @@ The setup was identical to EHT 2021 and the standard EHT tuning was used.
 The b3 modules ought to contain a folded b2 & b3, and b4 modules a folded b1 & b4.
 Yet so far there are no SMT 345G fringes in b1 nor b4.
 
+# Correlation Environment
+
+Use DiFX-2.8.1 or DiFX-2.7.1 with CALC 11 model via
+```
+$ calcifMixed --calc=difxcalc *.calc
+$ startdifx --dont-calc *.input
+```
+This is because ALMA switched from CALC 9.1 (DiFX calcif2) to CALC 11 (DiFX difxcalc) for
+their local atmospheric corrections that get baked into their recorded VDIF data.
+Hence 'calcifMixed' with explicit 'difxcalc' is required to avoid a double correction of the atmosphere.
+The ocean loading and pole tide coefficients for EHT stations are found in DiFX-2.8.1 difxcalc shared data.
+
+
 # TODO
 
 Derive better SPT coordinates after correlation, if residuals with a priori SPT coordinates turn out to be too large.
