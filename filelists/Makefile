@@ -44,20 +44,20 @@ aa_b4:
 # band 4 PCal tone at 423 MHz
 
 ax_b1:
-	$(call mk6dir2filelist,mark6-02,12,PERI%015,APEX_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-02,34,PERI%019,APEX_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-09,12,PERI%015,APEX_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,PERI%019,APEX_b1.34.filelist)
 
 ax_b2:
-	$(call mk6dir2filelist,mark6-02,12,PERI%021,APEX_b2.12.filelist)
-	$(call mk6dir2filelist,mark6-02,34,PERI%023,APEX_b2.34.filelist)
+	$(call mk6dir2filelist,mark6-09,12,PERI%021,APEX_b2.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,PERI%023,APEX_b2.34.filelist)
 
 ax_b3:
-	$(call mk6dir2filelist,mark6-02,12,PERI%003,APEX_b3.12.filelist)
-	$(call mk6dir2filelist,mark6-02,34,PERI%005,APEX_b3.34.filelist)
+	$(call mk6dir2filelist,mark6-09,12,PERI%003,APEX_b3.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,PERI%005,APEX_b3.34.filelist)
 
 ax_b4:
-	$(call mk6dir2filelist,mark6-02,12,PERI%007,APEX_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-02,34,PERI%009,APEX_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-09,12,PERI%007,APEX_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,PERI%009,APEX_b4.34.filelist)
 
 ## GLT
 #
@@ -65,20 +65,20 @@ ax_b4:
 # slot 1,2 = V-LCP, slot 3,4 = H-RCP
 
 gl_b1:
-	$(call mk6dir2filelist,mark6-03,12,BHC%0045,GLT_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-03,34,BHC%0065,GLT_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-02,12,BHC%0045,GLT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,BHC%0065,GLT_b1.34.filelist)
 
 gl_b2:
-	$(call mk6dir2filelist,mark6-03,12,MPHI%018,GLT_b2.12.filelist)
-	$(call mk6dir2filelist,mark6-03,34,EHT%0033,GLT_b2.34.filelist)
+	$(call mk6dir2filelist,mark6-02,12,MPHI%018,GLT_b2.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,EHT%0033,GLT_b2.34.filelist)
 
 gl_b3:
-	$(call mk6dir2filelist,mark6-03,12,BHC%0087,GLT_b3.12.filelist)
-	$(call mk6dir2filelist,mark6-03,34,BHC%0105,GLT_b3.34.filelist)
+	$(call mk6dir2filelist,mark6-02,12,BHC%0087,GLT_b3.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,BHC%0105,GLT_b3.34.filelist)
 
 gl_b4:
-	$(call mk6dir2filelist,mark6-03,12,BHC%0135,GLT_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-03,34,BHC%0139,GLT_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-02,12,BHC%0135,GLT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,BHC%0139,GLT_b4.34.filelist)
 
 ## JCMT
 #
@@ -86,20 +86,20 @@ gl_b4:
 # slot 1,2 = LCP, slot 3,4 = RCP
 
 mm_b1:
-	$(call mk6dir2filelist,mark6-04,12,MPI%6415,JCMT_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-04,34,MPI%6417,JCMT_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-05,12,MPI%6415,JCMT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-05,34,MPI%6417,JCMT_b1.34.filelist)
 
 mm_b2:
-	$(call mk6dir2filelist,mark6-04,12,BHC%0070,JCMT_b2.12.filelist)
-	$(call mk6dir2filelist,mark6-04,34,BHC%0081,JCMT_b2.34.filelist)
+	$(call mk6dir2filelist,mark6-05,12,BHC%0070,JCMT_b2.12.filelist)
+	$(call mk6dir2filelist,mark6-05,34,BHC%0081,JCMT_b2.34.filelist)
 
 mm_b3:
-	$(call mk6dir2filelist,mark6-04,12,BHC%0050,JCMT_b3.12.filelist)
-	$(call mk6dir2filelist,mark6-04,34,BHC%0052,JCMT_b3.34.filelist)
+	$(call mk6dir2filelist,mark6-05,12,BHC%0050,JCMT_b3.12.filelist)
+	$(call mk6dir2filelist,mark6-05,34,BHC%0052,JCMT_b3.34.filelist)
 
 mm_b4:
-	$(call mk6dir2filelist,mark6-04,12,MPI%6411,JCMT_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-04,34,MPI%6413,JCMT_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-05,12,MPI%6411,JCMT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-05,34,MPI%6413,JCMT_b4.34.filelist)
 
 ## Kitt Peak
 #
@@ -107,20 +107,20 @@ mm_b4:
 # slot 1,2 = LCP-V-0, slot 3,4 = RCP-H-1
 
 kt_b1:
-	$(call mk6dir2filelist,mark6-05,12,PERI%011,KT_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-05,34,PERI%013,KT_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-10,12,PERI%011,KT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-10,34,PERI%013,KT_b1.34.filelist)
 
 kt_b2:
-	$(call mk6dir2filelist,mark6-05,12,MPI%8005,KT_b2.12.filelist)
-	$(call mk6dir2filelist,mark6-05,34,MPI%8033,KT_b2.34.filelist)
+	$(call mk6dir2filelist,mark6-10,12,MPI%8005,KT_b2.12.filelist)
+	$(call mk6dir2filelist,mark6-10,34,MPI%8033,KT_b2.34.filelist)
 
 kt_b3:
-	$(call mk6dir2filelist,mark6-05,12,ALMA%001,KT_b3.12.filelist)
-	$(call mk6dir2filelist,mark6-05,34,ALMA%003,KT_b3.34.filelist)
+	$(call mk6dir2filelist,mark6-10,12,ALMA%001,KT_b3.12.filelist)
+	$(call mk6dir2filelist,mark6-10,34,ALMA%003,KT_b3.34.filelist)
 
 kt_b4:
-	$(call mk6dir2filelist,mark6-05,12,PERI%046,KT_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-05,34,PERI%048,KT_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-10,12,PERI%046,KT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-10,34,PERI%048,KT_b4.34.filelist)
 
 ## LMT
 #
@@ -129,19 +129,19 @@ kt_b4:
 # slot 1,2= L, slot 3,4 = R
 
 lm_b1:
-	$(call mk6dir2filelist,mark6-06,12,EHT%0053,LMT_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-06,34,EHT%0055,LMT_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-03,12,EHT%0053,LMT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-03,34,EHT%0055,LMT_b1.34.filelist)
 
 lm_b2:
-	$(call mk6dir2filelist,mark6-06,12,BHC%0128,LMT_b2.12.filelist)
-	$(call mk6dir2filelist,mark6-06,34,BHC%0136,LMT_b2.34.filelist)
+	$(call mk6dir2filelist,mark6-03,12,BHC%0128,LMT_b2.12.filelist)
+	$(call mk6dir2filelist,mark6-03,34,BHC%0136,LMT_b2.34.filelist)
 
 lm_b3:
 	touch LMT_b3.12.filelist LMT_b3.34.filelist
 
 lm_b4:
-	$(call mk6dir2filelist,mark6-06,12,EHT%0049,LMT_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-06,34,EHT%0051,LMT_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-03,12,EHT%0049,LMT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-03,34,EHT%0051,LMT_b4.34.filelist)
 
 ## NOEMA
 #
@@ -214,20 +214,20 @@ sw_b4:
 # slot 1,2 = V-LCP, slot 3,4 = H-RCP
 
 mg_b1:
-	$(call mk6dir2filelist,mark6-09,12,PERI%035,SMT_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-09,34,PERI%036,SMT_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-04,12,PERI%035,SMT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-04,34,PERI%036,SMT_b1.34.filelist)
 
 mg_b2:
-	$(call mk6dir2filelist,mark6-09,12,PERI%028,SMT_b2.12.filelist)
-	$(call mk6dir2filelist,mark6-09,34,MPI%8036,SMT_b2.34.filelist)
+	$(call mk6dir2filelist,mark6-04,12,PERI%028,SMT_b2.12.filelist)
+	$(call mk6dir2filelist,mark6-04,34,MPI%8036,SMT_b2.34.filelist)
 
 mg_b3:
-	$(call mk6dir2filelist,mark6-09,12,PERI%033,SMT_b3.12.filelist)
-	$(call mk6dir2filelist,mark6-09,34,PERI%038,SMT_b3.34.filelist)
+	$(call mk6dir2filelist,mark6-04,12,PERI%033,SMT_b3.12.filelist)
+	$(call mk6dir2filelist,mark6-04,34,PERI%038,SMT_b3.34.filelist)
 
 mg_b4:
-	$(call mk6dir2filelist,mark6-09,12,MPI%8037,SMT_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-09,34,PERI%026,SMT_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-04,12,MPI%8037,SMT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-04,34,PERI%026,SMT_b4.34.filelist)
 
 ## SPT
 #
@@ -235,20 +235,20 @@ mg_b4:
 # slot 1,2 = LCP-V, slot 3,4 - RCP-H
 
 sz_b1:
-	$(call mk6dir2filelist,mark6-10,12,BHC%0060,SPT_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-10,34,BHC%0061,SPT_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-11,12,BHC%0060,SPT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,BHC%0061,SPT_b1.34.filelist)
 
 sz_b2:
-	$(call mk6dir2filelist,mark6-10,12,BHC%0095,SPT_b2.12.filelist)
-	$(call mk6dir2filelist,mark6-10,34,BHC%0059,SPT_b2.34.filelist)
+	$(call mk6dir2filelist,mark6-11,12,BHC%0095,SPT_b2.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,BHC%0059,SPT_b2.34.filelist)
 
 sz_b3:
-	$(call mk6dir2filelist,mark6-10,12,BHC%0124,SPT_b3.12.filelist)
-	$(call mk6dir2filelist,mark6-10,34,EHT%0075,SPT_b3.34.filelist)
+	$(call mk6dir2filelist,mark6-11,12,BHC%0124,SPT_b3.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,EHT%0075,SPT_b3.34.filelist)
 
 sz_b4:
-	$(call mk6dir2filelist,mark6-10,12,BHC%0104,SPT_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-10,34,BHC%0103,SPT_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-11,12,BHC%0104,SPT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,BHC%0103,SPT_b4.34.filelist)
 
 
 
