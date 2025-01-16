@@ -150,7 +150,7 @@ OUTPUTBAND outputbands {
   addOutputBand = freq@229979.203125/bw@58.0
 }
 
-SETUP zoomSetup {
+SETUP productionSetup {
   numBufferedFFTs = 20
   tInt = 0.400
   # subintNS =  3200000  # terribly slow at MPIfR
@@ -166,5 +166,5 @@ SETUP zoomSetup {
 }
 
 RULE defaultRule {
-  setup = zoomSetup
+  setup = productionSetup
 }
