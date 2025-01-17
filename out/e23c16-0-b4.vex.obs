@@ -33,7 +33,7 @@ def Aa;
 enddef;
 *
 def Ax;
-  clock_early = 2023y105d00h00m00s : 0.384 usec : 2023y105d00h00m00s : +0.987e-12;
+  clock_early = 2023y105d00h00m00s : 0.3334 usec : 2023y105d00h00m00s : +0.987e-12;
 enddef;
 *
 def Gl;
@@ -731,7 +731,7 @@ def Mm; * JCMT & SMA shared H-maser
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -1.192e-12;
+  clock_early = 2023y105d00h00m00s : -0.2865 usec : 2023y105d00h00m00s : -1.192e-12;
 enddef;
 *
 def Nn; * NOEMA
