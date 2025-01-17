@@ -739,7 +739,8 @@ def Nn; * NOEMA
 enddef;
 *
 def Sz;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.435e-12;
+  clock_early = 2023y105d00h00m00s : 0.1857 usec : 2023y105d00h00m00s : -0.00197e-12;
+  * clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.435e-12; * a priori
 enddef;
 *
 def Sw;
