@@ -4,4 +4,5 @@ Gl              -0.6523
 Nn              12.7777
 Mm              0.4981
 Mg              -0.2406
+Ax              -0.068
 # Kt : covered by per-scan clock breaks in clocks_KT_e23a22.vex
