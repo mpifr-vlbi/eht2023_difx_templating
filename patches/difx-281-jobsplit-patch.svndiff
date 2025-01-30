@@ -1,0 +1,78 @@
+Index: applications/vex2difx/src/jobgroup.h
+===================================================================
+--- applications/vex2difx/src/jobgroup.h	(revision 10985)
++++ applications/vex2difx/src/jobgroup.h	(working copy)
+@@ -33,6 +33,7 @@
+ #include <iostream>
+ #include <vector>
+ #include <list>
++#include <set>
+ #include <string>
+ #include "job.h"
+ #include "event.h"
+@@ -42,9 +43,11 @@
+ {
+ public:
+ 	std::vector<std::string> scans;
++	std::set<std::string> antennas;
+ 	std::list<Event> events;
+ 
+ 	bool hasScan(const std::string &scanName) const;
++	bool hasAntenna(const std::string &antennaName) const;
+ 	void genEvents(const std::list<Event> &eventList);
+ 	void createJobs(std::vector<Job> &jobs, Interval &jobTimeRange, const VexData *V, double minLength, double maxLength, double maxSize) const;
+ };
+Index: applications/vex2difx/src/jobgroup.cpp
+===================================================================
+--- applications/vex2difx/src/jobgroup.cpp	(revision 10985)
++++ applications/vex2difx/src/jobgroup.cpp	(working copy)
+@@ -36,6 +36,13 @@
+ 	return find(scans.begin(), scans.end(), scanName) != scans.end();
+ }
+ 
++bool JobGroup::hasAntenna(const std::string &antennaName) const
++{
++	return (antennas.find(antennaName) != antennas.end());
++}
++
++// Generate a filtered list of events for internal use,
++// retaining only events related to scans and antennas of this JobGroup
+ void JobGroup::genEvents(const std::list<Event> &eventList)
+ {
+ 	for(std::list<Event>::const_iterator it = eventList.begin(); it != eventList.end(); ++it)
+@@ -48,8 +55,19 @@
+ 			if(hasScan(it->scan))
+ 			{
+ 				events.push_back(*it);
+-			}	
++			}
+ 		}
++		else if(it->eventType == Event::CLOCK_BREAK ||
++			it->eventType == Event::RECORD_START ||
++			it->eventType == Event::RECORD_STOP ||
++			it->eventType == Event::ANTENNA_START ||
++			it->eventType == Event::ANTENNA_STOP)
++		{
++			if(hasAntenna(it->name))
++			{
++				events.push_back(*it);
++			}
++		}
+ 		else
+ 		{
+ 			events.push_back(*it);
+Index: applications/vex2difx/src/makejobs.cpp
+===================================================================
+--- applications/vex2difx/src/makejobs.cpp	(revision 10985)
++++ applications/vex2difx/src/makejobs.cpp	(working copy)
+@@ -89,6 +89,10 @@
+ 		JobGroup &JG = JGs.back();
+ 		JG.scans.push_back(scans.front());
+ 		JG.setTimeRange(*scan);
++		for(std::map<std::string,Interval>::const_iterator it = scan->stations.begin(); it != scan->stations.end(); ++it)
++		{
++			JG.antennas.insert(it->first);
++		}
+ 		scans.pop_front();
+ 
+ 		const VexScan *scan1 = V->getScanByDefName(JG.scans.back());

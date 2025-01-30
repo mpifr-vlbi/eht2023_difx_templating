@@ -1,0 +1,43 @@
+
+Patch for DiFX 2.7.1
+
+
+Issue/fix:
+
+"refine vex2difx job splitting: ignore antennas unrelated to job #67"
+
+https://github.com/difx/difx/pull/67
+
+
+Details:
+
+Vex2difx behaves suboptimally in a special case of a sub-arrayed VLBI experiment that contains clock breaks.
+
+To illustrate the issue assume a sub-arrayed experiment with
+
+Scan 1a from 106-0400 till 106-0415 with stations Aa Bb Cc
+Scan 1b from 106-0408 till 106-0420 with stations Kk Nn Mm
+VEX clock_early break at Kk at 106-0408
+
+Vex2difx unexpectedly generates 3 jobs - two jobs for scan 1a, one for 1b:
+
+Job 1 spans 106-0400 till 106-0408 with stations Aa Bb Cc
+Job 2 spans 106-0408 till 106-0415 with stations Aa Bb Cc
+Job 3 spans 106-0408 till 106-0420 with stations Kk Nn Mm
+
+Since Kk with its clock break is not even part of scan 1a, splitting that scan into two jobs feels unnecessary.
+In fact, it also triggers a problem downstream in difx2mark4 which does not support merging back the data of two
+jobs into one scan - about half the visibility data (job 2 of scan 1a) are lost to difx2mark4.
+
+It turns out there is already a pre-filtering function in JobGroup that goes through a time series of global
+VEX "events" (scan start, stop, antenna scan start, stop). It discards events that have nothing to do with
+scans of the JobGroup.
+
+This minimal patch extends that pre-filtering function.
+
+The pre-filtering now also discards events that have nothing to do with the antennas of the JobGroup.
+
+In the above test case ,vex2difx now generates a more optimal set of jobs:
+
+Job 1 spans 106-0400 till 106-0415 with stations Aa Bb Cc, the unrelated break at Kk is ignored
+Job 2 spans 106-0408 till 106-0420 with stations Kk Nn Mm, and with the correct Kk clock
