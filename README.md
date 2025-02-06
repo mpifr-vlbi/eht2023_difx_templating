@@ -1,6 +1,6 @@
 # eht2023_difx_templating
 
-EHT 2023 VLBI DiFX correlation setups
+Correlation setup for EHT 2023 VLBI under DiFX 2.7.1/2.8.1
 
 All tracks were observed at 230 GHz except for the 345 GHz track e23d15.
 
@@ -13,9 +13,9 @@ M. Bremer provided the pad info separately by email; tracks g17 e19 a22 pad N007
 
 Coordinates for Sgr A* by V. Fish using position and proper motion from 2022ApJ...940...15X for J2000 epoch 2023.29 are 17 45 40.032073   -29 00 28.26098.
 
-Tracks e23g17 and e23a22 have a few scans that were scheduled for ALMA only with no other stations.
-Although the scans were recorded on ALMA Mark6, they have no baselines, leading to issues under CASA.
-Thus the problematic ALMA-only scans are commented out in the DiFX correlation setup.
+Tracks e23g17 and e23a22 had single-station scans scheduled at ALMA and or SMA.
+These scans were recorded at ALMA/SMA but have no baselines. This cause issues in the CASA pipeline.
+The problematic scans are thus commented out in the DiFX correlation setup.
 
 The SMT 345G receiver is not sideband reparating; LSB folds onto USB.
 According to Slack #smt_backend on 12 April 2023, b1 b2 Mark6 recorders had no IF signal.
@@ -26,16 +26,24 @@ Yet so far there are no SMT 345G fringes in b1 nor b4.
 
 # Correlation Environment
 
-Use DiFX-2.8.1 or DiFX-2.7.1 with CALC 11 model via
+Use DiFX-2.8.1 or DiFX-2.7.1. Apply a small local patch `./patches/difx-271-jobsplit-patch.svndiff`
+or `./patches/difx-281-jobsplit-patch.svndiff`. The patch fixes a shortcoming in DiFX job
+creation for sub-arrayed tracks (e23d15 e23c16 e23c18) where certain simultaneously observed
+scans get split unnecessarily into 2-3 correlation jobs per scan. While fine for FITS-IDI,
+Mk4 takes only the 1st data part of split scans. The patch avoids creating scan splits. See https://github.com/difx/difx/pull/67/
+
+Use CALC 11 rather than the old default CALC 9.1 model by, e.g.,
 ```
 $ calcifMixed --calc=difxcalc *.calc
 $ startdifx --dont-calc *.input
 ```
-This is because ALMA switched from CALC 9.1 (DiFX calcif2) to CALC 11 (DiFX difxcalc) for
-their local atmospheric corrections that get baked into their recorded VDIF data.
-Hence 'calcifMixed' with explicit 'difxcalc' is required to avoid a double correction of the atmosphere.
-The ocean loading and pole tide coefficients for EHT stations are found in DiFX-2.8.1 difxcalc shared data.
+ALMA migrated from CALC 9.1 (DiFX calcif2) to CALC 11 (DiFX difxcalc). They use the CALC
+model to pre-correct for local atmosphere. These corrections are in a sense baked into
+the ALMA phased-sum VDIF recordings. To avoid a double correction and not over/undercompensate
+by inadvertently having the wrong default model version, use explicit `calcifMixed --calc=difxcalc`.
 
+Ocean loading and pole tide coefficients for CALC 11 for EHT stations are already
+part of DiFX-2.8.1 difxcalc. For DiFX-2.7.1 the respective coeff files need to be copied over from 2.8.1.
 
 # TODO
 
@@ -60,4 +68,5 @@ Notes
 Kt : H-maser stability lost in c18 e19 a22
 Lm : free-running crystal reference in all tracks
 Mm : absent in g17 because of Mauna Kea power grid issues
+Aa, Sw : several scans scheduled as single-station with VDIF data recording
 ```
