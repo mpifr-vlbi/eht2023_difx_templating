@@ -33,7 +33,7 @@ def Aa;
 enddef;
 *
 def Ax;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.987e-12;
+  clock_early = 2023y105d00h00m00s : 0.2085 usec : 2023y105d00h00m00s : +0.987e-12;
 enddef;
 *
 def Gl;
@@ -706,7 +706,7 @@ def Mg; * SMT
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.0028e-12;
+  clock_early = 2023y105d00h00m00s : 12.7092 usec : 2023y105d00h00m00s : +0.0028e-12;
 enddef;
 *
 def Sz;
@@ -1749,7 +1749,7 @@ scan 107-0306;
 *              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
      station=Nn:    0 sec:  300 sec:    0.000 GB:   :       : 1;
      station=Gl:    0 sec:  300 sec:    0.000 GB:   :       : 1;
-     station=Sz:    0 sec:  300 sec:    0.000 GB:   :       : 1;
+     *station=Sz:   0 sec:  300 sec:    0.000 GB:   :       : 1; * SPT receiver maintenance
      station=Ax:    0 sec:  300 sec:    0.000 GB:   :       : 1;
      station=Lm:    0 sec:  300 sec:    0.000 GB:   :       : 1;
      station=Kt:    0 sec:  300 sec:    0.000 GB:   :       : 1;
@@ -1768,7 +1768,7 @@ scan 107-0330;
      start=2023y107d03h30m00s; mode=band6; source=3C279;
      station=Nn:    0 sec:  300 sec:  615.383 GB:   :       : 1;
      station=Gl:    0 sec:  300 sec:  615.383 GB:   :       : 1;
-     station=Sz:    0 sec:  300 sec:  307.692 GB:   :       : 1;
+     *station=Sz:   0 sec:  300 sec:  307.692 GB:   :       : 1; * SPT receiver maintenance
      station=Ax:    0 sec:  300 sec:  615.383 GB:   :       : 1;
      station=Lm:    0 sec:  300 sec:  615.383 GB:   :       : 1;
      station=Kt:    0 sec:  300 sec:  615.383 GB:   :       : 1;
@@ -1790,7 +1790,7 @@ scan 107-0356;
 * intent = "ALMA:SCHEDBLOCK_STARTER:blazar"
      start=2023y107d03h56m00s; mode=band6; source=3C279;
      station=Gl:    0 sec:  180 sec: 1230.766 GB:   :       : 1;
-     station=Sz:    0 sec:  180 sec:  615.383 GB:   :       : 1;
+     *station=Sz:   0 sec:  180 sec:  615.383 GB:   :       : 1; * SPT receiver maintenance
      station=Ax:    0 sec:  180 sec: 1230.766 GB:   :       : 1;
      station=Lm:    0 sec:  180 sec: 1230.766 GB:   :       : 1;
      station=Kt:    0 sec:  180 sec: 1230.766 GB:   :       : 1;
@@ -1848,7 +1848,7 @@ scan 107-0422;
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y107d04h22m00s; mode=band6; source=3C279;
      station=Gl:    0 sec:  180 sec: 1876.918 GB:   :       : 1;
-     station=Sz:    0 sec:  180 sec:  799.998 GB:   :       : 1;
+     *station=Sz:   0 sec:  180 sec:  799.998 GB:   :       : 1; * SPT receiver maintenance
      station=Ax:    0 sec:  180 sec: 1876.918 GB:   :       : 1;
      station=Lm:    0 sec:  180 sec: 1876.918 GB:   :       : 1;
      station=Kt:    0 sec:  180 sec: 1876.918 GB:   :       : 1;
@@ -1952,7 +1952,7 @@ scan 107-0510;
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y107d05h10m00s; mode=band6; source=3C279;
      station=Gl:    0 sec:  180 sec: 2984.608 GB:   :       : 1;
-     station=Sz:    0 sec:  180 sec:  984.613 GB:   :       : 1;
+     *station=Sz:   0 sec:  180 sec:  984.613 GB:   :       : 1; * SPT receiver maintenance
      station=Ax:    0 sec:  180 sec: 2984.608 GB:   :       : 1;
      station=Lm:    0 sec:  180 sec: 2984.608 GB:   :       : 1;
      station=Kt:    0 sec:  180 sec: 2984.608 GB:   :       : 1;
@@ -2075,7 +2075,7 @@ scan 107-0606;
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y107d06h06m00s; mode=band6; source=3C279;
      station=Gl:    0 sec:  180 sec: 4276.913 GB:   :       : 1;
-     station=Sz:    0 sec:  180 sec: 1169.228 GB:   :       : 1;
+     *station=Sz:   0 sec:  180 sec: 1169.228 GB:   :       : 1; * SPT receiver maintenance
      station=Ax:    0 sec:  180 sec: 4276.913 GB:   :       : 1;
      station=Lm:    0 sec:  180 sec: 4276.913 GB:   :       : 1;
      station=Kt:    0 sec:  180 sec: 4276.913 GB:   :       : 1;
@@ -2199,7 +2199,7 @@ scan 107-0702;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y107d07h02m00s; mode=band6; source=3C279;
-     station=Sz:    0 sec:  180 sec: 1353.843 GB:   :       : 1;
+     *station=Sz:   0 sec:  180 sec: 1353.843 GB:   :       : 1; * SPT receiver maintenance
      station=Ax:    0 sec:  180 sec: 5569.216 GB:   :       : 1;
      station=Lm:    0 sec:  180 sec: 5569.216 GB:   :       : 1;
      station=Kt:    0 sec:  180 sec: 5569.216 GB:   :       : 1;
@@ -2332,7 +2332,7 @@ scan 107-0758;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y107d07h58m00s; mode=band6; source=3C279;
-     station=Sz:    0 sec:  180 sec: 1538.458 GB:   :       : 1;
+     *station=Sz:   0 sec:  180 sec: 1538.458 GB:   :       : 1; * SPT receiver maintenance
      station=Ax:    0 sec:  180 sec: 6861.520 GB:   :       : 1;
      station=Lm:    0 sec:  180 sec: 6861.520 GB:   :       : 1;
      station=Kt:    0 sec:  180 sec: 6861.520 GB:   :       : 1;
