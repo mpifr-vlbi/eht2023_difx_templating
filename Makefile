@@ -59,11 +59,31 @@ prerequisites:
 	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 4   > templates/345G/band3/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 3   > templates/345G/band4/freqs_NOEMA.vex
 	#    
-	./scripts/alma-vex-defs.py --lo1 343.600      -r 1 > templates/345G/band1/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f335600.00000 -w58.0 -sL -ralma
-	#./scripts/alma-vex-defs.py --lo1 343.600     -r 2 > templates/345G/band2/freqs_ALMA_alt.vex  # equiv. to $ehtc/alma-vex-defs.py -f337600.00000 -w58.0 -sL -ralma
-	./scripts/alma-vex-defs.py --lo1 343.54140625 -r 2 > templates/345G/band2/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f337541.40625 -w58.0 -sL -ralma; shifted 58.59375 MHz
-	./scripts/alma-vex-defs.py --lo1 341.600      -r 3 > templates/345G/band3/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f347600.00000 -w58.0 -sU -ralma
-	./scripts/alma-vex-defs.py --lo1 341.600      -r 4 > templates/345G/band4/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f349600.00000 -w58.0 -sU -ralma
+	#./scripts/alma-vex-defs.py --lo1 341.600      -r 4 > templates/345G/band4/freqs_ALMA.vex     # 2021; equiv. to $ehtc/alma-vex-defs.py -f349600.00000 -w58.0 -sU -ralma
+	# EHT2023 confluence page tarballs contain hidden e23d15-script.log with tuning
+	#    2023-04-15T07:26:18.551 StandardVLBI HW BB Centers: [335621000000.0, 337516500000.0, 347621000000.0, 349579000000.0]
+	# which is different from EHT2021 tuning of
+	# ./scripts/alma-vex-defs.py --lo1 343.600      -r 1 > templates/345G/band1/freqs_ALMA.vex
+	# ./scripts/alma-vex-defs.py --lo1 343.54140625 -r 2 > templates/345G/band2/freqs_ALMA.vex
+	# ./scripts/alma-vex-defs.py --lo1 341.600      -r 3 > templates/345G/band3/freqs_ALMA.vex
+	# ./scripts/alma-vex-defs.py --lo1 341.600      -r 4 > templates/345G/band4/freqs_ALMA.vex
+	# equivalent to the not so copy-pasteable output of
+	# $ehtc/alma-vex-defs.py -f335600.00000 -w58.0 -sL -ralma # b1 alt
+	# $ehtc/alma-vex-defs.py -f337541.40625 -w58.0 -sL -ralma # b2, shifted 58.59375 MHz
+	# $ehtc/alma-vex-defs.py -f347600.00000 -w58.0 -sU -ralma # b3
+	# $ehtc/alma-vex-defs.py -f349600.00000 -w58.0 -sU -ralma # b4
+	#
+	# Revised for EHT2023 with now no rounding error -induced LO offsets
+	./scripts/alma-vex-defs.py --lo1 343.621000  -r 1 > templates/345G/band1/freqs_ALMA.vex
+	./scripts/alma-vex-defs.py --lo1 343.516500  -r 2 > templates/345G/band2/freqs_ALMA.vex
+	./scripts/alma-vex-defs.py --lo1 341.621000  -r 3 > templates/345G/band3/freqs_ALMA.vex
+	./scripts/alma-vex-defs.py --lo1 341.579000  -r 4 > templates/345G/band4/freqs_ALMA.vex
+	# equivalent to the not so copy-pasteable output of
+	# $ehtc/alma-vex-defs.py -f335621.00000 -w58.0 -sL -ralma # b1
+	# $ehtc/alma-vex-defs.py -f337516.50000 -w58.0 -sL -ralma # b2
+	# $ehtc/alma-vex-defs.py -f347621.00000 -w58.0 -sU -ralma # b3
+	# $ehtc/alma-vex-defs.py -f349579.00000 -w58.0 -sU -ralma # b4
+	#
 	## Note: DiFX $ehtc/alma-vex-defs.py would be more direct, but its chan_defs are not useable as-is,
 	##       vs own ./scripts/alma-vex-defs.py usable for that while not being 4-8/5-9 aware, plus the 345G b2 offset trickyness
 	#
