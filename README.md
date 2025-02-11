@@ -68,8 +68,6 @@ Aa, Sw : scheduled as single station in several scans, with data recording - rem
 
 Derive better SPT coordinates, if residuals with a priori SPT coordinates turn out to be too large? Looks ok so far?
 
-ALMA LO offset 345G likely zero? Or like 2021 after all?
-
 Issues with the 345G track e23d15:
- - SMT, ALMA, GLT, APEX (just 2 good scans) have no fringes
- - only SMA-JCMT has a fringe
+ - only ALMA-SMA-JCMT fringes so far, not SMT GLT APEX
+ - ALMA had different tunings from EHT 2021: ~21 MHz offset now to get 0 Hz lo offsets
