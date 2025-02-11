@@ -11,7 +11,8 @@ order (and b3 b4 increasing order), and this lead to problems in postprocessing.
 The VLBI Monitor database contains incorrect (truncated) reference pad name entries for NOEMA.
 M. Bremer provided the pad info separately by email; tracks g17 e19 a22 pad N007, c16 c18 pad E003).
 
-Coordinates for Sgr A* by V. Fish using position and proper motion from 2022ApJ...940...15X for J2000 epoch 2023.29 are 17 45 40.032073   -29 00 28.26098.
+Coordinates for Sgr A* by V. Fish using position and proper motion from 2022ApJ...940...15X for J2000
+epoch 2023.29 are 17 45 40.032073 -29 00 28.26098. Results look good with that.
 
 Tracks e23g17 and e23a22 had single-station scans scheduled at ALMA and or SMA.
 These scans were recorded at ALMA/SMA but have no baselines. This cause issues in the CASA pipeline.
@@ -71,3 +72,5 @@ Derive better SPT coordinates, if residuals with a priori SPT coordinates turn o
 Issues with the 345G track e23d15:
  - only ALMA-SMA-JCMT fringes so far, not SMT GLT APEX
  - ALMA had different tunings from EHT 2021: ~21 MHz offset now to get 0 Hz lo offsets
+
+Cygnus A coordinates (track e23e19) are slightly off - need better ones
