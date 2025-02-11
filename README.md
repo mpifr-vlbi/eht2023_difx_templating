@@ -45,14 +45,6 @@ by inadvertently having the wrong default model version, use explicit `calcifMix
 Ocean loading and pole tide coefficients for CALC 11 for EHT stations are already
 part of DiFX-2.8.1 difxcalc. For DiFX-2.7.1 the respective coeff files need to be copied over from 2.8.1.
 
-# TODO
-
-Derive better SPT coordinates after correlation, if residuals with a priori SPT coordinates turn out to be too large.
-
-ALMA LO offset 345G likely zero? Or like 2021 after all?
-
-Reason for no SMT 345G fringes?
-
 # Stations and tracks
 
 ```
@@ -62,11 +54,22 @@ e23c16  230G  3849  10-st Aa Ax Gl Kt Lm Mg Mm Nn Sw Sz
 e23g17  230G  3850  10-st Aa Ax Gl Kt Lm Mg[Mm]Nn Sw Sz
 e23c18  230G  3851  9-st Aa Ax Gl Kt Mg Mm Nn Sz Sw
 e23e19  230G  3852  8-st Aa Ax Gl Kt Lm Mg Mm Nn
-e23a22  230G  3853  9-st Aa Ax Gl Kt Mg Mm Nn Sw Sz
+e23a22  230G  3853  9-st Aa Ax Gl Kt Mg Mm Nn Sw [Sz]
 
 Notes
 Kt : H-maser stability lost in c18 e19 a22
 Lm : free-running crystal reference in all tracks
 Mm : absent in g17 because of Mauna Kea power grid issues
-Aa, Sw : several scans scheduled as single-station with VDIF data recording
+Sz : observed c16 c18 but not a22
+Aa, Sw : scheduled as single station in several scans, with data recording - removed for correlation
 ```
+
+# TODO
+
+Derive better SPT coordinates, if residuals with a priori SPT coordinates turn out to be too large? Looks ok so far?
+
+ALMA LO offset 345G likely zero? Or like 2021 after all?
+
+Issues with the 345G track e23d15:
+ - SMT, ALMA, GLT, APEX (just 2 good scans) have no fringes
+ - only SMA-JCMT has a fringe
