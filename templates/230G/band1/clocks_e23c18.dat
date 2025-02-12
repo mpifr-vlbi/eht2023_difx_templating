@@ -3,4 +3,6 @@ CLOCK
 Gl              -0.7193
 Mm              0.428
 Mg              -0.3039
+Ax              0.1562
+Sz              0.1444
 # Kt : covered by per-scan clock breaks in clocks_KT_e23c18.vex
