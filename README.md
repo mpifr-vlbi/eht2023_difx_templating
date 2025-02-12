@@ -18,12 +18,12 @@ Tracks e23g17 and e23a22 had single-station scans scheduled at ALMA and or SMA.
 These scans were recorded at ALMA/SMA but have no baselines. This cause issues in the CASA pipeline.
 The problematic scans are thus commented out in the DiFX correlation setup.
 
-The SMT 345G receiver is not sideband reparating; LSB folds onto USB.
+The SMT 345G receiver is not sideband reparating; LSB folds onto USB (b2+b3, b1+b4).
 According to Slack #smt_backend on 12 April 2023, b1 b2 Mark6 recorders had no IF signal.
-A. Lowitz confirmed that the 345G "USB" IF was routed to b3 b4 Mark6 recorders.
+A. Lowitz confirmed that the 345G "USB" IF was routed to the b3 b4 Mark6 recorders.
 The setup was identical to EHT 2021 and the standard EHT tuning was used.
 The b3 modules ought to contain a folded b2 & b3, and b4 modules a folded b1 & b4.
-Yet so far there are no SMT 345G fringes in b1 nor b4.
+Yet so far there are no SMT 345G fringes in b1 nor b4 in either net sideband interpretation.
 
 # Correlation Environment
 
@@ -65,12 +65,18 @@ Sz : observed c16 c18 but not a22
 Aa, Sw : scheduled as single station in several scans, with data recording - removed for correlation
 ```
 
+# Grievances
+
+ALMA had different tunings from EHT 2021: ~21 MHz offset, yields finally an exact 1st LO tuning
+with 0 Hz LO offset. The info was found in a semi hardware level trace in e23d15-script.log.gz
+in a tarball nested within tarballs of the ALMA VLBI Metadata tarball.
+
 # TODO
 
 Derive better SPT coordinates, if residuals with a priori SPT coordinates turn out to be too large? Looks ok so far?
 
 Issues with the 345G track e23d15:
- - only ALMA-SMA-JCMT fringes so far, not SMT GLT APEX
- - ALMA had different tunings from EHT 2021: ~21 MHz offset now to get 0 Hz lo offsets
+ - only ALMA-SMA-JCMT fringes so far, not SMT GLT (neither understood), nor APEX in its 2 good scans
+ - SMT vlbimon data 23-04-15 02:34:07 342.600 GHz suggests the nominal LO was used, tuning should be okay...
 
 Cygnus A coordinates (track e23e19) are slightly off - need better ones
