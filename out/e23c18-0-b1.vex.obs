@@ -33,7 +33,7 @@ def Aa;
 enddef;
 *
 def Ax;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.987e-12;
+  clock_early = 2023y105d00h00m00s : 0.1562 usec : 2023y105d00h00m00s : +0.987e-12;
 enddef;
 *
 def Gl;
@@ -694,7 +694,7 @@ def Nn; * NOEMA
 enddef;
 *
 def Sz;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.00197e-12;
+  clock_early = 2023y105d00h00m00s : 0.1444 usec : 2023y105d00h00m00s : -0.00197e-12;
   * clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.435e-12; * a priori
 enddef;
 *
@@ -834,8 +834,8 @@ def band6;
      ref $IF = IF_NOMINAL:Nn:Gl:Ax:Sz:Kt:Lm:Mg:Sw:Mm;
      ref $IF = IF_APEX:Ax;
      ref $IF = IF_ALMA:Aa;
-     ref $BBC = BBC_COMMON:Sz:Kt:Mg:Sw:Mm:Nn;
-     ref $BBC = BBC_POLSWAP:Gl:Ax:Lm;
+     ref $BBC = BBC_COMMON:Sz:Gl:Kt:Mg:Sw:Mm:Nn;
+     ref $BBC = BBC_POLSWAP:Ax:Lm;
      ref $BBC = BBC_ALMA:Aa;
      ref $FREQ = FREQ_COMMON:Sz:Kt:Lm:Mg:Mm;
      ref $FREQ = FREQ_SMA:Sw;
