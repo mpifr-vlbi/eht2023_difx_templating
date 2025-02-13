@@ -1360,6 +1360,7 @@ enddef;
 *
 def FREQ_DBBC3_AX;
      sample_rate =  4096.000 Ms/sec;
+     * APEX FrequencyStructure2023Apr-345GHz.xlsx v5
      chan_def = &B:334552.000 MHz : U : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
      chan_def = &B:334552.000 MHz : U : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
@@ -1368,6 +1369,7 @@ def FREQ_GLT;
      sample_rate =  4096.000 Ms/sec;
      chan_def = &B:334552.000 MHz : U : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
      chan_def = &B:334552.000 MHz : U : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
+     * GLT no fringe with 336600.0 LSB either
 enddef;
 *
 def FREQ_SMA;
