@@ -88,15 +88,19 @@ prerequisites:
 	##       vs own ./scripts/alma-vex-defs.py usable for that while not being 4-8/5-9 aware, plus the 345G b2 offset trickyness
 	#
 	## SMA a priori clock files; clock rate identical to that of JCMT (shared H-maser)
-	#  Note that SMA has no band 4 in 345G track(s) due to capability to switch between 4-8G / 5-9G IF filters
+	# 230G
 	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b1.rx230.sbLSB.quad1.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band1/clocks_SMA.vex
 	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b2.rx230.sbLSB.quad0.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band2/clocks_SMA.vex
 	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b3.rx230.sbUSB.quad1.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band3/clocks_SMA.vex
 	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b4.rx230.sbUSB.quad2.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/230G/band4/clocks_SMA.vex
-	#
+	# 345G
 	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b1.rx345.sbLSB.quad1.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/345G/band1/clocks_SMA.vex
 	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b2.rx345.sbLSB.quad0.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/345G/band2/clocks_SMA.vex
 	./scripts/vexdelay.py -f ./priors/sma/eht2023-delays-b3.rx345.sbUSB.quad1.txt -c 0.5126 --rate=-0.158e-12 -s Sw -g 0.0 2023y105d01h40m00s 2023y112d07h55m00s > templates/345G/band3/clocks_SMA.vex
+	#  note that SMA has no band 4 in 345G track(s) due to no capability to switch between 4-8G / 5-9G IF filters; using dummy to keep vex2difx happy:
+	echo "def Sw;" > templates/345G/band4/clocks_SMA.vex
+	echo " clock_early = 2023y105d00h00m00s: 0.0 usec : 2023y105d00h00m00s : -7e-15;" >> templates/345G/band4/clocks_SMA.vex
+	echo "enddef;" >> templates/345G/band4/clocks_SMA.vex
 
 
 
