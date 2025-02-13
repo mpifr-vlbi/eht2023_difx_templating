@@ -114,38 +114,41 @@ DATASTREAM Nn_ds4 {
 #==================================================================
 
 OUTPUTBAND outputbands {
-  addOutputBand = freq@336662.796875/bw@58.0
-  addOutputBand = freq@336721.390625/bw@58.0
-  addOutputBand = freq@336779.984375/bw@58.0
-  addOutputBand = freq@336838.578125/bw@58.0
-  addOutputBand = freq@336897.171875/bw@58.0
-  addOutputBand = freq@336955.765625/bw@58.0
-  addOutputBand = freq@337014.359375/bw@58.0
-  addOutputBand = freq@337072.953125/bw@58.0
-  addOutputBand = freq@337131.546875/bw@58.0
-  addOutputBand = freq@337190.140625/bw@58.0
-  addOutputBand = freq@337248.734375/bw@58.0
-  addOutputBand = freq@337307.328125/bw@58.0
-  addOutputBand = freq@337365.921875/bw@58.0
-  addOutputBand = freq@337424.515625/bw@58.0
-  addOutputBand = freq@337483.109375/bw@58.0
-  addOutputBand = freq@337541.703125/bw@58.0
-  addOutputBand = freq@337600.296875/bw@58.0
-  addOutputBand = freq@337658.890625/bw@58.0
-  addOutputBand = freq@337717.484375/bw@58.0
-  addOutputBand = freq@337776.078125/bw@58.0
-  addOutputBand = freq@337834.671875/bw@58.0
-  addOutputBand = freq@337893.265625/bw@58.0
-  addOutputBand = freq@337951.859375/bw@58.0
-  addOutputBand = freq@338010.453125/bw@58.0
-  addOutputBand = freq@338069.046875/bw@58.0
-  addOutputBand = freq@338127.640625/bw@58.0
-  addOutputBand = freq@338186.234375/bw@58.0
-  addOutputBand = freq@338244.828125/bw@58.0
-  addOutputBand = freq@338303.421875/bw@58.0
-  addOutputBand = freq@338362.015625/bw@58.0
-  addOutputBand = freq@338420.609375/bw@58.0
-  addOutputBand = freq@338479.203125/bw@58.0
+  # ALMA used a -83.50 MHz tuning offset in b2, different from EHT 2021.
+  # The outputbands are adjusted accordingly.
+  # $ehtc/alma-vex-defs.py -f337516.50000 -w58.0 -sL -rzoom
+  addOutputBand = freq@336579.296875/bw@58.0
+  addOutputBand = freq@336637.890625/bw@58.0
+  addOutputBand = freq@336696.484375/bw@58.0
+  addOutputBand = freq@336755.078125/bw@58.0
+  addOutputBand = freq@336813.671875/bw@58.0
+  addOutputBand = freq@336872.265625/bw@58.0
+  addOutputBand = freq@336930.859375/bw@58.0
+  addOutputBand = freq@336989.453125/bw@58.0
+  addOutputBand = freq@337048.046875/bw@58.0
+  addOutputBand = freq@337106.640625/bw@58.0
+  addOutputBand = freq@337165.234375/bw@58.0
+  addOutputBand = freq@337223.828125/bw@58.0
+  addOutputBand = freq@337282.421875/bw@58.0
+  addOutputBand = freq@337341.015625/bw@58.0
+  addOutputBand = freq@337399.609375/bw@58.0
+  addOutputBand = freq@337458.203125/bw@58.0
+  addOutputBand = freq@337516.796875/bw@58.0
+  addOutputBand = freq@337575.390625/bw@58.0
+  addOutputBand = freq@337633.984375/bw@58.0
+  addOutputBand = freq@337692.578125/bw@58.0
+  addOutputBand = freq@337751.171875/bw@58.0
+  addOutputBand = freq@337809.765625/bw@58.0
+  addOutputBand = freq@337868.359375/bw@58.0
+  addOutputBand = freq@337926.953125/bw@58.0
+  addOutputBand = freq@337985.546875/bw@58.0
+  addOutputBand = freq@338044.140625/bw@58.0
+  addOutputBand = freq@338102.734375/bw@58.0
+  addOutputBand = freq@338161.328125/bw@58.0
+  addOutputBand = freq@338219.921875/bw@58.0
+  addOutputBand = freq@338278.515625/bw@58.0
+  addOutputBand = freq@338337.109375/bw@58.0
+  addOutputBand = freq@338395.703125/bw@58.0
 }
 
 SETUP productionSetup {
