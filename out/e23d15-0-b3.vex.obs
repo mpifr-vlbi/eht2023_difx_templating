@@ -1637,57 +1637,57 @@ $SCHED;
 scan 105-0143;
      start=2023y105d01h43m00s; mode=band7; source=3C279;
 *              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
-     station=Nn:    0 sec:  240 sec:    0.000 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec:    0.000 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec:    0.000 GB:   :       : 1;
      station=Gl:    0 sec:  240 sec:    0.000 GB:   :       : 1;
 endscan;
 scan 105-0152;
      start=2023y105d01h52m00s; mode=band7; source=3C273;
-     station=Nn:    0 sec:  240 sec:  246.153 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec:  246.153 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec:  246.153 GB:   :       : 1;
      station=Gl:    0 sec:  240 sec:  246.153 GB:   :       : 1;
 endscan;
 scan 105-0201;
      start=2023y105d02h01m00s; mode=band7; source=3C279;
-     station=Nn:    0 sec:  240 sec:  492.306 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec:  492.306 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec:  492.306 GB:   :       : 1;
      station=Gl:    0 sec:  240 sec:  492.306 GB:   :       : 1;
 endscan;
 scan 105-0210;
      start=2023y105d02h10m00s; mode=band7; source=3C273;
-     station=Nn:    0 sec:  240 sec:  738.460 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec:  738.460 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec:  738.460 GB:   :       : 1;
      station=Gl:    0 sec:  240 sec:  738.460 GB:   :       : 1;
 endscan;
 scan 105-0219;
      start=2023y105d02h19m00s; mode=band7; source=3C279;
-     station=Nn:    0 sec:  240 sec:  984.613 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec:  984.613 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec:  984.613 GB:   :       : 1;
      station=Gl:    0 sec:  240 sec:  984.613 GB:   :       : 1;
 endscan;
 scan 105-0228;
      start=2023y105d02h28m00s; mode=band7; source=3C273;
-     station=Nn:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec: 1230.766 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
      station=Gl:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
      station=Mg:    0 sec:  240 sec:    0.000 GB:   :       : 1;
 endscan;
 scan 105-0240;
      start=2023y105d02h40m00s; mode=band7; source=3C279;
-     station=Nn:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec: 1476.919 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
      station=Gl:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
 endscan;
 scan 105-0249;
      start=2023y105d02h49m00s; mode=band7; source=3C273;
-     station=Nn:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec: 1723.073 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
      station=Gl:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
      station=Mg:    0 sec:  240 sec:  246.153 GB:   :       : 1;
 endscan;
 scan 105-0258;
      start=2023y105d02h58m00s; mode=band7; source=3C279;
-     station=Nn:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec: 1969.226 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
      station=Gl:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
      station=Mg:    0 sec:  240 sec:  492.306 GB:   :       : 1;
@@ -1698,7 +1698,7 @@ scan 105-0306;
 * intent = "ALMA:PROJECT_FIRST_SCAN:sgra7"
 * intent = "ALMA:SCHEDBLOCK_STARTER:sgra7"
      start=2023y105d03h06m00s; mode=band7; source=3C279;
-     station=Nn:    0 sec:  180 sec: 2215.379 GB:   :       : 1;
+     * station=Nn:  0 sec:  180 sec: 2215.379 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  180 sec: 2215.379 GB:   :       : 1;
      station=Gl:    0 sec:  180 sec: 2215.379 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec:  738.460 GB:   :       : 1;
@@ -1708,7 +1708,7 @@ scan 105-0312;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d03h12m00s; mode=band7; source=3C273;
-     station=Nn:    0 sec:  180 sec: 2399.994 GB:   :       : 1;
+     * station=Nn:  0 sec:  180 sec: 2399.994 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  180 sec: 2399.994 GB:   :       : 1;
      station=Gl:    0 sec:  180 sec: 2399.994 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec:  923.075 GB:   :       : 1;
@@ -1719,7 +1719,7 @@ scan 105-0318;
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d03h18m00s; mode=band7; source=3C279;
 *              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
-     station=Nn:    0 sec:  180 sec: 2584.609 GB:   :       : 1;
+     * station=Nn:  0 sec:  180 sec: 2584.609 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  180 sec: 2584.609 GB:   :       : 1;
      station=Gl:    0 sec:  180 sec: 2584.609 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 1107.689 GB:   :       : 1;
@@ -1729,7 +1729,7 @@ scan 105-0325;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d03h25m00s; mode=band7; source=J1337-1257;
-     station=Nn:    0 sec:  180 sec: 2769.224 GB:   :       : 1;
+     * station=Nn:  0 sec:  180 sec: 2769.224 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  180 sec: 2769.224 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec:  553.845 GB:   :       : 1;
 endscan;
@@ -1737,7 +1737,7 @@ scan 105-0333;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d03h33m00s; mode=band7; source=3C279;
-     station=Nn:    0 sec:  180 sec: 2953.839 GB:   :       : 1;
+     * station=Nn:  0 sec:  180 sec: 2953.839 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  180 sec: 2953.839 GB:   :       : 1;
      station=Gl:    0 sec:  180 sec: 2769.224 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 1292.304 GB:   :       : 1;
@@ -1747,7 +1747,7 @@ scan 105-0339;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d03h39m00s; mode=band7; source=3C273;
-     station=Nn:    0 sec:  180 sec: 3138.454 GB:   :       : 1;
+     * station=Nn:  0 sec:  180 sec: 3138.454 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  180 sec: 3138.454 GB:   :       : 1;
      station=Gl:    0 sec:  180 sec: 2953.839 GB:   :       : 1;
      station=Mg:    0 sec:  180 sec: 1476.919 GB:   :       : 1;
@@ -1774,7 +1774,7 @@ scan 105-0401;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d04h01m00s; mode=band7; source=SGRA;
-     station=Nn:    0 sec:  600 sec: 3323.069 GB:   :       : 1;
+     * station=Nn:  0 sec:  600 sec: 3323.069 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  600 sec: 3692.299 GB:   :       : 1;
      station=Aa:    0 sec:  600 sec: 1476.919 GB:   :       : 1;
 endscan;
@@ -1791,7 +1791,7 @@ scan 105-0424;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d04h24m00s; mode=band7; source=SGRA;
-     station=Nn:    0 sec:  600 sec: 3938.452 GB:   :       : 1;
+     * station=Nn:  0 sec:  600 sec: 3938.452 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  600 sec: 4492.296 GB:   :       : 1;
      station=Aa:    0 sec:  600 sec: 2276.917 GB:   :       : 1;
 endscan;
@@ -1813,7 +1813,7 @@ scan 105-0445;
 * intent = "ALMA:AUTOPHASE_DETERMINE"
 * intent = "ALMA:SCHEDBLOCK_STARTER:sgra7"
      start=2023y105d04h45m00s; mode=band7; source=SGRA;
-     station=Nn:    0 sec:  840 sec: 4553.835 GB:   :       : 1;
+     * station=Nn:  0 sec:  840 sec: 4553.835 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  840 sec: 5107.680 GB:   :       : 1;
      station=Aa:    0 sec:  840 sec: 2892.301 GB:   :       : 1;
 endscan;
@@ -1840,7 +1840,7 @@ scan 105-0518;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d05h18m00s; mode=band7; source=SGRA;
-     station=Nn:    0 sec:  780 sec: 5415.371 GB:   :       : 1;
+     * station=Nn:  0 sec:  780 sec: 5415.371 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  780 sec: 6338.445 GB:   :       : 1;
      station=Aa:    0 sec:  780 sec: 4123.067 GB:   :       : 1;
 endscan;
@@ -1848,7 +1848,7 @@ scan 105-0534;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d05h34m00s; mode=band7; source=SGRA;
-     station=Nn:    0 sec:  900 sec: 6215.369 GB:   :       : 1;
+     * station=Nn:  0 sec:  900 sec: 6215.369 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  900 sec: 7138.443 GB:   :       : 1;
      station=Aa:    0 sec:  900 sec: 4923.065 GB:   :       : 1;
 endscan;
@@ -1856,7 +1856,7 @@ scan 105-0551;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d05h51m00s; mode=band7; source=J1924-2914;
-     station=Nn:    0 sec:  180 sec: 7138.444 GB:   :       : 1;
+     * station=Nn:  0 sec:  180 sec: 7138.444 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  180 sec: 8061.518 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 5846.140 GB:   :       : 1;
 endscan;
@@ -1892,7 +1892,7 @@ scan 105-0605;
 * intent = "ALMA:AUTOPHASE_DETERMINE"
 * intent = "ALMA:SCHEDBLOCK_STARTER:sgra7"
      start=2023y105d06h05m00s; mode=band7; source=SGRA;
-     station=Nn:    0 sec:  840 sec: 7323.059 GB:   :       : 1;
+     * station=Nn:  0 sec:  840 sec: 7323.059 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  840 sec: 8246.133 GB:   :       : 1;
      station=Aa:    0 sec:  840 sec: 6030.754 GB:   :       : 1;
 endscan;
@@ -1920,7 +1920,7 @@ scan 105-0637;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d06h37m00s; mode=band7; source=J1924-2914;
-     station=Nn:    0 sec:  180 sec: 8184.595 GB:   :       : 1;
+     * station=Nn:  0 sec:  180 sec: 8184.595 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  180 sec: 9476.899 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 7261.520 GB:   :       : 1;
 endscan;
@@ -1971,7 +1971,7 @@ scan 105-0712;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d07h12m00s; mode=band7; source=J1924-2914;
-     station=Nn:    0 sec:  180 sec: 8369.210 GB:   :       : 1;
+     * station=Nn:  0 sec:  180 sec: 8369.210 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  180 sec:10399.976 GB:   :       : 1;
      station=Aa:    0 sec:  180 sec: 8184.594 GB:   :       : 1;
 endscan;
@@ -1980,7 +1980,7 @@ scan 105-0726;
 * intent = "ALMA:AUTOPHASE_DETERMINE"
 * intent = "ALMA:SCHEDBLOCK_STARTER:sgra7"
      start=2023y105d07h26m00s; mode=band7; source=J1924-2914;
-     station=Nn:    0 sec:  240 sec: 8553.825 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec: 8553.825 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec:10584.591 GB:   :       : 1;
      station=Aa:    0 sec:  240 sec: 8369.209 GB:   :       : 1;
 endscan;
@@ -2009,7 +2009,7 @@ scan 105-0753;
 * intent = "apsmode = fast-abs"
 * intent = "ALMA:AUTOPHASE_DETERMINE"
      start=2023y105d07h53m00s; mode=band7; source=J1924-2914;
-     station=Nn:    0 sec:  240 sec: 8799.979 GB:   :       : 1;
+     * station=Nn:  0 sec:  240 sec: 8799.979 GB:   :       : 1; * did not observe
      station=Ax:    0 sec:  240 sec:11323.051 GB:   :       : 1;
      station=Aa:    0 sec:  240 sec: 9107.669 GB:   :       : 1;
 endscan;
@@ -2035,20 +2035,20 @@ scan 105-0813;
 endscan;
 scan 105-0812;
      start=2023y105d08h12m00s; mode=band7; source=3C345;
-     station=Nn:    0 sec:  300 sec: 9046.132 GB:   :       : 1;
+     * station=Nn:  0 sec:  300 sec: 9046.132 GB:   :       : 1; * did not observe
      station=Gl:    0 sec:  300 sec: 5538.448 GB:   :       : 1;
 endscan;
 scan 105-0822;
      start=2023y105d08h22m00s; mode=band7; source=3C345;
 *              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
-     station=Nn:    0 sec:  300 sec: 9353.823 GB:   :       : 1;
+     * station=Nn:  0 sec:  300 sec: 9353.823 GB:   :       : 1; * did not observe
      station=Gl:    0 sec:  300 sec: 5846.140 GB:   :       : 1;
      station=Mm:    0 sec:  300 sec: 3507.684 GB:   :       : 1;
      station=Sw:    0 sec:  300 sec: 3261.531 GB:   :       : 1;
 endscan;
 scan 105-0837;
      start=2023y105d08h37m00s; mode=band7; source=J0958+6533;
-     station=Nn:    0 sec:  300 sec: 9661.515 GB:   :       : 1;
+     * station=Nn:  0 sec:  300 sec: 9661.515 GB:   :       : 1; * did not observe
      station=Gl:    0 sec:  300 sec: 6153.831 GB:   :       : 1;
      station=Mm:    0 sec:  300 sec: 3815.375 GB:   :       : 1;
      station=Sw:    0 sec:  300 sec: 3569.223 GB:   :       : 1;
