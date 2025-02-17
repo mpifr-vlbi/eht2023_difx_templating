@@ -1801,9 +1801,9 @@ def CYGNUS-A;
 *    alternate source name: 1957+405
 *    alternate source name: 1957+404
 *    rfc_2012b Petrov, 2012, unpublished 3 observations
-     ra = 19h59m28.3688210s; dec =  40d44'02.047320"; ref_coord_frame = J2000;
-*    ra = 19h57m44.4530939s; dec =  40d35'46.312728"; ref_coord_frame = B1950;
-*    ra = 20h00m16.0865576s; dec =  40d47'28.327140"; ref_coord_frame = Date;
+*      ra = 19h59m28.3688210s; dec =  40d44'02.047320"; ref_coord_frame = J2000;
+*    ICRF3 2021AJ....162..121H - pending an Ok from Kino-san (PI) and Krichbaum
+     ra = 19h59m28.3560s; dec = 40d44'02.096"; ref_coord_frame = J2000;
 enddef;
 *
 def J2015+3710;
