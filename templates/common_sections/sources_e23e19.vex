@@ -169,10 +169,15 @@ def CYGNUS-A;
 *    alternate source name: J1959+40
 *    alternate source name: 1957+405
 *    alternate source name: 1957+404
-*    rfc_2012b Petrov, 2012, unpublished 3 observations
-*      ra = 19h59m28.3688210s; dec =  40d44'02.047320"; ref_coord_frame = J2000;
-*    ICRF3 2021AJ....162..121H - pending an Ok from Kino-san (PI) and Krichbaum
-     ra = 19h59m28.3560s; dec = 40d44'02.096"; ref_coord_frame = J2000;
+*
+*    rfc_2012b Petrov, 2012, unpublished 3 observations:
+*    ra = 19h59m28.3688210s; dec =  40d44'02.047320"; ref_coord_frame = J2000;
+*
+*    ICRF3 2021AJ....162..121H - pending an okay from Kino-san (PI) and Krichbaum:
+*    ra = 19h59m28.3560s; dec = 40d44'02.096"; ref_coord_frame = J2000;
+*
+*    Final decision SCHED catalog ICRF3 based coordinates:
+     ra = 19h59m28.35656837s; dec = 40d44'02.0972325"; ref_coord_frame = J2000;
 enddef;
 *
 def J2015+3710;
