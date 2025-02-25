@@ -46,7 +46,7 @@ ANTENNA Kt {
 
 ANTENNA Lm {
   datastreams = Lmt_ds12,Lmt_ds34
-  deltaClock = 0 # LMT extra offsets
+  deltaClock = -1.066 # LMT extra offsets
   # deltaClockAccel = 0 # LMT clock acceleration
 }
 
@@ -64,7 +64,7 @@ ANTENNA Nn {
 
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
-  deltaClock = 0 # SMA extra offsets
+  deltaClock = -37.145 # SMA extra offsets
 }
 
 ANTENNA Sz { # SPT
