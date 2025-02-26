@@ -71,6 +71,8 @@ ALMA had different tunings from EHT 2021: ~21 MHz offset, yields finally an exac
 with 0 Hz LO offset. The info was found in a semi hardware level trace in e23d15-script.log.gz
 in a tarball nested within tarballs of the ALMA VLBI Metadata tarball.
 
+SMA recordings in 260G e23d15 b4 are corrupt - all data are 0x00.
+
 # TODO
 
 Derive better SPT coordinates, if residuals with a priori SPT coordinates turn out to be too large? Looks ok so far?
