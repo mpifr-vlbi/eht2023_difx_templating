@@ -6,6 +6,8 @@
 # Notes:
 # - Aa stopped after scan 105-1342
 # - Ax loss of IF power except in scans 105-1457 105-1509 and perhaps 105-1445
+# - SMA did not observe band 4; "converted" VDIF recordings exist but are all-0x00
+# - SMT has fringes in band 4 but not band 1
 
 #==================================================================
 
