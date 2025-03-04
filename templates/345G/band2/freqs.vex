@@ -8,6 +8,11 @@ enddef;
 *
 def FREQ_DBBC3_AX;
      sample_rate =  4096.000 Ms/sec;
+     * << FrequencyStructure2023Apr-345GHz-14apr.xlsx v5 >>
+     *    b1 334552.0 MHz net USB
+     *    b2 338648.0 MHz net LSB
+     *    b3 346552.0 MHz net USB
+     *    b4 350648.0 MHz net LSB
      chan_def = &B:338648.000 MHz : L : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
      chan_def = &B:338648.000 MHz : L : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
