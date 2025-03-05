@@ -6,6 +6,8 @@
 # Notes:
 # - Aa stopped after scan 105-1342
 # - Ax loss of IF power except in scans 105-1457 105-1509 and perhaps 105-1445
+# - Mg dual-sideband receiver ("b3" Mk6 = b2+b3, "b4" Mk6 = b1+b4) - fringes in 105-1223 Aa-Mg
+# - Gl obs at very low elevation - fringes in 105-0837 Gl-Mm
 #==================================================================
 
 vex = e23d15-0-b2.vex.obs

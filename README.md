@@ -23,7 +23,10 @@ According to Slack #smt_backend on 12 April 2023, b1 b2 Mark6 recorders had no I
 A. Lowitz confirmed that the 345G "USB" IF was routed to the b3 b4 Mark6 recorders.
 The setup was identical to EHT 2021 and the standard EHT tuning was used.
 The b3 modules ought to contain a folded b2 & b3, and b4 modules a folded b1 & b4.
-Yet so far there are no SMT 345G fringes in b1 nor b4 in either net sideband interpretation.
+There are SMT b1 and b4 fringes (esp. 105-1223 Aa-Mg SNR~20) when using the b4 Mark6 data.
+There ough to be b2 b3 fringes in the same scan when using b3 Mark6 data.
+
+The GLT 345G observations were at very low elevation, with weak fringes in 105-0837 Gl-Mm SNR~10.
 
 # Correlation Environment
 
@@ -71,14 +74,10 @@ ALMA had different tunings from EHT 2021: ~21 MHz offset, yields finally an exac
 with 0 Hz LO offset. The info was found in a semi hardware level trace in e23d15-script.log.gz
 in a tarball nested within tarballs of the ALMA VLBI Metadata tarball.
 
-SMA recordings in 260G e23d15 b4 are corrupt - all data are 0x00.
+SMA recordings in 260G e23d15 b4 are present but corrupt - all data are 0x00. Didn't observe that band.
 
 # TODO
 
 Derive better SPT coordinates, if residuals with a priori SPT coordinates turn out to be too large? Looks ok so far?
-
-Issues with the 345G track e23d15:
- - only ALMA-SMA-JCMT fringes so far, not SMT GLT (neither understood), nor APEX in its 2 good scans
- - SMT vlbimon data 23-04-15 02:34:07 342.600 GHz suggests the nominal LO was used, tuning should be okay...
 
 Cygnus A coordinates (track e23e19) are slightly off - need better ones
