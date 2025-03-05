@@ -1,0 +1,174 @@
+#==================================================================
+# DiFX version 2.8.1 default, or
+# DiFX version 2.8.3/2.9.x when using LMT 'deltaClockAccel'
+#
+# Track e23d15 band 4
+# Notes:
+# - Aa stopped after scan 105-1342
+# - Ax loss of IF power except in scans 105-1457 105-1509 and perhaps 105-1445
+# - Sw did not observe band 4; "converted" VDIF recordings exist but are all-0x00
+# - Mg dual-sideband receiver ("b3" Mk6 = b2+b3, "b4" Mk6 = b1+b4) - fringes in 105-1223 Aa-Mg
+# - Gl obs at very low elevation - fringes in 105-0837 Gl-Mm
+#==================================================================
+
+vex = e23d15-1-b4.vex.obs
+
+dataBufferFactor = 24
+visBufferLength = 40
+startSeries = 1000
+exhaustiveAutocorrs = True
+minSubarray = 2
+singleScan = True
+singleSetup = True
+# maxReadSize = 67108864
+
+
+#==================================================================
+# ANTENNA DATA
+#==================================================================
+
+ANTENNA Aa {
+  # EHT 2023: ALMA LO offset 345G likely zero
+  datastreams = Aa_ds12,Aa_ds34
+}
+
+ANTENNA Ax {
+  datastreams = Ax_ds12,Ax_ds34
+}
+
+ANTENNA Gl {
+  datastreams = Glt_ds12,Glt_ds34
+}
+
+ANTENNA Kt {
+  datastreams = Kt_ds12,Kt_ds34
+  deltaClock = 0 # KT extra offsets
+  # deltaClockAccel = 0 # KT clock acceleration
+}
+
+ANTENNA Lm {
+  datastreams = Lmt_ds12,Lmt_ds34
+  deltaClock = 0 # LMT extra offsets
+  # deltaClockAccel = 0 # LMT clock acceleration
+}
+
+ANTENNA Mg { # SMT
+  datastreams = Smt_ds12,Smt_ds34
+}
+
+ANTENNA Mm { # JCMT
+  datastreams = Jcmt_ds12,Jcmt_ds34
+}
+
+ANTENNA Nn {
+  datastreams = Nn_ds1,Nn_ds2,Nn_ds3,Nn_ds4
+}
+
+ANTENNA Sw { # SMA APHIDS
+  datastreams = SmaAphids_ds12,SmaAphids_ds34
+  deltaClock = 0 # SMA extra offsets
+}
+
+ANTENNA Sz { # SPT
+  datastreams = Spt_ds12,Spt_ds34
+}
+DATASTREAM Aa_ds12 { filelist = ALMA_b4.12.filelist }
+DATASTREAM Aa_ds34 { filelist = ALMA_b4.34.filelist }
+DATASTREAM Ax_ds12 { filelist = APEX_b4.12.filelist }
+DATASTREAM Ax_ds34 { filelist = APEX_b4.34.filelist }
+DATASTREAM Glt_ds12 { filelist = GLT_b4.12.filelist }
+DATASTREAM Glt_ds34 { filelist = GLT_b4.34.filelist }
+DATASTREAM Jcmt_ds12 { filelist = JCMT_b4.12.filelist }
+DATASTREAM Jcmt_ds34 { filelist = JCMT_b4.34.filelist }
+DATASTREAM Kt_ds12 { filelist = KT_b4.12.filelist }
+DATASTREAM Kt_ds34 { filelist = KT_b4.34.filelist }
+DATASTREAM Lmt_ds12 { filelist = LMT_b4.12.filelist }
+DATASTREAM Lmt_ds34 { filelist = LMT_b4.34.filelist }
+DATASTREAM Spt_ds12 { filelist = SPT_b4.12.filelist }
+DATASTREAM Spt_ds34 { filelist = SPT_b4.34.filelist }
+DATASTREAM SmaAphids_ds12 { filelist = SMA_b4.12.filelist }
+DATASTREAM SmaAphids_ds34 { filelist = SMA_b4.34.filelist }
+DATASTREAM Smt_ds12 { filelist = SMT_b4.12.filelist }
+DATASTREAM Smt_ds34 { filelist = SMT_b4.34.filelist }
+DATASTREAM Nn_ds1 {
+  filelist = NOEMA_b4.1.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+  nBand = 16
+}
+DATASTREAM Nn_ds2 {
+  filelist = NOEMA_b4.2.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+  nBand = 16
+}
+DATASTREAM Nn_ds3 {
+  filelist = NOEMA_b4.3.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+  nBand = 16
+}
+DATASTREAM Nn_ds4 {
+  filelist = NOEMA_b4.4.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+  nBand = 16
+}
+
+
+#==================================================================
+# CORRELATION CONFIG
+#==================================================================
+
+OUTPUTBAND outputbands {
+  # ALMA used a +21 MHz tuning offset in b4, different from EHT 2021.
+  # The outputbands are adjusted accordingly.
+  # $ehtc/alma-vex-defs.py -f349579.00000 -w58.0 -sU -rzoom
+  addOutputBand = freq@348641.796875/bw@58.0
+  addOutputBand = freq@348700.390625/bw@58.0
+  addOutputBand = freq@348758.984375/bw@58.0
+  addOutputBand = freq@348817.578125/bw@58.0
+  addOutputBand = freq@348876.171875/bw@58.0
+  addOutputBand = freq@348934.765625/bw@58.0
+  addOutputBand = freq@348993.359375/bw@58.0
+  addOutputBand = freq@349051.953125/bw@58.0
+  addOutputBand = freq@349110.546875/bw@58.0
+  addOutputBand = freq@349169.140625/bw@58.0
+  addOutputBand = freq@349227.734375/bw@58.0
+  addOutputBand = freq@349286.328125/bw@58.0
+  addOutputBand = freq@349344.921875/bw@58.0
+  addOutputBand = freq@349403.515625/bw@58.0
+  addOutputBand = freq@349462.109375/bw@58.0
+  addOutputBand = freq@349520.703125/bw@58.0
+  addOutputBand = freq@349579.296875/bw@58.0
+  addOutputBand = freq@349637.890625/bw@58.0
+  addOutputBand = freq@349696.484375/bw@58.0
+  addOutputBand = freq@349755.078125/bw@58.0
+  addOutputBand = freq@349813.671875/bw@58.0
+  addOutputBand = freq@349872.265625/bw@58.0
+  addOutputBand = freq@349930.859375/bw@58.0
+  addOutputBand = freq@349989.453125/bw@58.0
+  addOutputBand = freq@350048.046875/bw@58.0
+  addOutputBand = freq@350106.640625/bw@58.0
+  addOutputBand = freq@350165.234375/bw@58.0
+  addOutputBand = freq@350223.828125/bw@58.0
+  addOutputBand = freq@350282.421875/bw@58.0
+  addOutputBand = freq@350341.015625/bw@58.0
+  addOutputBand = freq@350399.609375/bw@58.0
+  addOutputBand = freq@350458.203125/bw@58.0
+}
+
+SETUP productionSetup {
+  numBufferedFFTs = 20
+  tInt = 0.400
+  # subintNS =  3200000  # terribly slow at MPIfR
+  subintNS =  40000000   # by factor 2 zippier correlation at MPIfR
+  FFTSpecRes = 0.015625
+  xmacLength = 0
+  strideLength = 0
+  guardNS = 2000
+
+  outputSpecRes = 0.5         # production
+  # outputSpecRes = 0.0625    # fringe search, ~1000 ch over 58 MHz
+  # outputSpecRes = 0.0156250 # fringe search, ~4000 ch over 58 MHz
+}
+
+RULE defaultRule {
+  setup = productionSetup
+}
