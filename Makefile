@@ -240,8 +240,10 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = -1.066 # LMT extra offsets/g" out/e23c16-$(REL)-b4.v2d || true
 	# ...
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.145 # SMA extra offsets/g" out/e23c16-$(REL)-b4.v2d || true
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.337 # SMA extra offsets/g" out/e23c18-$(REL)-b4.v2d || true
 	# sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = 0.0 # SMA extra offsets/g" out/e23d15-$(REL)-b4.v2d
 	# ...
+	sed -i "s/deltaClock = 0 # KT extra offsets/deltaClock = -0.0177 # KT extra offsets/g" out/e23c18-$(REL)-b4.v2d || true
 
 %_b4_345:
 	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/$*.vext out/$*-$(REL)-b4.vex.obs
