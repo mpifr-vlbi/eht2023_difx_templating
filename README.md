@@ -76,6 +76,8 @@ in a tarball nested within tarballs of the ALMA VLBI Metadata tarball.
 
 SMA recordings in 260G e23d15 b4 are present but corrupt - all data are 0x00. Didn't observe that band.
 
+SMA recordings in 230G e23g17 after APHIDS processing "do not pass the verification" (YWei 2024-06-12)
+
 # TODO
 
 Derive better SPT coordinates, if residuals with a priori SPT coordinates turn out to be too large? Looks ok so far?
