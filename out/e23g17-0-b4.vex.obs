@@ -33,11 +33,11 @@ def Aa;
 enddef;
 *
 def Ax;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.987e-12;
+  clock_early = 2023y105d00h00m00s : 0.2244 usec : 2023y105d00h00m00s : +0.987e-12;
 enddef;
 *
 def Gl;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.087e-12;
+  clock_early = 2023y105d00h00m00s : -0.7239 usec : 2023y105d00h00m00s : -0.087e-12;
 enddef;
 *
 def Kt;
@@ -50,7 +50,7 @@ def Kt;
   * e23a22 : deltaClockAccel = +1.468801e-10 s/s2 for rate = -75.689971e-12, else TBD
   *
   * Rates:
-  clock_early = 2023y105d00h00m00s : 0.9857 usec : 2023y105d00h00m00s : +1.6251e-12;* c16 g17
+  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +1.6251e-12; * c16 g17
   *
   * Rates for tracks with poor H-maser stability:
   * clock_early = 2023y108d02h20m00s: 0.0 usec: 2023y108d02h20m00s : -11.7019999e-12; * c18
@@ -681,7 +681,7 @@ def Lm;
 enddef;
 *
 def Mm; * JCMT & SMA shared H-maser
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.158e-12;
+  clock_early = 2023y105d00h00m00s : 0.3847 usec : 2023y105d00h00m00s : -0.158e-12;
 enddef;
 *
 def Mg; * SMT
@@ -689,7 +689,7 @@ def Mg; * SMT
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.0028e-12;
+  clock_early = 2023y105d00h00m00s : 12.7073 usec : 2023y105d00h00m00s : +0.0028e-12;
 enddef;
 *
 def Sz;

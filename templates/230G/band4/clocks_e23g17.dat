@@ -1,3 +1,7 @@
 CLOCK
 # Station ID    Delay (usec)    Rate (sec/sec)
-Kt              0.9857
+Ax              0.2244
+Gl              -0.7239
+Mm              0.3847
+Nn              12.7073
+# Kt : covered by per-scan clock breaks in clocks_KT_e23g17.vex and (for b2/b3/b4) a v2d deltaClock
