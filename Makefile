@@ -239,6 +239,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	# sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.0 # LMT extra offsets/g" out/e23d15-$(REL)-b4.v2d
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = -1.066 # LMT extra offsets/g" out/e23c16-$(REL)-b4.v2d || true
 	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = -1.069 # LMT extra offsets/g" out/e23g17-$(REL)-b4.v2d || true
+	sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = -1.062 # LMT extra offsets/g" out/e23e19-$(REL)-b4.v2d || true
 	# e23c18 no lmt
 	# ...
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -37.145 # SMA extra offsets/g" out/e23c16-$(REL)-b4.v2d || true
@@ -248,6 +249,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	# ...
 	sed -i "s/deltaClock = 0 # KT extra offsets/deltaClock = -0.0180 # KT extra offsets/g" out/e23g17-$(REL)-b4.v2d || true
 	sed -i "s/deltaClock = 0 # KT extra offsets/deltaClock = -0.0177 # KT extra offsets/g" out/e23c18-$(REL)-b4.v2d || true
+	sed -i "s/deltaClock = 0 # KT extra offsets/deltaClock = -0.0160 # KT extra offsets/g" out/e23e19-$(REL)-b4.v2d || true
 
 %_b4_345:
 	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/$*.vext out/$*-$(REL)-b4.vex.obs

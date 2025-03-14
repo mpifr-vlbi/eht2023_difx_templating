@@ -33,11 +33,11 @@ def Aa;
 enddef;
 *
 def Ax;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.987e-12;
+  clock_early = 2023y105d00h00m00s : +0.0975 usec : 2023y105d00h00m00s : +0.987e-12;
 enddef;
 *
 def Gl;
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.087e-12;
+  clock_early = 2023y105d00h00m00s : -0.6982 usec : 2023y105d00h00m00s : -0.087e-12;
 enddef;
 *
 def Kt;
@@ -681,15 +681,15 @@ def Lm;
 enddef;
 *
 def Mm; * JCMT & SMA shared H-maser
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -0.158e-12;
+  clock_early = 2023y105d00h00m00s : 0.4010 usec : 2023y105d00h00m00s : -0.158e-12;
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : -1.192e-12;
+  clock_early = 2023y105d00h00m00s : -0.2755 usec : 2023y105d00h00m00s : -1.192e-12;
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2023y105d00h00m00s: 0.0 usec: 2023y105d00h00m00s : +0.0028e-12;
+  clock_early = 2023y105d00h00m00s : 12.7525 usec : 2023y105d00h00m00s : +0.0028e-12;
 enddef;
 *
 def Sz;

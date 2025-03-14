@@ -5,3 +5,5 @@ Nn              12.7444
 Mm              0.444
 Mg              -0.2897
 # Kt : covered by per-scan clock breaks in clocks_KT_e23e19.vex
+# Lm : covered by per-scan clock breaks in clocks_LMT_e23e19.vex
+
