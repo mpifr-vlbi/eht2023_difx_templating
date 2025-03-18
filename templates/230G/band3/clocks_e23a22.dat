@@ -1,2 +1,4 @@
 CLOCK
 # Station ID    Delay (usec)    Rate (sec/sec)
+# Kt : covered by per-scan clock breaks in clocks_KT_e23a22.vex and (for b2/b3/b4) a v2d deltaClock
+
