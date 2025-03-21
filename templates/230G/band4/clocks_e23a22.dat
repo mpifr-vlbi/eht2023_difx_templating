@@ -4,4 +4,6 @@ Ax              -0.0826
 Mm              0.4456
 Mg              -0.2358
 Nn              12.7890
+Gl              -0.6523
+# Gl : taking b1 clock offset despite no b4 fringes found
 # Kt : covered by per-scan clock breaks in clocks_KT_e23a22.vex and (for b2/b3/b4) a v2d deltaClock

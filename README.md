@@ -74,12 +74,16 @@ ALMA had different tunings from EHT 2021: ~21 MHz offset, yields finally an exac
 with 0 Hz LO offset. The info was found in a semi hardware level trace in e23d15-script.log.gz
 in a tarball nested within tarballs of the ALMA VLBI Metadata tarball.
 
-SMA recordings in 345G e23d15 b4 are present but corrupt - all data are 0x00. Didn't observe that band?
+SMA recordings in 345G e23d15 b4 are present but corrupt - all data are 0x00. Apparently expected,
+and b3 should be ok, but Hays reports no b3 fringe. The b1 b2 data however produce fringes.
 
 SMA recordings in 230G e23g17 after APHIDS processing "do not pass the verification" (YWei 2024-06-12)
+
+GLT recordings in 230G e23a22 b4 produce no fringes. Terse AOC note "GLT may be recording a reduced
+bandwidth due to staff/setup constraints" for this track.
 
 # TODO
 
 Derive better SPT coordinates, if residuals with a priori SPT coordinates turn out to be too large? Looks ok so far?
 
-Cygnus A coordinates (track e23e19) are slightly off - need better ones
+Cygnus A coordinates (track e23e19) are slightly off - need better ones?
