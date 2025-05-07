@@ -74,8 +74,10 @@ ALMA had different tunings from EHT 2021: ~21 MHz offset, yields finally an exac
 with 0 Hz LO offset. The info was found in a semi hardware level trace in e23d15-script.log.gz
 in a tarball nested within tarballs of the ALMA VLBI Metadata tarball.
 
-SMA recordings in 345G e23d15 b4 are present but corrupt - all data are 0x00. Apparently expected,
-and b3 should be ok, but Hays reports no b3 fringe. The b1 b2 data however produce fringes.
+SMA 345G e23d15 IFs covered EHT bands b1 b2 b4, without b3. The 345G b4 SWARM data land on the
+recorder of 230G b3. Alas, APHIDS postprocessing did not account for this. The b4 post-APHIDS
+module set sent to Bonn is missing 345G b4. Data were e-transferred from Haystack to Bonn for
+re-correlation of e23d15.
 
 SMA recordings in 230G e23g17 after APHIDS processing "do not pass the verification" (YWei 2024-06-12)
 
