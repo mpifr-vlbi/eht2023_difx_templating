@@ -258,8 +258,7 @@ diff: b1_diff b2_diff b3_diff b4_diff
 	# sed -i "s/deltaClock = 0 # LMT extra offsets/deltaClock = 0.0 # LMT extra offsets/g" out/e23d15-$(REL)-b4.v2d
 	# e23d15 no LMT
 	# ...
-	# sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = 0.0 # SMA extra offsets/g" out/e23d15-$(REL)-b4.v2d
-	# e23d15 no SMA in b4 - only in b1 (345G)
+	sed -i "s/deltaClock = -37.134 # SMA extra offsets/deltaClock = 0.0 # SMA extra offsets/g" out/e23d15-$(REL)-b4.v2d
 	# ...
 
 

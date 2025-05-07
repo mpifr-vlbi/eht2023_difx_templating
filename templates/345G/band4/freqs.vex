@@ -25,6 +25,8 @@ enddef;
 *
 def FREQ_SMA;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
-     chan_def = &B:348600.000 MHz : U : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
+     * NB: b4 ended up on post-APHIDS b3 modules, and have the net sideband of 230G b3
+     chan_def = &B:350648.000 MHz : L : 2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:350648.000 MHz : L : 2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
+*
