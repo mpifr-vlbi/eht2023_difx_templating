@@ -114,14 +114,13 @@
   clock_early = 2023y112d06h15m50s : -20.268316 usec : 2023y112d06h15m50s : -96.961922e-12;
   * clock_early = 2023y112d06h28m00s : NaN usec : 2023y112d06h28m00s : NaN;
   * clock_early = 2023y112d06h30m00s : NaN usec : 2023y112d06h30m00s : NaN;
-  * clock_early = 2023y112d06h38m00s : NaN usec : 2023y112d06h38m00s : NaN;
+  clock_early = 2023y112d06h38m00s : -20.383316 usec : 2023y112d06h38m00s : -96.711922e-12;
   * clock_early = 2023y112d06h48m00s : NaN usec : 2023y112d06h48m00s : NaN;
-  * clock_early = 2023y112d06h50m00s : NaN usec : 2023y112d06h50m00s : NaN;
-  * clock_early = 2023y112d06h58m00s : NaN usec : 2023y112d06h58m00s : NaN;
+  clock_early = 2023y112d06h50m00s : -20.454316 usec : 2023y112d06h50m00s : -96.316922e-12;
+  clock_early = 2023y112d06h58m00s : -20.508316 usec : 2023y112d06h58m00s : -95.951922e-12;
   * clock_early = 2023y112d07h13m00s : NaN usec : 2023y112d07h13m00s : NaN;
-  * clock_early = 2023y112d07h15m00s : NaN usec : 2023y112d07h15m00s : NaN;
-  * clock_early = 2023y112d07h23m00s : NaN usec : 2023y112d07h23m00s : NaN;
+  clock_early = 2023y112d07h15m00s : -20.596316 usec : 2023y112d07h15m00s : -95.261922e-12;
+  clock_early = 2023y112d07h23m00s : -20.645316 usec : 2023y112d07h23m00s : -94.921922e-12;
   * clock_early = 2023y112d07h33m00s : NaN usec : 2023y112d07h33m00s : NaN;
-  * clock_early = 2023y112d07h35m00s : NaN usec : 2023y112d07h35m00s : NaN;
-  * clock_early = 2023y112d07h43m00s : NaN usec : 2023y112d07h43m00s : NaN;
-
+  clock_early = 2023y112d07h35m00s : -20.712316 usec : 2023y112d07h35m00s : -94.361922e-12;
+  clock_early = 2023y112d07h43m00s : -20.756316 usec : 2023y112d07h43m00s : -94.031922e-12;
