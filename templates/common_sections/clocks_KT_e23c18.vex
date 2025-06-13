@@ -10,7 +10,6 @@
  *clock_early = 2023y108d03h11m00s : 1.356690 usec : 2023y108d03h11m00s : -19.483773e-12;
  *clock_early = 2023y108d03h17m00s : 1.331303 usec : 2023y108d03h17m00s : -19.146752e-12;
  *clock_early = 2023y108d03h25m00s : 1.303985 usec : 2023y108d03h25m00s : -18.959162e-12;
-
   clock_early = 2023y108d02h21m00s : 1.354376 usec : 2023y108d02h21m00s : -12.6e-12;
   clock_early = 2023y108d02h29m00s : 1.347400 usec : 2023y108d02h29m00s : -13.4e-12;
   clock_early = 2023y108d02h37m00s : 1.341400 usec : 2023y108d02h37m00s : -14.2e-12;
@@ -86,7 +85,6 @@
   clock_early = 2023y108d14h59m00s : -0.738 usec : 2023y108d14h59m00s : -74.2967e-12;
   clock_early = 2023y108d15h07m00s : -0.773 usec : 2023y108d15h07m00s : -74.5967e-12;
   clock_early = 2023y108d15h17m00s : -0.816 usec : 2023y108d15h17m00s : -74.9967e-12;
-
   * clock_early = 2023y108d13h58m00s : NaN usec : 2023y108d13h58m00s : NaN;
   * clock_early = 2023y108d14h11m00s : NaN usec : 2023y108d14h11m00s : NaN;
   * clock_early = 2023y108d14h19m00s : NaN usec : 2023y108d14h19m00s : NaN;
