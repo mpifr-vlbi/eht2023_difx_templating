@@ -61,17 +61,26 @@ def Kt;
   * Use these with a .v2d deltaClock=... for band specific offset
   *
   * KT clock breaks for e23c18 derived by alist2clockbreaks.py using fits into full-length scans
-  clock_early = 2023y108d02h20m00s : 1.682790 usec : 2023y108d02h20m00s : -26.841883e-12;
-  clock_early = 2023y108d02h21m00s : 1.675376 usec : 2023y108d02h21m00s : -26.654417e-12;
-  clock_early = 2023y108d02h29m00s : 1.616583 usec : 2023y108d02h29m00s : -25.180055e-12;
-  clock_early = 2023y108d02h37m00s : 1.559400 usec : 2023y108d02h37m00s : -23.777292e-12;
-  clock_early = 2023y108d02h45m00s : 1.504788 usec : 2023y108d02h45m00s : -22.483535e-12;
-  clock_early = 2023y108d02h53m00s : 1.453710 usec : 2023y108d02h53m00s : -21.336193e-12;
-  clock_early = 2023y108d03h01m00s : 1.407128 usec : 2023y108d03h01m00s : -20.372676e-12;
-  clock_early = 2023y108d03h09m00s : 1.366005 usec : 2023y108d03h09m00s : -19.630393e-12;
-  clock_early = 2023y108d03h11m00s : 1.356690 usec : 2023y108d03h11m00s : -19.483773e-12;
-  clock_early = 2023y108d03h17m00s : 1.331303 usec : 2023y108d03h17m00s : -19.146752e-12;
-  clock_early = 2023y108d03h25m00s : 1.303985 usec : 2023y108d03h25m00s : -18.959162e-12;
+ *clock_early = 2023y108d02h20m00s : 1.682790 usec : 2023y108d02h20m00s : -26.841883e-12;
+ *clock_early = 2023y108d02h21m00s : 1.675376 usec : 2023y108d02h21m00s : -26.654417e-12;
+ *clock_early = 2023y108d02h29m00s : 1.616583 usec : 2023y108d02h29m00s : -25.180055e-12;
+ *clock_early = 2023y108d02h37m00s : 1.559400 usec : 2023y108d02h37m00s : -23.777292e-12;
+ *clock_early = 2023y108d02h45m00s : 1.504788 usec : 2023y108d02h45m00s : -22.483535e-12;
+ *clock_early = 2023y108d02h53m00s : 1.453710 usec : 2023y108d02h53m00s : -21.336193e-12;
+ *clock_early = 2023y108d03h01m00s : 1.407128 usec : 2023y108d03h01m00s : -20.372676e-12;
+ *clock_early = 2023y108d03h09m00s : 1.366005 usec : 2023y108d03h09m00s : -19.630393e-12;
+ *clock_early = 2023y108d03h11m00s : 1.356690 usec : 2023y108d03h11m00s : -19.483773e-12;
+ *clock_early = 2023y108d03h17m00s : 1.331303 usec : 2023y108d03h17m00s : -19.146752e-12;
+ *clock_early = 2023y108d03h25m00s : 1.303985 usec : 2023y108d03h25m00s : -18.959162e-12;
+  clock_early = 2023y108d02h21m00s : 1.354376 usec : 2023y108d02h21m00s : -12.6e-12;
+  clock_early = 2023y108d02h29m00s : 1.347400 usec : 2023y108d02h29m00s : -13.4e-12;
+  clock_early = 2023y108d02h37m00s : 1.341400 usec : 2023y108d02h37m00s : -14.2e-12;
+  clock_early = 2023y108d02h45m00s : 1.333788 usec : 2023y108d02h45m00s : -15.0e-12;
+  clock_early = 2023y108d02h53m00s : 1.325710 usec : 2023y108d02h53m00s : -15.5e-12;
+  clock_early = 2023y108d03h01m00s : 1.317500 usec : 2023y108d03h01m00s : -16.1e-12;
+  clock_early = 2023y108d03h09m00s : 1.310005 usec : 2023y108d03h09m00s : -16.9e-12;
+  clock_early = 2023y108d03h17m00s : 1.303303 usec : 2023y108d03h17m00s : -17.6e-12;
+  clock_early = 2023y108d03h25m00s : 1.294985 usec : 2023y108d03h25m00s : -18.4e-12;
   clock_early = 2023y108d03h36m00s : 1.280246 usec : 2023y108d03h36m00s : -19.253340e-12;
   clock_early = 2023y108d03h41m00s : 1.274984 usec : 2023y108d03h41m00s : -19.632691e-12;
   clock_early = 2023y108d03h49m00s : 1.264014 usec : 2023y108d03h49m00s : -20.393480e-12;
@@ -129,6 +138,15 @@ def Kt;
   clock_early = 2023y108d13h25m00s : -0.335292 usec : 2023y108d13h25m00s : -69.775253e-12;
   clock_early = 2023y108d13h30m00s : -0.356035 usec : 2023y108d13h30m00s : -70.125619e-12;
   clock_early = 2023y108d13h48m00s : -0.431231 usec : 2023y108d13h48m00s : -71.396723e-12;
+  clock_early = 2023y108d13h58m00s : -0.475 usec : 2023y108d13h58m00s : -72.0967e-12;
+  clock_early = 2023y108d14h11m00s : -0.531 usec : 2023y108d14h11m00s : -72.7967e-12;
+  clock_early = 2023y108d14h19m00s : -0.565 usec : 2023y108d14h19m00s : -73.3967e-12;
+  clock_early = 2023y108d14h32m00s : -0.622 usec : 2023y108d14h32m00s : -73.7967e-12;
+  clock_early = 2023y108d14h40m00s : -0.656 usec : 2023y108d14h40m00s : -73.9467e-12;
+  clock_early = 2023y108d14h48m00s : -0.691 usec : 2023y108d14h48m00s : -74.0967e-12;
+  clock_early = 2023y108d14h59m00s : -0.738 usec : 2023y108d14h59m00s : -74.2967e-12;
+  clock_early = 2023y108d15h07m00s : -0.773 usec : 2023y108d15h07m00s : -74.5967e-12;
+  clock_early = 2023y108d15h17m00s : -0.816 usec : 2023y108d15h17m00s : -74.9967e-12;
   * clock_early = 2023y108d13h58m00s : NaN usec : 2023y108d13h58m00s : NaN;
   * clock_early = 2023y108d14h11m00s : NaN usec : 2023y108d14h11m00s : NaN;
   * clock_early = 2023y108d14h19m00s : NaN usec : 2023y108d14h19m00s : NaN;
@@ -243,7 +261,7 @@ def Kt;
   * clock_early = 2023y109d19h26m00s : NaN usec : 2023y109d19h26m00s : NaN;
   * clock_early = 2023y109d19h36m00s : NaN usec : 2023y109d19h36m00s : NaN;
   *
-  * KT clock breaks for e23a22 derived by alist2clockbreaks.py using fits into full-length scans
+  * KT clock breaks for track e23a22 derived by alist2clockbreaks.py using fits into full-length scans
   clock_early = 2023y111d15h18m00s : -15.425031 usec : 2023y111d15h18m00s : -76.323819e-12;
   clock_early = 2023y111d15h26m00s : -15.461931 usec : 2023y111d15h26m00s : -76.317958e-12;
   clock_early = 2023y111d15h28m00s : -17.062497 usec : 2023y111d15h28m00s : -76.836020e-12;
@@ -358,16 +376,16 @@ def Kt;
   clock_early = 2023y112d06h15m50s : -20.268316 usec : 2023y112d06h15m50s : -96.961922e-12;
   * clock_early = 2023y112d06h28m00s : NaN usec : 2023y112d06h28m00s : NaN;
   * clock_early = 2023y112d06h30m00s : NaN usec : 2023y112d06h30m00s : NaN;
-  * clock_early = 2023y112d06h38m00s : NaN usec : 2023y112d06h38m00s : NaN;
+  clock_early = 2023y112d06h38m00s : -20.383316 usec : 2023y112d06h38m00s : -96.711922e-12;
   * clock_early = 2023y112d06h48m00s : NaN usec : 2023y112d06h48m00s : NaN;
-  * clock_early = 2023y112d06h50m00s : NaN usec : 2023y112d06h50m00s : NaN;
-  * clock_early = 2023y112d06h58m00s : NaN usec : 2023y112d06h58m00s : NaN;
+  clock_early = 2023y112d06h50m00s : -20.454316 usec : 2023y112d06h50m00s : -96.316922e-12;
+  clock_early = 2023y112d06h58m00s : -20.508316 usec : 2023y112d06h58m00s : -95.951922e-12;
   * clock_early = 2023y112d07h13m00s : NaN usec : 2023y112d07h13m00s : NaN;
-  * clock_early = 2023y112d07h15m00s : NaN usec : 2023y112d07h15m00s : NaN;
-  * clock_early = 2023y112d07h23m00s : NaN usec : 2023y112d07h23m00s : NaN;
+  clock_early = 2023y112d07h15m00s : -20.596316 usec : 2023y112d07h15m00s : -95.261922e-12;
+  clock_early = 2023y112d07h23m00s : -20.645316 usec : 2023y112d07h23m00s : -94.921922e-12;
   * clock_early = 2023y112d07h33m00s : NaN usec : 2023y112d07h33m00s : NaN;
-  * clock_early = 2023y112d07h35m00s : NaN usec : 2023y112d07h35m00s : NaN;
-  * clock_early = 2023y112d07h43m00s : NaN usec : 2023y112d07h43m00s : NaN;
+  clock_early = 2023y112d07h35m00s : -20.712316 usec : 2023y112d07h35m00s : -94.361922e-12;
+  clock_early = 2023y112d07h43m00s : -20.756316 usec : 2023y112d07h43m00s : -94.031922e-12;
 enddef;
 *
 * LMT, undisciplined xtal instead of H-maser
