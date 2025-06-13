@@ -26,6 +26,21 @@ class ehtTrackList:
 
 		self.tracks = {}
 		#
+		self.tracks['e25j21'] = ['exper_nominal_start=2025y021d05h14m00s;', 'exper_nominal_stop=2025y021d08h07m00s;']
+		#
+		self.tracks['e24j25'] = ['exper_nominal_start=2024y025d00h20m00s;', 'exper_nominal_stop=2024y025d01h42m00s;']
+		self.tracks['e24b04'] = ['exper_nominal_start=2024y094d22h32m00s;', 'exper_nominal_stop=2024y095d16h15m00s;']
+		self.tracks['e24e07'] = ['exper_nominal_start=2024y098d00h59m00s;', 'exper_nominal_stop=2024y098d16h08m00s;']
+		self.tracks['e24a08'] = ['exper_nominal_start=2024y098d18h31m00s;', 'exper_nominal_stop=2024y099d19h02m00s;']
+		self.tracks['e24c09'] = ['exper_nominal_start=2024y099d22h12m00s;', 'exper_nominal_stop=2024y100d15h28m00s;']
+		self.tracks['e24d10'] = ['exper_nominal_start=2024y100d22h59m00s;', 'exper_nominal_stop=2024y101d10h42m00s;']
+		self.tracks['e24g11'] = ['exper_nominal_start=2024y101d22h55m00s;', 'exper_nominal_stop=2024y102d08h52m00s;']
+		#
+		self.tracks['c241a'] = ['exper_nominal_start=2024y109d16h00m00s;', 'exper_nominal_stop=2024y110d15h54m51s;']
+		self.tracks['c241b'] = ['exper_nominal_start=2024y110d16h15m01s;', 'exper_nominal_stop=2024y112d10h52m00s;']
+		self.tracks['c241c'] = ['exper_nominal_start=2024y112d00h40m00s;', 'exper_nominal_stop=2024y113d07h53m20s;']
+		self.tracks['c241d'] = ['exper_nominal_start=2024y112d22h00m00s;', 'exper_nominal_stop=2024y114d16h56m31s;']
+		#
 		self.tracks['e23a22'] = ['exper_nominal_start=2023y111d15h18m00s;', 'exper_nominal_stop=2023y112d07h48m00s;']
 		self.tracks['e23e19'] = ['exper_nominal_start=2023y109d04h34m00s;', 'exper_nominal_stop=2023y109d19h41m00s;']
 		self.tracks['e23c18'] = ['exper_nominal_start=2023y108d02h21m00s;', 'exper_nominal_stop=2023y108d15h20m00s;']
@@ -71,6 +86,11 @@ class ehtTrackList:
 
 		tracklist = []
 
+		if year==2025 or year<=0:
+			tracklist += ['e25j21']
+		if year==2024 or year<=0:
+			tracklist += ['e24j25', 'e24b04', 'e24e07', 'e24a08', 'e24c09', 'e24d10', 'e24g11']
+			tracklist += ['c241a', 'c241b', 'c241c', 'c241d']
 		if year==2023 or year<=0:
 			tracklist += ['e23a22', 'e23c16', 'e23c18', 'e23d15', 'e23e19', 'e23g17']
 		if year==2022 or year<=0:
